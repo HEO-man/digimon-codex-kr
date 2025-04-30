@@ -34,27 +34,33 @@
   "breakthrough": {
     "1": {
       "effect": "Heavenly Impact 피해 +40%",
-      "statsBoost": "치명타율 +5%"
+      "statsBoost": "치명타율 +5%",
+      "skillIndex": 2
     },
     "2": {
       "effect": "치명타율 +10%, 치명피해 +20%",
-      "statsBoost": "치명피해 +5%"
+      "statsBoost": "치명피해 +5%",
+      "skillIndex": 3
     },
     "3": {
       "effect": "Heavenly Impact AP -1",
-      "statsBoost": "치명타율 +8%"
+      "statsBoost": "치명타율 +8%",
+      "skillIndex": 2
     },
     "4": {
       "effect": "피해 증가/감소 +10%",
-      "statsBoost": "치명피해 +10%"
+      "statsBoost": "치명피해 +10%",
+      "skillIndex": 3
     },
     "5": {
       "effect": "Heavenly Impact 피해 +20%, AP -1",
-      "statsBoost": "피해 증가 +10%"
+      "statsBoost": "피해 증가 +10%",
+      "skillIndex": 2
     },
     "6": {
       "effect": "상태 적중/저항 +15000",
-      "statsBoost": "피해 증가 +5%, 피해 감소 +15%"
+      "statsBoost": "피해 증가 +5%, 피해 감소 +15%",
+      "skillIndex": 3
     }
   },
   "build": {
