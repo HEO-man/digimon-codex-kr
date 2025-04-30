@@ -1,12 +1,78 @@
 {
   "skills": [
-    "단일 대상에게 120% 피해를 입히고, 다른 모든 대상에게 원래 피해의 50%만큼 진짜 피해(True Damage)를 입힙니다. 또한 전체 적에게 100% 확률로 2턴간 Sacred Penalty 마크를 부여합니다.",
-    "단일 대상에게 550% 피해를 입히며, 50% 확률로 대상에게 1턴간 Sealed 마크를 부여합니다. 이 스킬로 대상이 사망할 경우 Revive Prohibition 효과를 부여합니다(영구 지속). 사용 후 Mantra 1스택을 획득합니다.",
-    "패시브 효과로, 전투 시작 시 랜덤한 적 1명에게 Alert 마크를 부여하며, Erlangmon이 부활할 경우에도 이 효과가 다시 발동됩니다. 마크된 적이 AP를 3회 소모하면 다음 행동할 적의 모든 버프를 제거할 확률이 100%이며, 이후 비용 없이 Shōrai: Kōtenken을 시전합니다. 또한, Alert 마크가 있는 적에게 단일 공격을 받을 경우 Erlangmon은 단일 대상 피해를 60% 감소시키고, 행동 금지 상태에 면역이 됩니다.",
-    "기본 피해 증가 +40%, 피해 감소 +40%를 보유하며, 전투 시작 시 Mantra 1스택을 얻습니다. 이후 Shōrai: Kōtenken을 사용할 때마다 Mantra 1스택을 추가 획득하며 최대 9스택까지 누적됩니다. 또한, 치명타 저항 수치만큼 자신의 치명타 확률이 증가합니다. Crystallized 상태이상에 면역입니다."
+    {
+      "name": "요선연무 (Yōsen Enbu / Eagle Point Waltz)",
+      "type": "AOE",
+      "exe": "+10",
+      "description": "단일 대상 120% 피해 + 나머지 적들에게 50% 진짜 피해. 모든 적에게 고정 확률로 [신벌] 마크(2턴) 부여."
+    },
+    {
+      "name": "소뢰: 황천견 (Shōrai: Kōtenken / Summon: Howling Celestial Dog)",
+      "type": "Main Skill",
+      "ap": "6 AP | EXE: +30",
+      "description": "단일 대상 550% 피해 + 50% 확률로 [봉인] 마크 부여 (1턴). 대상 처치 시 [부활 금지] 상태 부여 (영구적).\n스킬 사용 후 [진언] 1스택 획득. 시전 시 최종 피해 +30%."
+    },
+    {
+      "name": "천구시월 (Tiāngǒu Shì Yuè / Sky Dog Loves Moon)",
+      "type": "조건형 패시브",
+      "description": "진입 시 무작위 적 1명에게 [경계] 마크 부여. 3회 AP 소모 후 다음 적 행동자 버프 제거 + 코스트 없는 [황천견] 자동 시전.\n[경계] 대상이 공격 시 단일 대상 피해 -60%, 행동 제한 무시."
+    }
   ],
-  "core": {
-    "exclusiveEffect": "Erlangmon이 Alert 마크가 있는 적에게 공격받을 때, 행동 금지 상태에 걸리지 않음",
-    "suitableEffect": "행동 라운드 내 첫 공격 후 대상에게 초기 피해의 8%만큼 진짜 피해를 추가로 입힘"
+  "passive": {
+    "name": "청원묘도 (Qīng Yuán Miào Dào)",
+    "description": "기본 피해증가 +40%, 피해감소 +40%.\n• 전투 시작 시 [진언] 1스택 획득, [황천견] 사용 시마다 +1 스택 (최대 9)\n• 치명타 저항 수치만큼 치명타율 증가\n• 결정화 면역"
+  },
+  "exclusiveCore": {
+    "exclusiveEffect": "경계 마크가 있는 적에게 공격당할 경우 행동 제한 상태에 면역",
+    "suitableEffect": "턴당 첫 공격 이후 대상에게 8% 추가 진짜 피해"
+  },
+  "breakthrough": {
+    "1": {
+      "effect": "스킬 피해 +50%, 봉인 확률 +50%",
+      "statsBoost": "치명타율 +5%"
+    },
+    "2": {
+      "effect": "전투 시작 시 진언 +2 추가",
+      "statsBoost": "치명타 피해 +5%"
+    },
+    "3": {
+      "effect": "AP 소모 -1, 스킬 사용 시 진언 추가 +1",
+      "statsBoost": "치명타율 +8%"
+    },
+    "4": {
+      "effect": "경계 대상의 AP 소모 조건 -1회 (2회로 발동)",
+      "statsBoost": "치명타 피해 +10%"
+    },
+    "5": {
+      "effect": "피해 증가 +10%, 피해 감소 +10%",
+      "statsBoost": "피해 증가 +10%"
+    },
+    "6": {
+      "effect": "단일 대상 피해 감쇄율 추가 -30% (총 -90%)",
+      "statsBoost": "피해 증가 +5%, 피해 감소 +15%"
+    }
+  },
+  "build": {
+    "type": "High Crit Resist Build",
+    "pluginSet": "Damage Reduction Crit Resist Set (4)",
+    "subStats": [
+      "치명타 피해 +3~4",
+      "치명타율 +1~2",
+      "공격력 %",
+      "SPD +1"
+    ],
+    "mainSlotStat": "치명타 피해",
+    "5thSubstat": "치명타 저항 +1",
+    "coreSuggestions": [
+      "Verdict (턴 외 딜러에게 적합)",
+      "Resolute (생존력 강화)",
+      "Shield (광역 생존력 강화)"
+    ],
+    "targetValues": {
+      "SPD": "3000 ~ 3500",
+      "CritRate": "60 ~ 100%",
+      "CritDamage": "450 ~ 500%",
+      "CritResist": "110 ~ 130%"
+    }
   }
 }
