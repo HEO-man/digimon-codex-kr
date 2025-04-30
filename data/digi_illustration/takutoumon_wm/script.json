@@ -1,39 +1,90 @@
 {
+  "name": "Takutoumon WM",
+  "element": "Thunder",
+  "type": "Vaccine",
+  "role": "Output (DPS)",
   "skills": [
     {
-      "name": "창연격 (Spear Combo Attacks)",
+      "name": "Qiāng Lián Jí / Spear Combo Attacks",
+      "type": "Single Target Multi-Hit",
       "ap": "EXE: +10",
-      "type": "단일 다단 히트",
-      "description": "단일 대상에게 3회 공격, 매 공격마다 60% 피해.\n피해는 대상의 최대 HP를 기준으로 계산됩니다."
+      "description": "단일 적을 3회 타격하여 각 60% 피해를 입힙니다. 해당 피해는 대상의 최대 HP에서 차감됩니다."
     },
     {
-      "name": "용섬난격 (Dragon Flash Shooting)",
+      "name": "Ryūsen Rangeki / Dragon Flash Shooting",
+      "type": "Main Skill",
       "ap": "5 AP | EXE: +20",
-      "type": "광역 진/직 데미지",
-      "description": "모든 적에게 [과부하] 마크 부여 (2턴).\n지정 대상에게 260% 진 데미지 → 전체 190% 피해.\n전체 피해의 30%를 진 데미지로 전환하여 지정 대상에게 추가 피해 (최대 대상의 최대 HP의 60%).\n[보물뿔] 4스택일 경우, 대상에게 [억제] 상태 부여."
+      "description": "모든 적에게 Overload 마크 부여(2턴). 이후 지정 대상에게 260% 고정 피해 → 전체 적에게 190% 피해. 이 AOE 피해의 30%는 지정 대상에게 고정 피해로 전환(최대 대상 최대 HP의 60%). Treasure Cone이 4스택일 경우 Suppression 추가 부여."
     },
     {
-      "name": "비사문팔극섬진 (Bishamon Eight-Pole Annihilation Formation)",
+      "name": "Bishamon Hakkyoku Senjin / Bishamon Eight-Pole Annihilation Formation",
+      "type": "Sub Skill",
       "ap": "5 AP | EXE: +20",
-      "type": "단일 데미지 + 역할별 반응",
-      "description": "스킬 사용 후 추가 행동 획득.\n적이 행동 시 [보물뿔] 1스택 획득 (최대 4스택).\n자신의 비차턴 피해의 25%는 회복으로 전환.\n역할별 조건:\n- 딜러: 추가 턴 획득 시 80% 피해 + AP -1 (저항 무시)\n- 서포터: 행동 후 80% 피해 + EXE -50\n- 컨트롤러: 행동 전 180% 피해 + 제어 저항 1회(2턴)\n\n스킬 사용 시 단일 대상에게 180% 피해 + [보물뿔] 스택마다 추가 공격, 매 타격마다 2개 버프 제거 (저항 무시)."
+      "description": "적 1인에게 180% 피해, Treasure Cone 1스택당 추가 공격 발생(공격 전 2개 버프 제거, 상태저항 무시). 또한 턴 외 피해의 25%를 자가 회복. 적 행동 시 역할에 따라 다른 효과 발생 (DPS: 추가턴 시 피해+AP 감소, 보조: 피해+EXE 제거, 제어: 피해+제어면역 부여)."
     },
     {
-      "name": "비사문천 (Bishamonten)",
-      "type": "패시브",
-      "description": "기본 피해량 +40%, 피해 감소 +40%.\n\n전투 시작 시 [피해 무효화] 1회(2턴).\n사망 시 아군 전체에 [피해 무효화] 1회(1턴).\n공격 후 [분노한 천둥] 1스택 획득(행동당 1회, 최대 10).\n치명 피해 시 [분노한 천둥]으로 최소 HP 1% 유지 + 스택 ×5% 회복 (1회 제한).\n\n[과부하] 상태의 적에게 치명타 저항 -30%, 아군의 [과부하] 피해 +10%.\n[침묵] 면역."
+      "name": "Bishamonten",
+      "type": "Passive Skill",
+      "description": "피해 감소/증가 +40%, 전투 시작 시 Null Damage(2턴), 사망 시 아군에게 Null Damage(1턴) 부여. 피해 시 Raging Thunder 획득(최대 10스택), 치명 피해 전 생존 및 회복 효과. 생존 시 아군 Overload 피해 +10%, 적 Overload 대상 치명 저항 -30%. Silence 면역."
     }
   ],
-  "core": {
-    "exclusiveEffect": "전투 시작 시 [보물뿔] 2스택, [분노한 천둥] 5스택 획득",
-    "suitableEffect": "실드가 있는 적 공격 시 최종 피해 +12%"
+  "exclusiveCore": {
+    "exclusiveEffect": "전투 진입 시 Treasure Cone 2스택, Raging Thunder 5스택 획득",
+    "suitableEffect": "쉴드 대상 공격 시 최종 피해 +12%"
   },
   "breakthrough": {
-    "1": "메인 스킬 (용섬난격) 광역 피해량 +30%, 치명타 확률 +5%",
-    "2": "서브 스킬 (비사문팔극섬진) 역할별 효과 강화: 딜러(AP -1), 서포터(EXE -25), 컨트롤러(제어 저항 +1회), 치명타 피해 +5%",
-    "3": "메인 스킬 (용섬난격) AP -1, 진 데미지 +40%, 치명타 확률 +8%",
-    "4": "패시브 (비사문천) [분노한 천둥] 1스택당 치명타 피해 +8%, 인내 +8%, 치명타 피해 +10%",
-    "5": "서브 스킬 (비사문팔극섬진) [보물뿔] 1스택당 공격력 +4%, 피해 증가 +10%",
-    "6": "패시브 (비사문천) 기본 피해 +10%, 피해 감소 +10%, 피해 무효화 1회 추가, 피해 증가 +5%, 피해 감소 +15%"
+    "1": {
+      "effect": "Ryūsen Rangeki 광역 피해 +30%",
+      "statsBoost": "치명타율 +5%",
+      "skillIndex": 1
+    },
+    "2": {
+      "effect": "역할별 효과 강화 (DPS: AP -1, 보조: EXE -25, 제어: 제어면역 1회 추가)",
+      "statsBoost": "치명피해 +5%",
+      "skillIndex": 2
+    },
+    "3": {
+      "effect": "Ryūsen Rangeki AP -1, 고정 피해 +40%",
+      "statsBoost": "치명타율 +8%",
+      "skillIndex": 1
+    },
+    "4": {
+      "effect": "Raging Thunder당 치명피해 +8%, 인내력 +8%",
+      "statsBoost": "치명피해 +10%",
+      "skillIndex": 3
+    },
+    "5": {
+      "effect": "Treasure Cone당 공격력 +4%",
+      "statsBoost": "피해 증가 +10%",
+      "skillIndex": 2
+    },
+    "6": {
+      "effect": "피해감소/증가 +10%, Null Damage 1회 추가",
+      "statsBoost": "피해 증가 +5%, 피해 감소 +15%",
+      "skillIndex": 3
+    }
+  },
+  "build": {
+    "type": "Max Output Build",
+    "pluginSet": "Damage Increase Burst Set (4)",
+    "subStats": [
+      "치명피해 +3~4",
+      "치명타율",
+      "공격력 %",
+      "SPD"
+    ],
+    "mainSlotStat": "치명피해",
+    "5thSubstat": "치명피해 +1",
+    "coreSuggestions": [
+      "Weakness",
+      "Solid Barrier",
+      "Adhere",
+      "Counterattack"
+    ],
+    "targetValues": {
+      "SPD": "2500 ~ 3500",
+      "CritDamage": "450 ~ 500%",
+      "CritRate": "140%"
+    }
   }
 }
