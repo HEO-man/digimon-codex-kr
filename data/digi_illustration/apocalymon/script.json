@@ -1,76 +1,87 @@
 {
-  "name": "Apocalymon",
+  "name": "아포칼리몬",
   "element": "어둠",
   "type": "바이러스",
   "role": "딜러",
-  "skills": [
-    {
-      "name": "Degenerate Claw",
-      "type": "일반기",
-      "ap": "디지볼루션 에너지: +10",
-      "description": "지정 대상과 무작위 적 2명을 공격해 각각 100% 피해를 주고, 100% 고정 확률로 EXE를 20 감소시킴."
+  "skills": {
+    "mainSkill": {
+      "name": "암흑 영역",
+      "ap": "6",
+      "type": "광역 공격",
+      "description": "모든 적에게 2스택의 '일식'을 2턴간 부여하고 210% 피해를 입힙니다. 사용 후 적의 필드를 '암흑 영역'으로 전환합니다(2턴간 지속). 암흑 영역 내에서는 행동 전 EXE -20이 적용되며, '일식'이 부여된 적은 스택당 ATK 및 피해 감소 -5%가 적용됩니다. 디지볼브 효과: EXE -50 추가 차감."
     },
-    {
-      "name": "Dark Realm",
-      "type": "주요기",
-      "ap": "6 AP | 디지볼루션 에너지: +30",
-      "description": "모든 적에게 2중첩 Eclipse 부여 (2턴), 이후 전체 공격 (210% 피해). 적 필드를 2턴간 'Dark Realm'으로 전환. 이 상태에서 적은 행동 전 EXE -20, Eclipse 1중첩당 ATK/피해감소 -5%. 추가로 EXE -50 직접 제거. 행동 추가 없음."
-    },
-    {
-      "name": "Total Annihilation",
-      "type": "조건기",
-      "ap": "자동 발동",
-      "description": "적이 버프를 받을 때마다 Terror 1중첩 획득. 20중첩 시 즉시 발동. 전체 적에게 200% 피해 및 100% 확률로 무작위 버프 2개 삭제 후 Terror 초기화."
-    }
-  ],
-  "passive": {
-    "name": "Unlimited Escalation",
-    "description": "피해 증가+30%, 피해 감소+30%. 최대 HP의 10%를 ATK로 전환 (최대 기본 ATK의 60%). 받는 피해의 50%를 전투 종료까지 최대 HP로 전환 (최대 기본 HP의 100%). 항상 상성 우위를 가짐."
+    "subSkills": [
+      {
+        "name": "전멸",
+        "ap": "조건 기반",
+        "type": "광역 공격",
+        "description": "적이 버프를 받을 때마다 아포칼리몬은 '공포' 1스택을 얻고, 20스택 도달 시 즉시 발동됩니다. 모든 적에게 200% 피해를 입히고, 100% 확률로 각 대상의 버프를 2개 삭제합니다. 이후 모든 '공포' 스택이 제거됩니다."
+      },
+      {
+        "name": "퇴화 발톱",
+        "ap": "0",
+        "type": "광역 공격",
+        "description": "지정 대상과 무작위 적 2명에게 각각 100% 피해를 입히고, EXE를 20 차감합니다 (고정 확률)."
+      }
+    ]
   },
+  "passive": "내재 피해 증가 및 감소 +30%. 최대 HP의 10%를 ATK로 전환 (최대 기본 ATK의 60%). 받는 피해의 50%를 최대 HP로 전환(전투 종료 시까지 유지되며, 최대 기본 HP의 100%까지 누적). 속성 관계에서 항상 유리한 속성으로 간주됩니다.",
   "exclusiveCore": {
-    "exclusiveEffect": "전투 시작 시 최대 HP → ATK 전환 비율 +10%",
-    "suitableEffect": "실드 대상 공격 시 최종 피해 +12%"
+    "exclusiveEffect": "HP → ATK 전환 비율 +10%",
+    "suitableEffect": "실드가 있는 적 공격 시 피해량 +12%"
   },
   "breakthrough": {
     "1": {
-      "effect": "Dark Realm 피해 +30%, EXE 제거 +5",
-      "statsBoost": "치명타 확률 +5%",
-      "skillIndex": 1
+      "effect": "암흑 영역: 피해량 +30%, EXE 차감 +5",
+      "statsBoost": "치명타율 +5%",
+      "skillIndex": 0
     },
     "2": {
-      "effect": "Terror 중첩 조건 -5",
-      "statsBoost": "치명타 피해 +5%",
-      "skillIndex": 2
-    },
-    "3": {
-      "effect": "HP → ATK 전환 비율 +10%",
-      "statsBoost": "치명타 확률 +8%",
-      "skillIndex": 3
-    },
-    "4": {
-      "effect": "Total Annihilation 피해 +40%, 삭제 버프 +1",
-      "statsBoost": "치명타 피해 +10%",
-      "skillIndex": 2
-    },
-    "5": {
-      "effect": "Dark Realm 피해 +30%, AP -1",
-      "statsBoost": "피해 증가 +10%",
+      "effect": "전멸: 발동 조건 스택 -5",
+      "statsBoost": "치명피해 +5%",
       "skillIndex": 1
     },
+    "3": {
+      "effect": "패시브: HP → ATK 전환 비율 +10%",
+      "statsBoost": "치명타율 +8%",
+      "skillIndex": 2
+    },
+    "4": {
+      "effect": "전멸: 피해량 +40%, 삭제 버프 +1",
+      "statsBoost": "치명피해 +10%",
+      "skillIndex": 1
+    },
+    "5": {
+      "effect": "암흑 영역: 피해량 +30%, AP 소모 -1",
+      "statsBoost": "피해 증가 +10%",
+      "skillIndex": 0
+    },
     "6": {
-      "effect": "피해 증가 +10%, 피해 감소 +10%, 피해 → HP 전환 비율 +50%",
+      "effect": "패시브: 피해 증가 및 감소 +10%, 피해 → HP 전환 비율 +50%",
       "statsBoost": "피해 증가 +5%, 피해 감소 +15%",
-      "skillIndex": 3
+      "skillIndex": 2
     }
   },
   "build": {
-    "type": "EXE 조작 딜러",
-    "pluginSet": null,
-    "subStats": null,
-    "mainSlotStat": null,
-    "5thSubstat": null,
-    "coreSuggestions": null,
-    "coreStats": null,
-    "targetValues": null
+    "type": "DPS 특화",
+    "pluginSet": "EXE 제거 + 다크 데미지 세트",
+    "subStats": [
+      "치명타율 +2~4",
+      "치명피해 +3~4",
+      "공격력 %",
+      "SPD +1"
+    ],
+    "mainSlotStat": "치명피해",
+    "5thSubstat": "상태이상 적중 +1",
+    "coreSuggestions": [
+      "Verdict",
+      "Dark Call",
+      "Dominate"
+    ],
+    "targetValues": {
+      "SPD": "4000 이상",
+      "CritRate": "130% 이상",
+      "CritDamage": "400 ~ 500%"
+    }
   }
 }

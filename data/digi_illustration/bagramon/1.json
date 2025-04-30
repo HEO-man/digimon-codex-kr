@@ -1,0 +1,76 @@
+{
+  "name": "Bagramon",
+  "element": "어둠",
+  "type": "바이러스",
+  "role": "제어",
+  "skills": [
+    {
+      "name": "Prosthetic Strike",
+      "type": "일반기",
+      "ap": "디지볼루션 에너지: +10",
+      "description": "단일 대상 및 무작위 적 1명을 공격하여 ATK의 100% 고정 피해. 50% 확률로 AP -1 효과."
+    },
+    {
+      "name": "Ghost Plunder",
+      "type": "주요기",
+      "ap": "5 AP | 디지볼루션 에너지: +30",
+      "description": "단일 적에게 300% 피해, 100% 확률로 Stolen Soul 부여 (ATK -50%, 크리율 -50%, 크리댐 -100%). Bagramon은 1턴간 Grabbing Posture 상태에 진입. 해당 상태에서는 받은 피해의 50%를 대상이 대신 받음. 디지볼루션 효과로 Grabbing Posture 1턴 연장."
+    },
+    {
+      "name": "Invisible Snake Eye",
+      "type": "서브기",
+      "ap": "5 AP | 디지볼루션 에너지: +30",
+      "description": "아군 1명에게 True Eye 부여 (2턴). 모든 적에게 100% 확률로 Eclipse (2턴), 70% 확률로 회복불가 & 버프불가 (2턴) 부여."
+    }
+  ],
+  "passive": {
+    "name": "Absurd World",
+    "description": "석화 면역. 행동 시 50% 확률로 적의 버프 2개를 무작위 디버프로 전환.\nEclipse가 부여된 적에게 피해를 받기 전, 70% 확률로 해당 적에게 ATK-20%, 크리율-20%, 크리댐-50% (1턴) 부여.\n적이 AP를 사용할 때마다 SPD +100 (1턴, 최대 20중첩)."
+  },
+  "exclusiveCore": {
+    "exclusiveEffect": "주요기 사용 후, 적 전체에게 100% 확률로 도발 1턴 부여",
+    "suitableEffect": "공격 대상의 SPD가 사용자보다 낮을 경우 효과 적중 +1500"
+  },
+  "breakthrough": {
+    "1": {
+      "effect": "Grabbing Posture 지속 +1턴",
+      "statsBoost": "SPD +50",
+      "skillIndex": 1
+    },
+    "2": {
+      "effect": "버프 디버프 변환 확률 +50%",
+      "statsBoost": "효과 적중 +1000",
+      "skillIndex": 3
+    },
+    "3": {
+      "effect": "Invisible Snake Eye AP -1, 디버프 확률 +30%",
+      "statsBoost": "SPD +100",
+      "skillIndex": 2
+    },
+    "4": {
+      "effect": "Eclipse 대상 디버프 확률 +30%, 지속 +1턴",
+      "statsBoost": "효과 적중 +1500",
+      "skillIndex": 3
+    },
+    "5": {
+      "effect": "Invisible Snake Eye AP -1, Eclipse 1중첩 추가",
+      "statsBoost": "효과 저항 +2500",
+      "skillIndex": 2
+    },
+    "6": {
+      "effect": "Ghost Plunder AP -1, 디지볼루션 에너지 +20",
+      "statsBoost": "피해 감소 +20%",
+      "skillIndex": 1
+    }
+  },
+  "build": {
+    "type": "상태이상 중심 CC 빌드",
+    "pluginSet": null,
+    "subStats": null,
+    "mainSlotStat": null,
+    "5thSubstat": null,
+    "coreSuggestions": null,
+    "coreStats": null,
+    "targetValues": null
+  }
+}

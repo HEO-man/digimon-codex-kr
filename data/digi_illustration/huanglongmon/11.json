@@ -1,0 +1,89 @@
+{
+  "name": "Huanglongmon",
+  "element": "Earth",
+  "type": "Data",
+  "role": "Support (Auxiliary)",
+  "skills": [
+    {
+      "name": "Dragon Smash",
+      "type": "AOE True Damage + Cleanse",
+      "ap": "디지볼루션 에너지: +10",
+      "description": "자신의 최대 HP의 8%에 해당하는 고정 피해(최대 자신의 ATK 160%)를 적 전체에게 입히고, 아군 전체의 상태이상 1개를 제거합니다."
+    },
+    {
+      "name": "Taikyoku",
+      "type": "Field Buff + True Damage",
+      "ap": "6 AP | 디지볼루션 에너지: +50",
+      "description": "태극 영역을 펼칩니다 (우리: 양, 적: 음).\n양 진영은 행동 시 50% 확률로 AP 1 회복 및 HP 10% 회복.\n음 진영은 행동 시 버프 1개 제거 및 자신의 최대 HP 10%에 해당하는 고정 피해 (최대 ATK 300%)를 입습니다. 2턴 지속.\n디지볼루션 효과: 아군 전체의 디버프 제거."
+    },
+    {
+      "name": "Oukai",
+      "type": "Condition-Based | AOE True Damage",
+      "ap": "쿨다운: 4턴",
+      "description": "아군의 HP가 50% 이하일 때 발동.\n적 전체에게 최대 HP의 20%에 해당하는 고정 피해(최대 ATK 400%)를 입히고, 아군에게 모래폭풍 효과 부여: 치명 저항 +50%(1턴), 반격 상태(2턴).\n대지 속성 아군은 추가로 '자성화' 마크 획득(2턴)."
+    }
+  ],
+  "passive": {
+    "name": "Huanglong Ore",
+    "description": "최대 HP +25%, 상태 저항 +2500. 석화 면역."
+  },
+  "exclusiveCore": {
+    "exclusiveEffect": "회복 효과 +15%",
+    "suitableEffect": "아군 상태 이상 제거 시, 상태 저항 +2500 (2턴)"
+  },
+  "breakthrough": {
+    "1": {
+      "effect": "회복량 및 피해 비율 +5%",
+      "statsBoost": "상태 저항 +1000",
+      "skillIndex": 1
+    },
+    "2": {
+      "effect": "상태이상 제거 수 +1",
+      "statsBoost": "피해 감소 +5%",
+      "skillIndex": 0
+    },
+    "3": {
+      "effect": "최대 HP +10%, 상태 저항 +500",
+      "statsBoost": "상태 저항 +1500",
+      "skillIndex": 3
+    },
+    "4": {
+      "effect": "적 버프 제거 수 +1",
+      "statsBoost": "피해 감소 +5%",
+      "skillIndex": 1
+    },
+    "5": {
+      "effect": "쿨다운 -1턴",
+      "statsBoost": "피해 감소 +10%",
+      "skillIndex": 2
+    },
+    "6": {
+      "effect": "AP 회복 확률 +50%",
+      "statsBoost": "SPD +150, 피해 감소 +10%",
+      "skillIndex": 1
+    }
+  },
+  "build": {
+    "type": "하이탱크 & 상태저항 지원형",
+    "pluginSet": "없음 (전용 언급 없음)",
+    "subStats": [
+      "HP %",
+      "상태 저항 +",
+      "속도 +"
+    ],
+    "mainSlotStat": "HP %",
+    "5thSubstat": "상태 저항 +1",
+    "coreSuggestions": [
+      "Healing Bonus",
+      "Cleanse"
+    ],
+    "coreStats": [
+      "HP % + 상태 저항",
+      "SPD + 상태 저항"
+    ],
+    "targetValues": {
+      "SPD": "6000 ~ 7500",
+      "StatusResistance": "30,000 ~ 45,000"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "name": "Apocalymon",
+  "element": "어둠",
+  "type": "바이러스",
+  "role": "딜러",
+  "skills": [
+    {
+      "name": "Degenerate Claw",
+      "type": "일반기",
+      "ap": "디지볼루션 에너지: +10",
+      "description": "지정 대상과 무작위 적 2명을 공격해 각각 100% 피해를 주고, 100% 고정 확률로 EXE를 20 감소시킴."
+    },
+    {
+      "name": "Dark Realm",
+      "type": "주요기",
+      "ap": "6 AP | 디지볼루션 에너지: +30",
+      "description": "모든 적에게 2중첩 Eclipse 부여 (2턴), 이후 전체 공격 (210% 피해). 적 필드를 2턴간 'Dark Realm'으로 전환. 이 상태에서 적은 행동 전 EXE -20, Eclipse 1중첩당 ATK/피해감소 -5%. 추가로 EXE -50 직접 제거. 행동 추가 없음."
+    },
+    {
+      "name": "Total Annihilation",
+      "type": "조건기",
+      "ap": "자동 발동",
+      "description": "적이 버프를 받을 때마다 Terror 1중첩 획득. 20중첩 시 즉시 발동. 전체 적에게 200% 피해 및 100% 확률로 무작위 버프 2개 삭제 후 Terror 초기화."
+    }
+  ],
+  "passive": {
+    "name": "Unlimited Escalation",
+    "description": "피해 증가+30%, 피해 감소+30%. 최대 HP의 10%를 ATK로 전환 (최대 기본 ATK의 60%). 받는 피해의 50%를 전투 종료까지 최대 HP로 전환 (최대 기본 HP의 100%). 항상 상성 우위를 가짐."
+  },
+  "exclusiveCore": {
+    "exclusiveEffect": "전투 시작 시 최대 HP → ATK 전환 비율 +10%",
+    "suitableEffect": "실드 대상 공격 시 최종 피해 +12%"
+  },
+  "breakthrough": {
+    "1": {
+      "effect": "Dark Realm 피해 +30%, EXE 제거 +5",
+      "statsBoost": "치명타 확률 +5%",
+      "skillIndex": 1
+    },
+    "2": {
+      "effect": "Terror 중첩 조건 -5",
+      "statsBoost": "치명타 피해 +5%",
+      "skillIndex": 2
+    },
+    "3": {
+      "effect": "HP → ATK 전환 비율 +10%",
+      "statsBoost": "치명타 확률 +8%",
+      "skillIndex": 3
+    },
+    "4": {
+      "effect": "Total Annihilation 피해 +40%, 삭제 버프 +1",
+      "statsBoost": "치명타 피해 +10%",
+      "skillIndex": 2
+    },
+    "5": {
+      "effect": "Dark Realm 피해 +30%, AP -1",
+      "statsBoost": "피해 증가 +10%",
+      "skillIndex": 1
+    },
+    "6": {
+      "effect": "피해 증가 +10%, 피해 감소 +10%, 피해 → HP 전환 비율 +50%",
+      "statsBoost": "피해 증가 +5%, 피해 감소 +15%",
+      "skillIndex": 3
+    }
+  },
+  "build": {
+    "type": "EXE 조작 딜러",
+    "pluginSet": null,
+    "subStats": null,
+    "mainSlotStat": null,
+    "5thSubstat": null,
+    "coreSuggestions": null,
+    "coreStats": null,
+    "targetValues": null
+  }
+}

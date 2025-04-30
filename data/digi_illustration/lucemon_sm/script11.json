@@ -1,0 +1,92 @@
+{
+  "name": "Lucemon SM",
+  "element": "Dark",
+  "type": "Virus",
+  "role": "제어형 (CC)",
+  "skills": [
+    {
+      "name": "Pollution Impact",
+      "type": "AOE",
+      "ap": "EXE: +10",
+      "description": "대상과 무작위 적 2명을 공격(각 100%)하며, 100% 확률로 아래 상태이상 중 2개를 부여 (2턴): 공격력 -20%, 방어력 -60%, 치명저항 -20%, 치명피해 -50%, 인내 -50%, 치명확률 -20%, 회피율 -20%."
+    },
+    {
+      "name": "Purgatorial Flame",
+      "type": "AOE + True Damage",
+      "ap": "6 AP | EXE: +50",
+      "description": "모든 적의 버프 제거 후, 전원에게 350% 피해. 이후 [Purgation Flame] 1중첩 부여(기본 100% 고정 확률). 상태이상이 있으면 추가 1중첩 부여. 이 효과는 중첩 가능(최대 7), EXE/쉴드 획득률 -10%, 행동 전 최대 체력의 7% 진짜 피해(최대 Lucemon SM의 ATK까지, 영구 지속)."
+    },
+    {
+      "name": "Judgment of the Seven Sins",
+      "type": "Single + AoE Multi-Hit",
+      "ap": "6 AP | EXE: +50",
+      "description": "대상 1명과 무작위 7명에게 연속 공격(각 160%). 각 공격마다 50% 확률로 상태이상 부여: 화상 5중첩, 빙결, 독 10중첩, 석화, 마비, 윈드블레이드 10중첩(고정), 이클립스 5중첩(고정). 사용 후 추가 행동 가능."
+    },
+    {
+      "name": "The Seven Deadly Sins",
+      "type": "Passive",
+      "description": "기본 상태 적중 +25,000, 피해 증가/감소 +40%. ATK 10,000당 최대 HP +1%, 공격력 +1%, 방어력 +2%(최대 800,000 기준). 적에게 상태이상이 있을 때마다 피해 증가 +2%(최대 20개), 부정 마크마다 피해 감소 +2%(최대 20개). 빠른 적에게 피해를 입으면 최대 HP +10%(행동당 최대 5회, 누적 최대 400%). 추방 면역."
+    }
+  ],
+  "exclusiveCore": {
+    "exclusiveEffect": "기본 상태 적중의 100%만큼 상태 저항 증가",
+    "suitableEffect": "공격 시마다 공격력 +2%(최대 8중첩, 공격 시 해제)"
+  },
+  "breakthrough": {
+    "1": {
+      "effect": "AP -1, 피해 +50%",
+      "statsBoost": "SPD +50",
+      "skillIndex": 1
+    },
+    "2": {
+      "effect": "상태 적중 +10000, 피해 증가/감소 +10%",
+      "statsBoost": "상태 적중 +1000",
+      "skillIndex": 3
+    },
+    "3": {
+      "effect": "각 상태이상 확률 +50%",
+      "statsBoost": "SPD +100",
+      "skillIndex": 2
+    },
+    "4": {
+      "effect": "상태이상 적 대상에게 [Purgation Flame] 1중첩 추가",
+      "statsBoost": "상태 적중 +1500",
+      "skillIndex": 1
+    },
+    "5": {
+      "effect": "AP -1, 각 히트 피해 +40%",
+      "statsBoost": "상태 저항 +2500",
+      "skillIndex": 2
+    },
+    "6": {
+      "effect": "상태이상 1개당 피해 증가 +1%, 마크 1개당 피해 감소 +1%, 피해 받을 때마다 최대 HP +10%",
+      "statsBoost": "피해 감소 +20%",
+      "skillIndex": 3
+    }
+  },
+  "build": {
+    "type": "상태이상 기반 제어형",
+    "pluginSet": "상태 적중 + 속도 중심 구성",
+    "subStats": [
+      "SPD +3~4",
+      "Status Hit +1~2",
+      "Status Resistance +1~2"
+    ],
+    "mainSlotStat": "Status Hit or SPD",
+    "5thSubstat": "Status Resistance +1",
+    "coreSuggestions": [
+      "Adhere",
+      "Cleanse",
+      "Debuff Spread",
+      "Digivolution"
+    ],
+    "coreStats": [
+      "SPD + Status Hit",
+      "Status Hit + Crit Rate"
+    ],
+    "targetValues": {
+      "SPD": "6500 ~ 7500",
+      "Status Hit": "25000 ~ 35000"
+    }
+  }
+}
