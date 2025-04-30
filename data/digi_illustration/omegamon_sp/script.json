@@ -8,51 +8,74 @@
       "name": "Grey Sword & Garuru Cannon",
       "type": "Single Target",
       "ap": "EXE: +10",
-      "description": "100% 피해 + 방무/무적/쉴드 무시. 자신의 턴에는 추가 피해(150%) + SPD 감소. 빙결 상태 대상 AP 제거. 아군 공격 시 협공."
+      "description": "100% 피해 + 방무/무적/쉴드 무시. 자신의 턴에 추가 피해(150%) + SPD -200(2턴). 빙결 상태 대상 AP 제거. 아군이 공격 시 협공."
     },
     {
       "name": "Omni-Knight",
-      "type": "Multi-Select",
-      "description": "3가지 스킬 중 선택 사용 가능:\n• Full Power Barrage: 전체 공격 + 빙결 + 실패 시 AP -4\n• Ultimate Sword Slash: 결정화 + 전체 버프 + 피해\n• Courageous Savior: 아군 1명 오버라이드 부여 + 부활 + 전체 버프"
+      "type": "Multi-Selection Skill",
+      "description": "스킬 선택 사용 가능:\n• Full Power Barrage: 전체공격 + 빙결 + 실패 시 AP -4\n• Ultimate Sword Slash: 전체 버프 + 결정화 + 피해\n• Courageous Savior: 아군 오버라이드 부여 + 부활 + 전체 버프",
+      "subSkills": [
+        {
+          "name": "Full Power Barrage",
+          "ap": "6 AP | EXE: +40",
+          "description": "전체 200% 피해 + 빙결(1~2턴). 실패 시 AP -4. 우정의 힘 획득, 50% 확률 추가 행동."
+        },
+        {
+          "name": "Ultimate Sword Slash",
+          "ap": "6 AP | EXE: +40",
+          "description": "전체 결정화 + 피해 + 전체 버프(피해+, ATK+, 치명+, 치피+). 용기의 힘 획득, 50% 확률 추가 행동."
+        },
+        {
+          "name": "Courageous Savior",
+          "ap": "6 AP | EXE: +40",
+          "description": "아군 오버라이드 사용권 부여 + 부활. 전체 피해감소/DEF/저항/인내 증가. 최종의 힘 획득, 50% 확률 추가 행동."
+        }
+      ]
     },
     {
       "name": "Courage, Friendship, and Victory",
       "type": "Passive Sub Skill",
-      "description": "메인 스킬 사용 시 우정/용기/최종 힘 획득. 3개 모두 보유 시 전체 무효화 + 제어 면역 2턴, 자신의 턴에 무적."
+      "description": "메인 스킬 사용 시 각기 다른 힘 획득. 세 가지 모두 보유 시 전체 피해 무효화 + 제어 면역(2턴). 자신의 턴에 무적 부여."
     }
   ],
   "passive": {
     "name": "Savior",
-    "description": "기본 피해증가/감소 +40%. 구원의 보호막으로 치명타 보호 + HP 복원 + 무적(쿨 3턴). 상태 적중/저항은 ATK의 10% 보정 (최대 35,000)."
+    "description": "기본 피해증가/감소 +40%. 각성 시 피해 무효화 보호막 획득. 치명 피해 시 1% 생존 + 무적(1턴). 상태 적중/저항 = ATK의 10% (최대 35,000)."
   },
   "exclusiveCore": {
-    "exclusiveEffect": "모든 메인 스킬 AP -1",
+    "exclusiveEffect": "모든 메인 스킬의 AP 소모 -1",
     "suitableEffect": "쉴드 대상 공격 시 최종 피해 +12%"
   },
   "breakthrough": {
     "1": {
       "effect": "Omni-Knight AP -1, 추가 행동 확률 +50%",
-      "statsBoost": "치명타율 +5%"
+      "statsBoost": "치명타율 +5%",
+      "skillIndex": 1
     },
     "2": {
       "effect": "세 가지 힘 효과 +10%",
-      "statsBoost": "치명피해 +5%"
+      "statsBoost": "치명피해 +5%",
+      "skillIndex": 2
     },
     "3": {
       "effect": "Omni-Knight AP -1, EXE +10",
-      "statsBoost": "치명타율 +8%"
+      "statsBoost": "치명타율 +8%",
+      "skillIndex": 1
     },
     "4": {
       "effect": "기본 피해증가 +10%, 피해감소 +10%",
-      "statsBoost": "치명피해 +10%"
+      "statsBoost": "치명피해 +10%",
+      "skillIndex": 3
     },
     "5": {
       "effect": "무효화/제어 면역 1회 추가",
-      "statsBoost": "피해 증가 +10%"
+      "statsBoost": "피해 증가 +10%",
+      "skillIndex": 2
     },
     "6": {
       "effect": "보호막 쿨타임 -1턴, 무적 지속 +1턴",
-      "statsBoost": "피해 증가 +5%, 피해 감소 +15%"
+      "statsBoost": "피해 증가 +5%, 피해 감소 +15%",
+      "skillIndex": 3
     }
   },
   "build": {
