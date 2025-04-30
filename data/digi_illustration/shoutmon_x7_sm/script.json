@@ -1,39 +1,88 @@
 {
+  "name": "Shoutmon X7 SM",
+  "element": "Light",
+  "type": "Vaccine",
+  "role": "Output (DPS)",
   "skills": [
     {
-      "name": "퓨전 익스플로시브-버닝 파워 싱어",
+      "name": "Fusion Explosive-Burning Power Singer",
+      "type": "Normal Skill",
       "ap": "EXE: +10",
-      "type": "단일 대상",
-      "description": "단일 대상에게 150% 피해.\n자신의 턴일 경우 AP 전부 소모 → 2AP당 추가 80% 피해.\n6AP 이상 소모 시: 공격 전 [고립] + [봉인] 부여(100%, 1턴).\n공격 후 선행행동 획득, 이후 [피로] 상태(1턴)."
+      "description": "단일 적에게 150% 피해를 줍니다. Shoutmon X7 SM의 턴 중 사용 시, 모든 AP를 소모하며, 2 AP마다 80% 추가 피해를 줍니다. 6 AP 이상 소모 시, 공격 전에 대상에게 [격리]와 [봉인] 마크를 1턴 동안 100% 확률로 부여합니다. 공격 후 Advance Action을 얻고, 행동 후 [Exhausted] 상태가 됩니다."
     },
     {
-      "name": "파이널 크로스 블레이드",
-      "ap": "가상 10 AP | EXE: +30",
-      "type": "단일 대상",
-      "description": "사용 시 AP를 전부 소모하여 150% 피해 → 이후 대상의 모든 버프 제거(100%, 저항 무시).\n추가로 100% + (소모 AP × 40%) 피해.\n6AP 이상 소모 시: [퇴화] 마크 부여(50%, 현재 행동 종료 시까지, 저항 무시).\n공격 후 선행행동 획득 → 이후 [피로] 상태(1턴)."
+      "name": "Final Xros Blade",
+      "type": "Main Skill",
+      "ap": "EXE: +30",
+      "description": "10 AP 사용으로 간주되며, 데미지 계산 시 최종 데미지 +30%. 아군의 ATK의 10%를 흡수 후, 모든 AP를 소모해 단일 적에게 150% 피해를 줍니다. 이후 대상의 모든 버프를 100% 확률로 제거하며, 추가 피해 (100% + 소모된 AP × 40%)를 줍니다. 6 AP 이상 소모 시, 공격 전에 50% 확률로 [퇴화] 상태 부여. 공격 후 Advance Action을 얻고, 행동 후 [Exhausted] 상태가 됩니다."
     },
     {
-      "name": "찬란한 날개 펼침",
-      "ap": "-",
-      "type": "조건부 스킬",
-      "description": "AP가 감소할 때마다 [찬란한 날개 에너지] 획득 (최대 20스택).\n사용 시 스택 수에 따라 단일 대상에게 10타 진실 피해(40%/60%/80% ATK ×10타).\n10스택 소모 후 선행행동 획득 → 이후 [피로] 상태(1턴).\n스택 소모당 아군 EXE +10."
+      "name": "Radiant Wings Unfold",
+      "type": "Sub Skill",
+      "description": "AP가 감소할 때마다 [Radiant Wing Energy]를 해당 수치만큼 획득 (최대 20스택). 스킬 사용 시, 스택 수에 따라 단일 대상에게 10회의 True Damage를 입히며 (각각 40%/60%/80% ATK), 공격 후 10스택 소모. 공격 후 Advance Action을 얻고, 행동 후 [Exhausted] 상태가 됩니다. 사용된 스택당 아군에게 EXE +10 부여.",
+      "ap": "조건 기반 스킬"
     },
     {
-      "name": "디지몬 킹",
-      "type": "패시브",
-      "description": "기본 피해량 +40%, 피해 감소 +40%.\nATK 10,000마다 HP +1%, ATK +1%, DEF +2%(최대 80만).\nPvE에서 ATK/DEF 최소 50만으로 간주.\n\n선행행동 시 [미래 보강] 상태 진입 → 대상에게 가한 공격 1회 저장, 다음 라운드 재시전.\n미래 보강 중 피해 +50%.\n\n생존한 아군 2명마다 AP 회복 +1.\n디버프 상태일 경우 [불굴] 획득 → 피해 감소 +80%, 인내 +200%.\n\n[레트로액티브 비콘] 1회 부여 → 치명 피해 시 최소 HP 1% 유지 후 상태 복원, 다음 비콘으로 교체 (최대 3회, PvE에서는 미사용).\n\n아군 수에 따라 효과:\n- 4인 이하: 치확 +100%\n- 3인 이하: 피격 시 AP +2\n- 2인 이하: [피로] 면역\n- 1인 이하: 디버프 면역\n\n방어력 60% 무시, [결정화] 면역, 아군 면역 상태 공유"
+      "name": "Digimon King",
+      "type": "Passive Skill",
+      "description": "기본 피해 증가 +40%, 피해 감소 +40%. 공격력 10,000마다 HP +1%, ATK +1%, DEF +2% 증가 (최대 80만 기준). PvE에서 ATK/DEF 계산 시 최소 50만으로 간주. Advance Action 발동 시 [Future Reinforcement] 상태에 진입하며, 적에게 준 공격이 기록됩니다. 다음 라운드 시작 시 양측 생존 시 기록된 공격이 재실행됩니다. 이 상태에서 최종 데미지 +50%. 생존 아군 수에 따라 AP 회복 증가. 부정 마크 상태 시 Unbending 발동: 피해 감소 +80%, 인내 +200%. 전투 시작 시 [Retroactive Beacon] 획득. 이 효과는 최대 3회 선소모 가능. 피해를 받아 죽기 전 해당 효과로 1% HP 유지 및 상태 초기화. 결빙 면역. 아군 수에 따라 버프 효과 증가."
     }
   ],
-  "core": {
-    "exclusiveEffect": "선행행동 시 AP +4 획득",
-    "suitableEffect": "공격 시 ATK +2%(최대 8스택), 공격 후 초기화"
+  "exclusiveCore": {
+    "exclusiveEffect": "Advance Action 시 AP +4",
+    "suitableEffect": "공격 시마다 공격력 +2% (최대 8스택, 공격 후 초기화)"
   },
   "breakthrough": {
-    "1": "메인 스킬 (파이널 크로스 블레이드) 피해 +50%, [퇴화] 확률 +50%",
-    "2": "패시브 (디지몬 킹) 피해량 +10%, 피해 감소 +10%, 추가 AP 회복 조건 -1명",
-    "3": "메인 스킬 (파이널 크로스 블레이드) 흡수율 +5%, AP당 추가 피해 +10%",
-    "4": "노멀 스킬 (퓨전 익스플로시브) AP당 피해량 +20%, [고립/봉인] 지속 +1턴",
-    "5": "서브 스킬 (찬란한 날개) 스택 최대치 +10, 피해량 +20/40/60%, EXE +5 추가",
-    "6": "패시브 (디지몬 킹) 피해 감소 +20%, 인내 +100%, 방어 무시 +25%, 효과 조건 최대 대상 +1"
+    "1": {
+      "effect": "Final Xros Blade 기본 피해 +50%, [퇴화] 확률 +50%",
+      "statsBoost": "치명타율 +5%",
+      "skillIndex": 1
+    },
+    "2": {
+      "effect": "피해 증가 +10%, 피해 감소 +10%, 추가 AP 회복 조건 완화",
+      "statsBoost": "치명 피해 +5%",
+      "skillIndex": 3
+    },
+    "3": {
+      "effect": "아군 공격력 흡수 +5%, AP당 피해 증가 +10%",
+      "statsBoost": "치명타율 +8%",
+      "skillIndex": 1
+    },
+    "4": {
+      "effect": "AP당 피해 증가 +20%, 격리/봉인 지속 +1턴",
+      "statsBoost": "치명 피해 +10%",
+      "skillIndex": 0
+    },
+    "5": {
+      "effect": "Radiant Wing Energy 최대치 +10, 피해 +20/40/60%, EXE 보너스 +5",
+      "statsBoost": "피해 증가 +10%",
+      "skillIndex": 2
+    },
+    "6": {
+      "effect": "피해 감소 +20%, 인내 +100%, 방어력 무시 +25%, 각 효과 발동 최대 대상 +1",
+      "statsBoost": "피해 증가 +5%, 피해 감소 +15%",
+      "skillIndex": 3
+    }
+  },
+  "build": {
+    "type": "High Output Build",
+    "pluginSet": "Damage Increase Burst Set (4)",
+    "subStats": [
+      "치명 피해 +3~4",
+      "치명타율 +1~2",
+      "공격력 %",
+      "SPD +1"
+    ],
+    "mainSlotStat": "치명 피해",
+    "5thSubstat": "치명 피해 +1",
+    "coreSuggestions": [
+      "Weakness",
+      "Assault"
+    ],
+    "targetValues": {
+      "SPD": "3000 ~ 4000",
+      "CritRate": "140%",
+      "CritDamage": "450 ~ 500%"
+    }
   }
 }
