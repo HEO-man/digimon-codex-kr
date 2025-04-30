@@ -6,29 +6,30 @@
   "skills": [
     {
       "name": "Garuru Cannon: Still Water",
-      "type": "AOE",
+      "type": "AoE",
       "ap": "EXE: +10",
-      "description": "모든 적에게 100% 피해 + Rising Tide 2중첩 부여. 주 대상 쉴드 탈취 후 자신에게 부여. Rising Tide 5중첩 시 스킬 재시전."
+      "description": "모든 적에게 100% 피해를 주고 자신에게 Rising Tide 2중첩을 부여합니다. 시전 전에 주요 대상의 쉴드를 훔쳐 자신에게 부여하며, Rising Tide가 5 중첩 이상일 경우 5 중첩을 소모하고 이 스킬을 한 번 더 시전합니다."
     },
     {
       "name": "Grey Blade: Soul Slash",
       "type": "Main Skill",
       "ap": "6 AP | EXE: +30",
-      "description": "방어력 무시 및 트루 대미지 포함 다중 타격. 잃은 HP 비례 대미지 증가. Rising Tide 8중첩 시 재시전."
+      "description": "주요 대상과 HP 비율이 가장 낮은 2인을 공격하여 각각 350% 피해를 입히고, 대상의 잃은 HP 1%당 피해가 1% 증가합니다. 대상이 부족하면 기존 대상에게 반복 공격(75% 피해). 이후 잃은 HP의 50%에 해당하는 고정 피해를 전체 적에게 줍니다(최대 자신의 ATK의 500%). Rising Tide 8 중첩 시 스택을 소모하고 무코스트 재시전합니다."
     },
     {
       "name": "Tear of Resolve",
       "type": "Passive Sub Skill",
-      "description": "전투 시작 시 보호효과 획득. 치명 피해 무효화 및 체력 300% 버프. 조건 만족 시 재부여. 비 효과 시 Tear Drop 누적."
+      "description": "전투 시작 시 Tear of Resolve를 획득합니다. 치명 피해를 받을 경우 이를 소모하여 피해를 무효화하고 최대 HP의 300%만큼 회복하며 1턴 지속. Tear가 없으면 적 처치 시 Tear Drop 1스택을 얻고, 3스택 시 Tear 복원. 비가 오는 날씨에서 턴 종료 시 Tear Drop 추가 1스택 획득."
+    },
+    {
+      "name": "Photon Scatter",
+      "type": "Passive Skill",
+      "description": "기본 피해 증가/감소 +40%. ATK 10,000당 HP +1%, ATK +1%, DEF +2%(최대 800,000 기준). 상태 적중/저항은 ATK의 10%만큼 증가(최대 35,000). AP를 소모할 때마다 Rising Tide 1스택을 획득. 반복 스킬 사용 시 True Mirror-Like Calm 상태 진입: 다른 디지몬의 패시브 무효, 피해로 적 처치 불가. 입장 시 비 날씨 및 Rising Tide 3스택 획득. 제어 상태일 때 5스택 소모로 제거. AP 감소 면역."
     }
   ],
-  "passive": {
-    "name": "Photon Scatter",
-    "description": "기본 피해/감소 +40%. Rising Tide 중첩 관련 효과, 트루 미러 상태 부여, 전투 진입 시 비 효과 제거 및 날씨 변화. AP 차감 면역."
-  },
   "exclusiveCore": {
-    "exclusiveEffect": "Tear of Resolve의 Max HP 지속 시간 +1턴",
-    "suitableEffect": "공격 시 ATK +2% (최대 8중첩, 공격 시 해제)"
+    "exclusiveEffect": "Tear of Resolve의 최대 HP 지속 시간이 1턴 증가",
+    "suitableEffect": "피해를 줄 때마다 ATK +2%(최대 8스택, 공격 후 제거)"
   },
   "breakthrough": {
     "1": {
@@ -42,22 +43,22 @@
       "skillIndex": 3
     },
     "3": {
-      "effect": "Grey Blade: Soul Slash 피해 +50%, 트루 대미지 비율 +25%",
+      "effect": "Grey Blade: Soul Slash 피해 +50%, 고정 피해 비율 +25%",
       "statsBoost": "치명타율 +8%",
       "skillIndex": 1
     },
     "4": {
-      "effect": "Tear of Resolve 체력 버프 +200%",
+      "effect": "Tear of Resolve 회복 HP +200%",
       "statsBoost": "치명피해 +10%",
       "skillIndex": 2
     },
     "5": {
-      "effect": "Grey Blade: Soul Slash 재시전 필요 중첩 수 -3",
+      "effect": "Grey Blade 반복 시 필요한 Rising Tide -3",
       "statsBoost": "피해 증가 +10%",
       "skillIndex": 1
     },
     "6": {
-      "effect": "입장 시 Rising Tide +2, 비 효과 제거 중첩 수 -3",
+      "effect": "입장 시 Rising Tide +2, 제어 상태 제거 조건 -3스택",
       "statsBoost": "피해 증가 +5%, 피해 감소 +15%",
       "skillIndex": 3
     }
