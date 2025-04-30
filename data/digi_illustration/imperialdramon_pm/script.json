@@ -1,0 +1,78 @@
+{
+  "name": "Imperialdramon PM",
+  "element": "Light",
+  "type": "Vaccine",
+  "role": "공격형 (DPS)",
+  "skills": [
+    {
+      "name": "Shining Sword",
+      "type": "일반기",
+      "ap": "디지볼루션 에너지: +10",
+      "description": "자신의 방어력의 200%를 공격력으로 계산하여 단일 적에게 130% 피해를 주고, 자신에게 룬 1중첩을 부여합니다.",
+      "skillIndex": 0
+    },
+    {
+      "name": "Omega Sword",
+      "type": "주요기",
+      "ap": "6 AP | 디지볼루션 에너지: +30",
+      "description": "자신의 모든 디버프를 해제하고 룬 1중첩을 획득한 후, 방어력의 200%를 공격력으로 계산하여 전체 적에게 150% 피해를 주며, 적의 방어력을 50% 무시합니다.",
+      "skillIndex": 1
+    },
+    {
+      "name": "Knightship",
+      "type": "조건 기반 스킬 (수동 반격)",
+      "description": "치명타 피해를 받을 경우 방어력의 200%를 공격력으로 계산하여 220% 반격 피해를 입히고, 룬 2중첩을 획득합니다. 직접 피해는 최대 HP의 50%를 넘지 않으며, 피해를 받을 때마다 1턴 쿨타임으로 룬 1중첩을 얻습니다.",
+      "skillIndex": 2
+    }
+  ],
+  "passive": {
+    "name": "Paladin Sword",
+    "description": "침묵 면역. 내장 피해 증가 +25% 및 잃은 HP 1%당 추가 피해 증가 +0.15%. 치명타 피해 시 생존 및 무적 1턴 (1회 발동). 룬 1중첩당 방어력 +8%, 강인함 +15% (최대 7중첩). 제어 상태일 경우 턴 시작 시 룬 2중첩을 소모해 지속시간 -1턴. 자신이 생존 중일 때 아군 빛 속성 디지몬 피해 증가 +15%. 사망 시 아군 전체의 디버프 제거 및 무작위 아군 1명 부활(HP 30%)."
+  },
+  "exclusiveCore": {
+    "exclusiveEffect": "치명타가 아닌 일반 피해를 받을 때도 서브 스킬 반격 발동 확률 적용",
+    "suitableEffect": "실드가 있는 적 공격 시 최종 피해 +12%"
+  },
+  "breakthrough": {
+    "1": {
+      "effect": "주요기 피해량 +20%, AP -1",
+      "statsBoost": "치명타 확률 +5%",
+      "skillIndex": 1
+    },
+    "2": {
+      "effect": "일반기 룬 중첩 +1",
+      "statsBoost": "치명타 피해 +5%",
+      "skillIndex": 0
+    },
+    "3": {
+      "effect": "룬 1중첩당 피해 증가 +0.2%, 피해 시 룬 중첩 +1",
+      "statsBoost": "치명타 확률 +8%",
+      "skillIndex": 3
+    },
+    "4": {
+      "effect": "서브기 반격 피해 +40%",
+      "statsBoost": "치명타 피해 +10%",
+      "skillIndex": 2
+    },
+    "5": {
+      "effect": "AP -1, 룬 획득 +1",
+      "statsBoost": "피해 증가 +10%",
+      "skillIndex": 1
+    },
+    "6": {
+      "effect": "내장 피해 증가 +10%, 데이터 재구성 HP 비율 +30%",
+      "statsBoost": "피해 증가 +5%, 피해 감소 +15%",
+      "skillIndex": 3
+    }
+  },
+  "build": {
+    "type": "PvE",
+    "pluginSet": "Ordinemon 플러그인 던전",
+    "subStats": [],
+    "mainSlotStat": "",
+    "5thSubstat": "",
+    "coreSuggestions": [],
+    "coreStats": [],
+    "targetValues": {}
+  }
+}
