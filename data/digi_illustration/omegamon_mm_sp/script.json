@@ -1,40 +1,81 @@
 {
+  "name": "Omegamon MMˢᵖ",
+  "element": "Water",
+  "type": "Vaccine",
+  "role": "Output (DPS)",
   "skills": [
     {
       "name": "Garuru Cannon: Still Water",
+      "type": "AOE",
       "ap": "EXE: +10",
-      "type": "광역 피해",
-      "description": "모든 적에게 100% 피해를 입히고, 자신에게 [고조의 물결] 2스택을 부여합니다. 이 스킬을 직접 사용할 경우, 공격 전 대상의 실드(해제 불가 실드 포함)를 훔쳐 오메가몬 MMˢᵖ에게 부여합니다.\n\n[고조의 물결]이 5스택 이상일 경우, 5스택을 소모하고 이 스킬을 한 번 더 발동합니다."
+      "description": "전체 공격(100%) + Rising Tide 2중첩. 쉴드 강탈 후 자신에게 부여. Rising Tide가 5중첩 이상일 경우 스킬 재사용."
     },
     {
       "name": "Grey Blade: Soul Slash",
+      "type": "Main Skill",
       "ap": "6 AP | EXE: +30",
-      "type": "다중 피해 + 고정 피해",
-      "description": "오버라이드 효과: 최종 피해량 +40%.\n\n대상의 실드를 훔쳐 자신에게 부여한 뒤, 그레이 블레이드를 사용하여 HP 비율이 가장 낮은 적 3명을 공격합니다. 각 적에게 350% 피해를 입히며, 대상의 HP 손실 1%당 최종 피해 +1%. 대상이 3명 미만일 경우 반복 타격하며, 반복 타격은 원래 피해의 75%로 적용됩니다.\n\n이후 적 전체에게 잃은 HP의 50%에 해당하는 고정 피해를 입힙니다(이 피해는 자신의 ATK의 500%를 초과하지 않음).\n\n[고조의 물결]이 8스택 이상일 경우, 8스택을 소모하고 이 스킬을 무소모로 한 번 더 발동합니다."
+      "description": "HP가 가장 낮은 적 포함 3명 공격 (350%) + 잃은 HP 비례 추가 피해. 후속으로 전체 적에게 잃은 HP의 50%만큼 진짜 피해. Rising Tide 8중첩 소모 시 재사용."
     },
     {
       "name": "Tear of Resolve",
-      "ap": "패시브 서브 스킬",
-      "type": "생존 패시브",
-      "description": "전투 시작 시 [결의의 눈물] 획득. 치명 피해를 받을 경우 이를 소모해 해당 피해를 무효화하고, 최대 HP의 300% 상태로 1턴 유지합니다.\n\n[결의의 눈물]이 없을 경우, 적에게 치명 피해를 가할 때마다 [눈물방울] 1스택 획득(턴당 1회). 3스택 누적 시 다시 [결의의 눈물] 획득.\n\n날씨가 비일 경우, 매 턴 종료 시 [눈물방울] 1스택 추가 획득."
-    },
-    {
-      "name": "Photon Scatter",
-      "ap": "-",
-      "type": "패시브",
-      "description": "기본 피해 증가 +40%, 피해 감소 +40%.\n\n기본 ATK 10,000당 HP +1%, ATK +1%, DEF +2%(최대 800,000 ATK 기준). PvE에서는 ATK 500,000으로 계산.\n\nAP 1을 잃을 때마다 [고조의 물결] 1스택 획득.\n\n추가 행동을 얻을 수는 없지만, 스킬이 반복 발동될 경우 [거울처럼 고요한 상태]에 진입. 이 상태에서는 적의 서브 및 패시브 스킬의 효과가 발동하지 않으며, 자신의 턴 종료 시까지 유지. 이 상태에서는 다른 디지몬이 일반 피해로 죽지 않음(PvP 한정).\n\n전투 시작 시 날씨를 비로 변경하고 [고조의 물결] 3스택 획득. [고조의 물결]이 5스택 이상이고 제어 이상 상태일 경우, 자신의 턴에 5스택을 소모해 이상 상태를 해제.\n\nAP 감소 효과에 면역입니다."
+      "type": "Passive Sub Skill",
+      "description": "전투 시작 시 1회 치명 피해 무효 + HP 300% 획득. Tear Drop 3중첩 시 [Tear of Resolve] 복원. 비/우천 날씨 시 Tear Drop 추가 획득."
     }
   ],
-  "core": {
-    "exclusiveEffect": "[결의의 눈물]로 획득한 최대 HP 증가 지속 시간이 1턴 연장됨.",
-    "suitableEffect": "피해를 줄 때마다 ATK +2% (최대 8스택, 공격 시 초기화)"
+  "passive": {
+    "name": "Photon Scatter",
+    "description": "기본 피해증가/감소 +40%, Rising Tide 획득. True Mirror-Like Calm 상태 진입 시 타 디지몬 패시브 차단. 진입 시 우천 날씨 부여. 제어 상태 해제 기능 포함."
+  },
+  "exclusiveCore": {
+    "exclusiveEffect": "Tear of Resolve 효과 지속 1턴 증가",
+    "suitableEffect": "공격 시 ATK 2%씩 증가 (최대 8중첩)"
   },
   "breakthrough": {
-    "1": "메인 스킬 (소울 슬래시) AP -1, 피해량 +50%, 치명타 확률 +5%",
-    "2": "패시브 (포톤 스캐터) 피해 증가 +10%, 피해 감소 +10%, 치명타 피해 +5%",
-    "3": "메인 스킬 (소울 슬래시) 피해량 +50%, 고정 피해 비율 +25%, 치명타 확률 +8%",
-    "4": "서브 스킬 (결의의 눈물) 최대 HP 획득량 +200%, 치명타 피해 +10%",
-    "5": "메인 스킬 (소울 슬래시) 반복 시 필요한 고조의 물결 -3, 피해 증가 +10%",
-    "6": "패시브 (포톤 스캐터) 진입 시 고조의 물결 +2, 이상 상태 해제 시 필요한 고조의 물결 -3, 피해 증가 +5%, 피해 감소 +15%"
+    "1": {
+      "effect": "Soul Slash AP -1, 피해 +50%",
+      "statsBoost": "치명타율 +5%"
+    },
+    "2": {
+      "effect": "피해 증가/감소 +10%",
+      "statsBoost": "치명피해 +5%"
+    },
+    "3": {
+      "effect": "Soul Slash 피해 +50%, 진짜 피해 비율 +25%",
+      "statsBoost": "치명타율 +8%"
+    },
+    "4": {
+      "effect": "Tear of Resolve 회복량 +200%",
+      "statsBoost": "치명피해 +10%"
+    },
+    "5": {
+      "effect": "스킬 재시전 시 필요 Rising Tide -3",
+      "statsBoost": "피해 증가 +10%"
+    },
+    "6": {
+      "effect": "진입 시 Rising Tide +2, 제어 상태 제거 비용 -3",
+      "statsBoost": "피해 증가 +5%, 피해 감소 +15%"
+    }
+  },
+  "build": {
+    "type": "High Output Build",
+    "pluginSet": "Damage Increase Burst Set (4)",
+    "subStats": [
+      "치명피해 +3~4",
+      "치명타율 +1~2",
+      "공격력 %",
+      "SPD +1"
+    ],
+    "mainSlotStat": "치명피해",
+    "5thSubstat": "치명피해 +1",
+    "coreSuggestions": [
+      "Weakness",
+      "Assault",
+      "Persuit"
+    ],
+    "targetValues": {
+      "SPD": "3000 ~ 4000",
+      "CritRate": "140%",
+      "CritDamage": "450 ~ 500%"
+    }
   }
 }

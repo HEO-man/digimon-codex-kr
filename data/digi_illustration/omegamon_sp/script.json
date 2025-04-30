@@ -1,57 +1,80 @@
 {
+  "name": "Omegamonˢᵖ",
+  "element": "Light",
+  "type": "Vaccine",
+  "role": "Output (DPS)",
   "skills": [
     {
-      "name": "그레이소드 & 가루루캐논",
+      "name": "Grey Sword & Garuru Cannon",
+      "type": "Single Target",
       "ap": "EXE: +10",
-      "type": "단일 대상",
-      "description": "단일 적에게 100% 피해를 입히며, 방어력 75%, 무적, 실드 무시.\n오메가몬ˢᵖ의 턴에 추가 150% 피해 + SPD -200(2턴).\n빙결 상태일 경우 AP 전부 제거.\n아군이 액티브 스킬 사용 시 협공(고정 확률)."
+      "description": "100% 피해 + 방무/무적/쉴드 무시. 자신의 턴에는 추가 피해(150%) + SPD 감소. 빙결 상태 대상 AP 제거. 아군 공격 시 협공."
     },
     {
-      "name": "옴니-나이트 (메인 스킬 선택)",
-      "type": "멀티 선택 스킬",
-      "mainSkill": {
-        "name": "옴니-나이트",
-        "description": "3가지 메인 스킬 중 하나를 선택하여 사용할 수 있습니다."
-      },
-      "subSkills": [
-        {
-          "name": "풀 파워 바라지",
-          "ap": "6 AP | EXE: +40",
-          "description": "모든 이상 상태 해제 → 적 전체 200% 피해 + [빙결] 부여(1턴, 주 대상은 2턴).\n실패 시 AP -4.\n[우정의 힘] 획득, 50% 확률로 추가 행동."
-        },
-        {
-          "name": "궁극의 일격",
-          "ap": "6 AP | EXE: +40",
-          "description": "[결정화] 부여 → 아군에게 [피해 +20%, ATK +30%, 치확 +20%, 치피 +50%] 버프.\n적 HP가 더 높을수록 최대 +60% 피해 증가.\n[용기의 힘] 획득, 50% 확률로 추가 행동."
-        },
-        {
-          "name": "용감한 구세주",
-          "ap": "6 AP | EXE: +40",
-          "description": "아군 1명 [에너지 주입] → 오버라이드 스킬 무료 사용 가능.\n사망 시 100% HP로 부활.\n전체 피해 감소 +20%, DEF +60%, 치명저항 +20%, 인내 +50%.\n[최종의 힘] 획득, 50% 확률로 추가 행동."
-        }
-      ]
+      "name": "Omni-Knight",
+      "type": "Multi-Select",
+      "description": "3가지 스킬 중 선택 사용 가능:\n• Full Power Barrage: 전체 공격 + 빙결 + 실패 시 AP -4\n• Ultimate Sword Slash: 결정화 + 전체 버프 + 피해\n• Courageous Savior: 아군 1명 오버라이드 부여 + 부활 + 전체 버프"
     },
     {
-      "name": "용기, 우정, 승리",
-      "type": "패시브 서브 스킬",
-      "description": "디스펠 면역.\n메인 스킬 사용 후 다음 중 하나 획득:\n- [우정의 힘]: 피해 감소 +15%, DEF +40%\n- [용기의 힘]: 피해 증가 +15%, ATK +15%\n- [최종의 힘]: 치명저항 +10%, 인내 +40%\n3개 보유 시: 아군 전체 [1회 피해 무효화 + 제어 면역](2턴), 오메가몬ˢᵖ의 턴에 무적 부여."
-    },
-    {
-      "name": "구세주",
-      "type": "패시브",
-      "description": "기본 피해 +40%, 피해 감소 +40%.\nATK 10,000당 HP +1%, ATK +1%, DEF +2% (최대 ATK 800,000 기준).\n상태 적중/저항 = ATK의 10% (최대 35,000).\n매 라운드 시작 시 [구원의 보호막] 획득 → 치명 피해를 받으면 최소 HP 1% 유지 + 초기 HP로 복원 + 무적(1턴). (쿨타임 3턴).\n빙결 면역."
+      "name": "Courage, Friendship, and Victory",
+      "type": "Passive Sub Skill",
+      "description": "메인 스킬 사용 시 우정/용기/최종 힘 획득. 3개 모두 보유 시 전체 무효화 + 제어 면역 2턴, 자신의 턴에 무적."
     }
   ],
-  "core": {
-    "exclusiveEffect": "모든 메인 스킬의 AP 소모량 -1",
-    "suitableEffect": "실드가 있는 적을 공격 시 최종 피해량 +12%"
+  "passive": {
+    "name": "Savior",
+    "description": "기본 피해증가/감소 +40%. 구원의 보호막으로 치명타 보호 + HP 복원 + 무적(쿨 3턴). 상태 적중/저항은 ATK의 10% 보정 (최대 35,000)."
+  },
+  "exclusiveCore": {
+    "exclusiveEffect": "모든 메인 스킬 AP -1",
+    "suitableEffect": "쉴드 대상 공격 시 최종 피해 +12%"
   },
   "breakthrough": {
-    "1": "메인 스킬 (옴니나이트) AP -1, 추가 행동 확률 +50%, 치명타 확률 +5%",
-    "2": "서브 스킬 (용기, 우정, 승리) 모든 효과 +10%, 치명타 피해 +5%",
-    "3": "메인 스킬 (옴니나이트) AP -1, EXE +10, 치명타 확률 +8%",
-    "4": "패시브 (구세주) 기본 피해 증가 +10%, 피해 감소 +10%, 치명타 피해 +10%",
-    "5": "서브 스킬 (용기, 우정, 승리) 피해 무효 및 제어 면역 1회 추가, 피해 증가 +10%",
-    "6": "패시브 (구세주) 보호막 쿨타임 -1턴, 무적 지속 시간 +1턴, 피해 증가 +5%, 피해 감소 +15%"
+    "1": {
+      "effect": "Omni-Knight AP -1, 추가 행동 확률 +50%",
+      "statsBoost": "치명타율 +5%"
+    },
+    "2": {
+      "effect": "세 가지 힘 효과 +10%",
+      "statsBoost": "치명피해 +5%"
+    },
+    "3": {
+      "effect": "Omni-Knight AP -1, EXE +10",
+      "statsBoost": "치명타율 +8%"
+    },
+    "4": {
+      "effect": "기본 피해증가 +10%, 피해감소 +10%",
+      "statsBoost": "치명피해 +10%"
+    },
+    "5": {
+      "effect": "무효화/제어 면역 1회 추가",
+      "statsBoost": "피해 증가 +10%"
+    },
+    "6": {
+      "effect": "보호막 쿨타임 -1턴, 무적 지속 +1턴",
+      "statsBoost": "피해 증가 +5%, 피해 감소 +15%"
+    }
+  },
+  "build": {
+    "type": "High Output Build",
+    "pluginSet": "Damage Increase Burst Set (4)",
+    "subStats": [
+      "치명피해 +3~4",
+      "치명타율 +1~2",
+      "공격력 %",
+      "SPD +1"
+    ],
+    "mainSlotStat": "치명피해",
+    "5thSubstat": "치명피해 +1",
+    "coreSuggestions": [
+      "Weakness",
+      "Assault",
+      "Cleanse"
+    ],
+    "targetValues": {
+      "SPD": "4000 ~ 5000",
+      "CritRate": "140%",
+      "CritDamage": "450 ~ 500%"
+    }
   }
 }
