@@ -1,80 +1,79 @@
 {
-  "name": "Takutoumon WM",
-  "element": "Thunder",
-  "type": "Vaccine",
-  "role": "Output (DPS)",
-  "skills": [
-    {
-      "name": "Qiāng Lián Jí / Spear Combo Attacks",
-      "type": "Single Target Multi-Hit",
+  "name": "타쿠토우몬 WM",
+  "element": "번개",
+  "type": "백신",
+  "role": "딜러",
+  "skills": {
+    "normalSkill": {
+      "name": "창 연격",
+      "type": "단일 다중타격",
       "ap": "EXE: +10",
-      "description": "단일 적을 3회 타격하여 각 60% 피해를 입힙니다. 해당 피해는 대상의 최대 HP에서 차감됩니다."
+      "description": "단일 적을 3회 연속 공격하며, 각 공격은 60%의 피해를 줍니다. 이 스킬의 피해는 100% 대상의 최대 HP에서 직접 차감됩니다."
     },
-    {
-      "name": "Ryūsen Rangeki / Dragon Flash Shooting",
-      "type": "Main Skill",
+    "mainSkill": {
+      "name": "용섬난격",
+      "type": "광역 + 진짜 피해",
       "ap": "5 AP | EXE: +20",
-      "description": "모든 적에게 Overload 마크 부여(2턴). 이후 지정 대상에게 260% 고정 피해 → 전체 적에게 190% 피해. 이 AOE 피해의 30%는 지정 대상에게 고정 피해로 전환(최대 대상 최대 HP의 60%). Treasure Cone이 4스택일 경우 Suppression 추가 부여."
+      "description": "모든 적에게 100% 고정 확률로 2턴간 과부하 마크를 부여합니다. 이후 지정된 대상에게 260% 진짜 피해를 입힙니다. 그 다음, 모든 적에게 190% 피해를 입히고, 이 광역 피해의 30%를 진짜 피해로 전환하여 지정 대상에게 추가로 입힙니다 (최대 대상의 최대 HP의 60%까지). 스킬 사용 시 보물 뿔이 4스택일 경우, 공격 전 대상에게 억제 효과를 부여합니다."
     },
-    {
-      "name": "Bishamon Hakkyoku Senjin / Bishamon Eight-Pole Annihilation Formation",
-      "type": "Sub Skill",
+    "subSkill": {
+      "name": "비사문 팔극 섬진진",
+      "type": "단일 공격",
       "ap": "5 AP | EXE: +20",
-      "description": "적 1인에게 180% 피해, Treasure Cone 1스택당 추가 공격 발생(공격 전 2개 버프 제거, 상태저항 무시). 또한 턴 외 피해의 25%를 자가 회복. 적 행동 시 역할에 따라 다른 효과 발생 (DPS: 추가턴 시 피해+AP 감소, 보조: 피해+EXE 제거, 제어: 피해+제어면역 부여)."
+      "description": "오버라이드 효과: 스킬 사용 후 타쿠토우몬 WM은 추가 행동을 할 수 있습니다.\n\n어떤 대상이든 행동할 때마다 보물 뿔 1스택을 획득하며, 최대 4스택까지 누적됩니다. 자신의 턴이 아닐 때 입히는 피해의 25%는 자신에게 회복 효과로 전환됩니다.\n\n상대의 역할에 따라 적의 턴 중 다음 효과를 발동:\n- 딜러: 추가 행동 시 80% 피해 + AP -1 (상태 저항 무시)\n- 서포터: 행동 후 80% 피해 + EXE -50\n- 제어형: 행동 전에 180% 피해 + 제어 면역 1회(2턴 지속)\n\n스킬 사용 시 단일 적에게 180% 피해를 주며, 보물 뿔 스택 수만큼 추가 타격이 발생합니다. 각 타격 전, 100% 확률로 대상의 버프 2개를 제거합니다 (상태 저항 무시)."
     },
-    {
-      "name": "Bishamonten",
-      "type": "Passive Skill",
-      "description": "피해 감소/증가 +40%, 전투 시작 시 Null Damage(2턴), 사망 시 아군에게 Null Damage(1턴) 부여. 피해 시 Raging Thunder 획득(최대 10스택), 치명 피해 전 생존 및 회복 효과. 생존 시 아군 Overload 피해 +10%, 적 Overload 대상 치명 저항 -30%. Silence 면역."
+    "passiveSkill": {
+      "name": "비사문천",
+      "description": "기본 피해 감소 +40%, 피해 증가 +40% (기본 능력 포함).\n\n입장 효과: 전투 시작 시 2턴간 피해 무효 1회 획득. 전투 불능 시, 아군 전체에게 1턴간 피해 무효 1회를 부여합니다.\n\n피해를 입힐 때마다 '격노하는 번개' 1스택 획득 (턴당 1회), 최대 10스택 누적. 치명적인 피해를 받을 경우, 격노하는 번개의 보호를 받아 해당 턴 중 최소 HP 1%를 유지하며, (스택 × 5)% HP를 회복합니다. 이 효과는 전투당 1회 발동됩니다.\n\n생존 중일 경우, 아군이 가하는 과부하 피해 +10%, 과부하 상태의 적은 치명 저항 -30%.\n\n침묵 상태 면역."
     }
-  ],
+  },
   "exclusiveCore": {
-    "exclusiveEffect": "전투 진입 시 Treasure Cone 2스택, Raging Thunder 5스택 획득",
-    "suitableEffect": "쉴드 대상 공격 시 최종 피해 +12%"
+    "exclusiveEffect": "전투 시작 시 보물 뿔 2스택, 격노하는 번개 5스택 획득",
+    "suitableEffect": "쉴드가 있는 적을 공격할 때 최종 피해 +12%"
   },
   "breakthrough": {
     "1": {
-      "effect": "Ryūsen Rangeki 광역 피해 +30%",
+      "effect": "용섬난격: 광역 피해 +30%",
       "statsBoost": "치명타율 +5%",
       "skillIndex": 1
     },
     "2": {
-      "effect": "역할별 효과 강화 (DPS: AP -1, 보조: EXE -25, 제어: 제어면역 1회 추가)",
-      "statsBoost": "치명피해 +5%",
+      "effect": "비사문 팔극 섬진진: 역할별 추가 효과 강화 (딜러: AP -1, 서포터: EXE -25, 제어: 제어 면역 +1회)",
+      "statsBoost": "치명 피해 +5%",
       "skillIndex": 2
     },
     "3": {
-      "effect": "Ryūsen Rangeki AP -1, 고정 피해 +40%",
+      "effect": "용섬난격: AP -1, 지정 대상에게 진짜 피해 +40%",
       "statsBoost": "치명타율 +8%",
       "skillIndex": 1
     },
     "4": {
-      "effect": "Raging Thunder당 치명피해 +8%, 인내력 +8%",
-      "statsBoost": "치명피해 +10%",
+      "effect": "비사문천: 격노하는 번개 1스택당 치명 피해 +8%, 인내 +8%",
+      "statsBoost": "치명 피해 +10%",
       "skillIndex": 3
     },
     "5": {
-      "effect": "Treasure Cone당 공격력 +4%",
+      "effect": "비사문 팔극 섬진진: AP -1, 보물 뿔 1스택당 공격력 +4%",
       "statsBoost": "피해 증가 +10%",
       "skillIndex": 2
     },
     "6": {
-      "effect": "피해감소/증가 +10%, Null Damage 1회 추가",
+      "effect": "비사문천: 피해 감소 +10%, 피해 증가 +10%, 피해 무효 +1회 추가",
       "statsBoost": "피해 증가 +5%, 피해 감소 +15%",
       "skillIndex": 3
     }
   },
   "build": {
     "type": "Max Output Build",
-    "pluginSet": "Damage Increase Burst Set (4)",
+    "pluginSet": "피해량 증가 버스트 세트 (4세트)",
     "subStats": [
-      "치명피해 +3~4",
+      "치명 피해 +3~4",
       "치명타율",
       "공격력 %",
       "SPD"
     ],
-    "mainSlotStat": "치명피해",
-    "5thSubstat": "치명피해 +1",
+    "mainSlotStat": "치명 피해",
+    "5thSubstat": "치명 피해 +1",
     "coreSuggestions": [
       "Weakness",
       "Solid Barrier",

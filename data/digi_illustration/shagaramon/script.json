@@ -1,79 +1,72 @@
 {
-  "name": "Cendrillmon",
+  "name": "샤가라몬",
   "element": "물",
-  "type": "바이러스",
-  "role": "군중 제어",
-  "skills": [
-    {
-      "name": "Marriage Strike",
-      "type": "일반기",
-      "ap": "디지볼루션 에너지: +10",
-      "description": "단일 적에게 DEF 100%만큼의 고정 피해를 주고, 아군 물속성 디지몬에게 Rising Tide 2스택 부여. 아군이 공격 시 50% 확률로 연계 공격, 물속성일 경우 100%. 자신의 턴 외 발동 시 대상의 버프 제거 후 Rising Tide 2스택 획득."
+  "type": "데이터",
+  "role": "서포터",
+  "skills": {
+    "normalSkill": {
+      "name": "파도 부채",
+      "type": "직접 피해",
+      "ap": "EXE: +10",
+      "description": "모든 적을 공격하여 100% 피해를 입힙니다. 그 후, 모든 물 속성 아군에게 '솟구치는 조수' 2스택을 부여합니다."
     },
-    {
-      "name": "Noble Familiarts",
-      "type": "주요기",
-      "ap": "6 AP | 디지볼루션 에너지: +40",
-      "description": "모든 적에게 DEF 200% 고정 피해. 50% 확률로 'Familiars 초대' 상태 부여 (1턴), 해제 시 Glass Slipper 부여 (2턴). 주 대상에게 100% 확률로 동빙. 아군 전체에게 2턴간 버프 해제 면역 부여. 사용 후 Permafrost 마크로 효과 변경."
+    "mainSkill": {
+      "name": "청룡의 송곳니",
+      "type": "직접 피해",
+      "ap": "EXE: +50",
+      "description": "샤가라몬이 이 스킬을 사용한 후 한 번 더 행동할 수 있습니다 (오버라이드된 경우 솟구치는 조수 소모 없음). 솟구치는 조수 5스택을 소모하여 단일 적을 3회 공격하며, 각각 150% 피해를 입힙니다. 각 타격마다 100% 고정 확률로 [방어 약화]를 6스택 부여합니다 (최대 9스택). [방어 약화]는 대상의 방어력 -10%, 최종 피해 감소 -6% 효과를 가지며, 대상이 타격을 받을 때마다 1스택씩 사라집니다. 이후 아군 전체에게 2턴간 공격력 +30%, 방어력 +75% 버프를 부여합니다."
     },
-    {
-      "name": "Prism Date Break",
-      "type": "서브기",
-      "ap": "조건부 발동 | 디지볼루션 에너지: 없음",
-      "description": "Ball Countdown 24스택 도달 시, 스택을 소모해 단일 적에게 DEF 2000%의 고정 피해. 대상이 생존할 경우 100% 확률로 Permafrost 마크 부여 (2턴). 모든 디지몬이 행동 시 1스택, 적이 사망하면 2스택 획득."
+    "subSkill": {
+      "name": "해양 폭발",
+      "type": "진실 피해",
+      "ap": "EXE: +50",
+      "description": "솟구치는 조수 5스택을 소모하여 방어력의 100%에 해당하는 진실 피해를 모든 적에게 가합니다. 이후 100% 고정 확률로 [심해의 저주]를 2턴간 부여합니다. 이 상태가 된 적은 회복 효과 -75%, EXE -50% 감소를 받고, 체력이 15% 이하가 되면 해당 턴 종료 시 즉사합니다."
+    },
+    "passiveSkill": {
+      "name": "연꽃 정화",
+      "description": "기본 효과 저항 +25,000, 피해 감소 +20%, 속도 +600.\n\n기본 방어력 5,000마다 최대 HP +1%, 공격력 +1%, 방어력 +2% 증가. PVE에서는 최소 250,000 DEF 기준으로 계산.\n\n전투 시작 시 솟구치는 조수 4스택 및 아쿠아 드래곤 스케일 5개 획득. 자신의 턴마다 솟구치는 조수 2스택 획득.\n\nAP 1당 피해 감소 +6%. 전투 불능 시 보유 AP를 소모해 아군 전원 회복 (AP 1당 HP 5%).\n\n공격을 받을 때마다 스케일 1개 소모 및 AP 2 소모로 스케일 1개 떨어뜨림 (랜덤 아군에게 부여, 최대 HP +40%). 아군당 최대 5개 보유 가능.\n\n샤가라몬 생존 중일 때 아군 전체 피해 감소 +15%, 피해 증가 +15%, 물 속성 아군은 공격력 +20%, 방어력 +40%. 추방 면역."
     }
-  ],
-  "passive": {
-    "name": "Prince Candidate",
-    "description": "상태 적중 +25000, SPD +600, 피해 감소 +40%. DEF 5,000마다 HP +1%, ATK +1%, DEF +2% (최대 40만 DEF 기준). PvE 기준 최소 25만 DEF로 계산.\n전투 시작 시 적 중 첫 행동 대상에게 Glass Slipper 2턴 부여. 해당 대상이 Cendrillmon을 공격하지 않으면 해당 턴 종료 시 Permafrost 마크 부여 (2턴).\n고정 피해를 받을 경우 받은 만큼의 최대 500%까지 HP 증가.\n턴 시작 시 Rising Tide 모두 소모하여 2스택당 1 AP 회복.\n동빙 면역."
   },
   "exclusiveCore": {
-    "exclusiveEffect": "전투 시작 시 1턴간 은신 부여",
-    "suitableEffect": "공격 대상의 SPD가 사용자보다 낮을 경우 효과 적중 +1500"
+    "exclusiveEffect": "공격 시 [아쿠아 드래곤 스케일] 1개 추가로 떨어뜨림 (AP 소모 없음)",
+    "suitableEffect": "회복 효과 제공 시, 50% 확률로 2턴간 치명 저항 +20% 부여"
   },
   "breakthrough": {
     "1": {
-      "effect": "Familiars 초대 확률 +50%",
-      "statsBoost": "SPD +50",
-      "skillIndex": 1
+      "effect": "[방어 약화] 3스택 추가 부여",
+      "statsBoost": "상태 이상 저항 +1000"
     },
     "2": {
-      "effect": "Ball Countdown 스택당 DEF +2%, SPD +30",
-      "statsBoost": "상태 적중 +1000",
-      "skillIndex": 2
+      "effect": "효과 저항 +10000, 피해 감소 +10%, 속도 +200",
+      "statsBoost": "피해 감소 +5%"
     },
     "3": {
-      "effect": "AP -1, Familiars 초대 지속 +1턴",
-      "statsBoost": "SPD +100",
-      "skillIndex": 1
+      "effect": "[심해의 저주] 지속 시간 +1턴",
+      "statsBoost": "상태 이상 저항 +1500"
     },
     "4": {
-      "effect": "Permafrost 마크 지속시간 '무한'으로 변경",
-      "statsBoost": "상태 적중 +1500",
-      "skillIndex": 2
+      "effect": "전체 아우라 효과 +10%",
+      "statsBoost": "피해 감소 +5%"
     },
     "5": {
-      "effect": "동빙 지속시간 +1턴",
-      "statsBoost": "상태 저항 +2500",
-      "skillIndex": 1
+      "effect": "즉사 발동 HP 조건 +10%",
+      "statsBoost": "피해 감소 +10%"
     },
     "6": {
-      "effect": "Glass Slipper 대상이 Cendrillmon에게 주는 피해 -90%, Rising Tide 소모량 1 감소",
-      "statsBoost": "피해 감소 +20%",
-      "skillIndex": 3
+      "effect": "AP당 피해 감소 +2% 증가, 스케일 1개 생성 시 AP 소모 -1",
+      "statsBoost": "속도 +150, 피해 감소 +10%"
     }
   },
   "build": {
-    "type": "속도 & 상태 이상 특화 빌드",
-    "pluginSet": "Blessing Sniper Set (2) + Quick Blessing Set (2)",
-    "subStats": ["상태 적중 +3 또는 +4", "SPD +2 또는 +3", "방어력 %"],
-    "mainSlotStat": "상태 적중 또는 SPD",
-    "5thSubstat": "상태 적중 +1",
-    "coreSuggestions": ["Insight", "Cleanse", "Accumulation"],
-    "coreStats": ["SPD + 상태 적중"],
+    "type": "하이브리드 속도/상태 저항 빌드",
+    "pluginSet": ["축복 저격 세트 (2)", "신속 축복 세트 (2)"],
+    "subStats": ["속도 +3 또는 +4", "상태 저항 +1 또는 +2", "방어력% +1 또는 +2"],
+    "mainSlotStat": "상태 저항 또는 속도",
+    "5thSubstat": "상태 저항 +1",
+    "coreSuggestions": ["콤보", "회복 보너스", "클렌즈"],
     "targetValues": {
-      "SPD": "7000 ~ 7500",
-      "상태 적중": "40000 ~ 50000"
+      "속도": "7200~8500",
+      "상태 적중": "45000~60000"
     }
   }
 }

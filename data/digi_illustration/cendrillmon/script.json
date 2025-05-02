@@ -1,79 +1,82 @@
 {
-  "name": "Cendrillmon",
+  "name": "상드리몬",
   "element": "물",
   "type": "바이러스",
-  "role": "군중 제어",
-  "skills": [
-    {
-      "name": "Marriage Strike",
-      "type": "일반기",
-      "ap": "디지볼루션 에너지: +10",
-      "description": "단일 적에게 DEF 100%만큼의 고정 피해를 주고, 아군 물속성 디지몬에게 Rising Tide 2스택 부여. 아군이 공격 시 50% 확률로 연계 공격, 물속성일 경우 100%. 자신의 턴 외 발동 시 대상의 버프 제거 후 Rising Tide 2스택 획득."
+  "role": "컨트롤러",
+  "skills": {
+    "normalSkill": {
+      "name": "결혼의 일격 (Marriage Strike)",
+      "type": "단일 대상",
+      "ap": "",
+      "description": "센드릴몬의 방어력의 100%에 해당하는 고정 피해를 단일 적에게 입히고, 모든 물 속성 아군에게 '파도 상승' 2스택을 부여합니다. 아군 디지몬이 공격 시, 센드릴몬은 50% 고정 확률로 협공을 가하며, 공격자가 물 속성일 경우 해당 확률은 100%가 됩니다. 자신의 턴이 아닐 때 발동된 경우, 공격 전에 대상의 모든 버프를 해제하고 센드릴몬에게 '파도 상승' 2스택을 부여합니다."
     },
-    {
-      "name": "Noble Familiarts",
-      "type": "주요기",
-      "ap": "6 AP | 디지볼루션 에너지: +40",
-      "description": "모든 적에게 DEF 200% 고정 피해. 50% 확률로 'Familiars 초대' 상태 부여 (1턴), 해제 시 Glass Slipper 부여 (2턴). 주 대상에게 100% 확률로 동빙. 아군 전체에게 2턴간 버프 해제 면역 부여. 사용 후 Permafrost 마크로 효과 변경."
+    "mainSkill": {
+      "name": "귀족의 사역마 (Noble Familiarts)",
+      "type": "광역",
+      "ap": "6 AP | EXE: +40",
+      "description": "센드릴몬의 방어력의 200%에 해당하는 고정 피해를 모든 적에게 입힙니다. 모든 적에게 50% 기본 확률로 1턴간 '사역마의 초대'를 부여합니다. 해당 상태가 해제되면 2턴간 '유리 구두'를 부여합니다. 메인 대상에게는 100% 기본 확률로 1턴간 빙결을 부여합니다. 모든 아군에게 2턴간 전면 디버프 면역을 부여합니다."
     },
-    {
-      "name": "Prism Date Break",
-      "type": "서브기",
-      "ap": "조건부 발동 | 디지볼루션 에너지: 없음",
-      "description": "Ball Countdown 24스택 도달 시, 스택을 소모해 단일 적에게 DEF 2000%의 고정 피해. 대상이 생존할 경우 100% 확률로 Permafrost 마크 부여 (2턴). 모든 디지몬이 행동 시 1스택, 적이 사망하면 2스택 획득."
+    "subSkill": {
+      "name": "프리즘 데이트 브레이크 (Prism Date Break)",
+      "type": "단일 대상",
+      "ap": "",
+      "description": "디지몬이 행동할 때마다 [무도회 카운트다운] 1스택을 획득하며, 적이 치명타 피해를 입을 경우 2스택을 추가 획득합니다. 각 스택은 센드릴몬의 방어력을 +3%, 속도를 +20 증가시킵니다. 24스택 도달 시, 스택을 전부 소모하여 단일 적에게 센드릴몬 방어력의 2000%에 해당하는 고정 피해를 입힙니다. 대상이 생존 시, 100% 확률로 2턴간 '영구 빙결' 마크를 부여합니다."
+    },
+    "passiveSkill": {
+      "name": "왕자 후보 (Prince Candidate)",
+      "description": "기본 상태이상 적중 +25,000, SPD +600, 피해 감소 +40%. 방어력 5,000마다 최대 HP +1%, 공격력 +1%, 방어력 +2%(최대 400,000까지 계산). PvE 기준으로는 최소 250,000 방어력 기준으로 계산. 첫 라운드 시작 시 행동 순서가 가장 빠른 적에게 2턴간 '유리 구두' 부여. 해당 대상이 센드릴몬을 공격하지 않으면 턴 종료 시 100% 확률로 2턴간 '영구 빙결' 부여. 센드릴몬이 고정 피해를 받을 경우 누적하여 최대 HP의 500%만큼 체력을 증가시킵니다. 자신의 턴 시작 시 '파도 상승' 스택을 전부 소모하여 2스택당 AP 1 회복. 빙결 면역."
     }
-  ],
-  "passive": {
-    "name": "Prince Candidate",
-    "description": "상태 적중 +25000, SPD +600, 피해 감소 +40%. DEF 5,000마다 HP +1%, ATK +1%, DEF +2% (최대 40만 DEF 기준). PvE 기준 최소 25만 DEF로 계산.\n전투 시작 시 적 중 첫 행동 대상에게 Glass Slipper 2턴 부여. 해당 대상이 Cendrillmon을 공격하지 않으면 해당 턴 종료 시 Permafrost 마크 부여 (2턴).\n고정 피해를 받을 경우 받은 만큼의 최대 500%까지 HP 증가.\n턴 시작 시 Rising Tide 모두 소모하여 2스택당 1 AP 회복.\n동빙 면역."
   },
   "exclusiveCore": {
-    "exclusiveEffect": "전투 시작 시 1턴간 은신 부여",
-    "suitableEffect": "공격 대상의 SPD가 사용자보다 낮을 경우 효과 적중 +1500"
+    "exclusiveEffect": "전투 시작 시 1턴간 은신 상태 부여",
+    "suitableEffect": "공격 대상의 SPD가 자신보다 낮을 경우 상태이상 적중 +1500"
   },
   "breakthrough": {
     "1": {
-      "effect": "Familiars 초대 확률 +50%",
+      "effect": "'사역마의 초대' 기본 확률 +50%",
       "statsBoost": "SPD +50",
-      "skillIndex": 1
+      "skillIndex": 2
     },
     "2": {
-      "effect": "Ball Countdown 스택당 DEF +2%, SPD +30",
-      "statsBoost": "상태 적중 +1000",
-      "skillIndex": 2
+      "effect": "[무도회 카운트다운] 1스택당 방어력 +2%, 속도 +30",
+      "statsBoost": "상태이상 적중 +1000",
+      "skillIndex": 3
     },
     "3": {
-      "effect": "AP -1, Familiars 초대 지속 +1턴",
+      "effect": "AP 소비 -1, '사역마의 초대' 지속 시간 +1턴",
       "statsBoost": "SPD +100",
-      "skillIndex": 1
-    },
-    "4": {
-      "effect": "Permafrost 마크 지속시간 '무한'으로 변경",
-      "statsBoost": "상태 적중 +1500",
       "skillIndex": 2
     },
+    "4": {
+      "effect": "'영구 빙결' 효과를 영구 지속으로 변경",
+      "statsBoost": "상태이상 적중 +1500",
+      "skillIndex": 3
+    },
     "5": {
-      "effect": "동빙 지속시간 +1턴",
-      "statsBoost": "상태 저항 +2500",
-      "skillIndex": 1
+      "effect": "빙결 지속 시간 +1턴",
+      "statsBoost": "상태이상 저항 +2500",
+      "skillIndex": 2
     },
     "6": {
-      "effect": "Glass Slipper 대상이 Cendrillmon에게 주는 피해 -90%, Rising Tide 소모량 1 감소",
+      "effect": "'유리 구두' 대상이 센드릴몬에게 주는 피해 -90%, 파도 상승 스택 소모량 2 → 1",
       "statsBoost": "피해 감소 +20%",
-      "skillIndex": 3
+      "skillIndex": 4
     }
   },
   "build": {
-    "type": "속도 & 상태 이상 특화 빌드",
-    "pluginSet": "Blessing Sniper Set (2) + Quick Blessing Set (2)",
-    "subStats": ["상태 적중 +3 또는 +4", "SPD +2 또는 +3", "방어력 %"],
-    "mainSlotStat": "상태 적중 또는 SPD",
-    "5thSubstat": "상태 적중 +1",
-    "coreSuggestions": ["Insight", "Cleanse", "Accumulation"],
-    "coreStats": ["SPD + 상태 적중"],
+    "type": "PVE, PVP",
+    "pluginSet": "축복 저격 세트(2) + 고속 축복 세트(2)",
+    "subStats": [
+      "상태이상 적중 +3 또는 +4",
+      "속도 +2 또는 +3",
+      "방어력 %"
+    ],
+    "mainSlotStat": "상태이상 적중 또는 속도",
+    "5thSubstat": "상태이상 적중 +1",
+    "coreSuggestions": ["통찰", "정화", "축적"],
     "targetValues": {
       "SPD": "7000 ~ 7500",
-      "상태 적중": "40000 ~ 50000"
+      "Status Hit": "40000 ~ 50000"
     }
   }
 }

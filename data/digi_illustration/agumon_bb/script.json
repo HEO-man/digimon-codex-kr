@@ -1,71 +1,71 @@
 {
-  "name": "Agumon BB",
+  "name": "아구몬 BB (용기의 유대)",
   "element": "불",
   "type": "백신",
-  "role": "DPS",
-  "skills": [
-    {
-      "name": "Red Reamer",
-      "type": "일반기",
-      "ap": "디지볼루션 에너지: +10",
-      "description": "모든 적을 공격해 100% 피해를 주고, 100% 확률로 Molten Armor 마크를 2턴간 부여."
+  "role": "딜러",
+  "skills": {
+    "normalSkill": {
+      "name": "레드 리머",
+      "type": "광역",
+      "ap": "EXE: +10",
+      "description": "모든 적을 공격하여 100% 피해를 주고, 100% 고정 확률로 2턴 동안 '용암 갑옷' 마크를 부여합니다."
     },
-    {
-      "name": "Gaia Brave",
-      "type": "주요기",
-      "ap": "6 AP | 디지볼루션 에너지: +30",
-      "description": "단일 적에게 999% 피해를 주고, 주위 적에게 10% 확산 피해. 사용 시마다 확산 피해 +5% (최대 +100%). 방어 무시 40%, 사용 시마다 +20%. 행동 추가."
+    "mainSkill": {
+      "name": "가이아 브레이브",
+      "type": "단일 대상 + 분산 피해",
+      "ap": "6 AP | EXE: +30",
+      "description": "단일 적을 공격하여 999% 피해를 주고, 다른 적에게는 원래 피해의 10%를 분산시킵니다. 이 스킬이 사용될 때마다 분산 피해 비율이 +5% 증가하며 최대 +100%까지 누적됩니다. 대상의 방어력을 40% 무시하며, 사용될 때마다 이 효과는 20%씩 증가합니다. 스킬 사용 후 추가 행동을 획득합니다."
     },
-    {
-      "name": "Strash Salamander",
-      "type": "서브기",
-      "ap": "조건 발동기",
-      "description": "적이 비공격 기술 사용 시 300% 피해 반격. 피해량만큼 대상의 최대 HP를 깎고, 자신에게 HP를 추가 (최대 기본 HP 100%, 3턴 지속)."
+    "subSkill": {
+      "name": "스트래시 살라맨더",
+      "type": "조건부 단일 대상",
+      "ap": "",
+      "description": "적이 비공격 스킬 또는 간접 피해 스킬을 사용할 경우 자동으로 발동하여 적을 공격하고 300% 피해를 줍니다. 해당 피해량은 대상의 최대 HP에서 차감되며, 아구몬 BB의 최대 HP에 더해집니다(추가되는 HP는 아구몬 BB의 기본 HP의 100%를 초과할 수 없음). 효과는 3턴 동안 지속됩니다."
+    },
+    "passiveSkill": {
+      "name": "용기의 유대",
+      "description": "기본 피해 증가 +40%, 피해 감소 +40%.\n- 아군이 필드에 존재할 경우, 아구몬 BB는 양쪽 팀 모두의 타겟 선택 대상에서 제외되는 '특수 은신' 상태에 진입합니다.\n- 가이아 브레이브로 치명타 피해를 입히는 경우, 대상은 1의 HP를 유지하며 '추방(Banished)' 상태에 빠집니다. 이 효과는 PVE 모드에서는 적용되지 않습니다. 추방은 3턴 지속되며 상태 저항을 무시합니다.\n- 아구몬 BB가 쓰러질 경우, 한 번에 한하여 HP 50%로 부활합니다.\n- 전투 시작 시, '용기의 선봉' 상태에 들어가며 공격력 +40%, 방어력 +80% 효과가 3턴 동안 지속됩니다.\n- 동결 상태에 면역입니다."
     }
-  ],
-  "passive": {
-    "name": "Yuki no Kizuna",
-    "description": "피해 증가 +40%, 피해 감소 +40%.\n아군이 있을 때 타겟팅 불가.\nGaia Brave로 치명타 시 대상 HP 1 유지 후 추방 효과 (PVP 전용).\n사망 시 HP 50%로 부활 (1회 한정).\n입장 시 ATK +40%, DEF +80% (3턴). 동결 면역."
   },
   "exclusiveCore": {
-    "exclusiveEffect": "Gaia Brave AP 소비 -1",
-    "suitableEffect": "쉴드가 있는 대상 공격 시 피해 +12%"
+    "exclusiveEffect": "메인 스킬 '가이아 브레이브'의 AP 소모 -1",
+    "suitableEffect": "실드가 있는 적 공격 시 최종 피해 +12%"
   },
   "breakthrough": {
     "1": {
-      "effect": "Red Reamer AP -1",
+      "effect": "레드 리머 AP 소모 -1",
       "statsBoost": "치명타 확률 +5%",
-      "skillIndex": 0
-    },
-    "2": {
-      "effect": "추방 효과 지속 시간 영구로 변경",
-      "statsBoost": "치명타 피해 +5%",
-      "skillIndex": 3
-    },
-    "3": {
-      "effect": "HP 흡수 효과 지속 시간 99턴",
-      "statsBoost": "치명타 확률 +8%",
-      "skillIndex": 2
-    },
-    "4": {
-      "effect": "피해 증가/감소 +10%, 용기의 선봉 지속시간 +2턴",
-      "statsBoost": "치명타 피해 +10%",
-      "skillIndex": 3
-    },
-    "5": {
-      "effect": "확산 피해 증가율 +5% (사용 시마다)",
-      "statsBoost": "피해 증가 +10%",
       "skillIndex": 1
     },
-    "6": {
-      "effect": "부활 효과 → 데이터 재구성, 부활 시 HP +50%",
-      "statsBoost": "피해 증가 +5%, 피해 감소 +15%",
+    "2": {
+      "effect": "추방 상태 지속시간을 3턴에서 영구로 변경",
+      "statsBoost": "치명타 피해 +5%",
+      "skillIndex": 4
+    },
+    "3": {
+      "effect": "스트래시 살라맨더의 HP 흡수 효과 지속시간을 99턴으로 증가",
+      "statsBoost": "치명타 확률 +8%",
       "skillIndex": 3
+    },
+    "4": {
+      "effect": "기본 피해 증가 +10%, 피해 감소 +10%, '용기의 선봉' 지속시간 +2턴",
+      "statsBoost": "치명타 피해 +10%",
+      "skillIndex": 4
+    },
+    "5": {
+      "effect": "가이아 브레이브 사용 시 분산 피해 비율 증가폭 +5%",
+      "statsBoost": "피해 증가 +10%",
+      "skillIndex": 2
+    },
+    "6": {
+      "effect": "부활 효과가 데이터 재구성으로 변경, 부활 시 HP 회복량 +50%",
+      "statsBoost": "피해 증가 +5%, 피해 감소 +15%",
+      "skillIndex": 4
     }
   },
   "build": {
-    "type": "고속 중출력 빌드",
-    "pluginSet": "피해 증가 + 속도 세트 (4)",
+    "type": "PVP, PVE",
+    "pluginSet": "피해 증가 속도 세트 (4)",
     "subStats": [
       "속도 +2",
       "치명타 피해 +2",
@@ -74,18 +74,13 @@
     "mainSlotStat": "속도",
     "5thSubstat": "치명타 피해 +1",
     "coreSuggestions": [
-      "Assault",
-      "Weakness"
-    ],
-    "coreStats": [
-      "치명타 피해 + 속도",
-      "치명타 확률 + 치명타 피해",
-      "치명타 피해 + 공격력 %"
+      "돌격",
+      "약점"
     ],
     "targetValues": {
       "SPD": "4500 ~ 5500",
-      "CritRate": "140%",
-      "CritDamage": "350 ~ 400%"
+      "Crit Damage": "350 ~ 400%",
+      "Crit Rate": "140%"
     }
   }
 }

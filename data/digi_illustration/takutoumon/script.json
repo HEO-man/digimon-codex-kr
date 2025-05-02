@@ -1,79 +1,78 @@
 {
-  "name": "Takutoumon",
-  "element": "Water",
-  "type": "Vaccine",
-  "role": "Support (Auxiliary)",
-  "skills": [
-    {
-      "name": "Tenseizan / Sky Star Slash",
-      "type": "Single Target Multi-Hit",
+  "name": "타쿠토우몬",
+  "element": "물",
+  "type": "백신",
+  "role": "서포터",
+  "skills": {
+    "normalSkill": {
+      "name": "천성참 (Sky Star Slash)",
+      "type": "단일 다중타격",
       "ap": "EXE: +10",
-      "description": "단일 대상에게 2회 공격, 각 75% 피해를 주며, 100% 고정 확률로 모든 물 속성 아군에게 Rising Tide 1중첩을 부여합니다."
+      "description": "단일 적을 2회 공격하여 각각 75%의 피해를 입히며, 100% 확률로 모든 물 속성 아군에게 '넘실대는 파도(Rising Tide)' 1스택을 부여합니다."
     },
-    {
-      "name": "Tettensaisai / Iron Sky Crush",
-      "type": "Single Target",
+    "mainSkill": {
+      "name": "철천쇄쇄 (Iron Sky Crush)",
+      "type": "단일 공격",
       "ap": "5 AP | EXE: +50",
-      "description": "공격 전, 대상의 모든 버프를 100% 고정 확률로 해제(상태 저항 무시). 이후 단일 대상에게 350% 피해를 주고, 아군 전체에게 상태이상 면역을 2턴간 부여합니다. Rising Tide 9중첩 시, 대상에게 1턴간 Isolated 마크를 100% 확률로 부여합니다."
+      "description": "오버라이드 효과: 이 스킬 사용 전에 대상의 모든 버프를 제거하며, 상태 저항을 무시합니다. 이후 단일 적에게 350% 피해를 입히고, 아군 전체에게 2턴간 상태 이상 면역을 부여합니다. 타쿠토우몬이 '넘실대는 파도' 9스택 이상일 경우, 100% 확률로 대상에게 1턴간 고립(Isolated) 마크를 부여합니다."
     },
-    {
-      "name": "Jūn Shén Zhòng Quán / God Of War Punch",
-      "type": "Condition-Based",
-      "description": "Rising Tide 2중첩 이상 시, 적이 추가 턴을 얻으면 240% 피해를 주고, 100% 확률로 1턴간 빙결 상태 부여(2중첩 소모). 해당 스킬이 발동되지 않으면 아군 전체의 디버프 1개 제거 + ATK +20% (2턴)."
+    "subSkill": {
+      "name": "전신중권 (God Of War Punch)",
+      "type": "조건부 단일 공격",
+      "ap": "조건부 발동",
+      "description": "타쿠토우몬이 '넘실대는 파도' 2스택 이상 보유 중일 때, 적이 추가 턴을 얻으면 해당 적에게 240% 피해를 입히며, 100% 확률로 1턴간 빙결 상태를 부여합니다. 이후 파도 스택 2개를 소모합니다. 이 스킬이 발동되지 않은 채 타쿠토우몬의 턴이 시작되면, 아군 전체의 디버프 1개를 제거하고, 2턴간 공격력 +20% 버프를 부여합니다."
     },
-    {
-      "name": "Cháoshuǐ Yǒng Dòng / Tide Surges",
-      "type": "Passive Skill",
-      "description": "배틀 시작 시 Rising Tide 10중첩 획득 (각 SPD +40, 피해감소 +3%). 아군은 Pagoda 보호로 인해 치명 피해 시 생존 후 회복 (쿨타임 2턴). Tettensaisai 시 Surge 3중첩 획득. Surge 1중첩당 적 전체의 ATK -3%, DEF -5%, SPD -100 (최대 7중첩). 마비 면역."
+    "passiveSkill": {
+      "name": "조수용동 (Tide Surges)",
+      "description": "입장 시 '넘실대는 파도' 10스택 획득. 각 스택은 SPD +40, 피해 감소 +3% 부여.\n\n타쿠토우몬을 제외한 아군은 치명 피해를 받을 때 탑(Pagoda) 보호를 받아 현재 행동 라운드 피해 이후 최소 HP 1%를 유지하며, (파도 스택 × 5)% 회복. 쿨타임 2턴.\n\n철천쇄쇄 사용 시 '쇄도(Surge)' 3스택 획득. 이후 아군 행동마다 1스택 증가, 적 행동마다 1스택 감소.\n\n쇄도 스택마다 적 전체 ATK -3%, DEF -5%, SPD -100 (최대 7스택). 마비 상태 면역."
     }
-  ],
+  },
   "exclusiveCore": {
-    "exclusiveEffect": "전투 시작 시 Surge 2중첩 및 Rising Tide 5중첩 획득",
-    "suitableEffect": "비행동 턴 중 상태 적중 +1500, 저항 +2500"
+    "exclusiveEffect": "전투 시작 시 적이 행동할 때 더 이상 '쇄도(Surge)'가 감소하지 않음",
+    "suitableEffect": "자신의 턴이 아닐 때 상태 적중 +1500, 상태 저항 +2500"
   },
   "breakthrough": {
     "1": {
-      "effect": "Rising Tide 1중첩당 SPD +20, 피해감소 +2%",
-      "statsBoost": "상태저항 +1000",
+      "effect": "넘실대는 파도 스택당 SPD +20, 피해 감소 +2%",
+      "statsBoost": "상태 저항 +1000",
       "skillIndex": 3
     },
     "2": {
-      "effect": "AP -1, Isolated 마크 조건 줄어듦 (-2중첩)",
-      "statsBoost": "피해감소 +5%",
+      "effect": "철천쇄쇄: AP -1, 고립 마크 요구 스택 -2",
+      "statsBoost": "피해 감소 +5%",
       "skillIndex": 1
     },
     "3": {
-      "effect": "디버프 제거 수 +1, ATK 버프 비율 +10%",
-      "statsBoost": "상태저항 +1500",
+      "effect": "전신중권: 디버프 제거 수 +1, 아군 ATK 버프 +10%",
+      "statsBoost": "상태 저항 +1500",
       "skillIndex": 2
     },
     "4": {
-      "effect": "Pagoda 쿨타임 -1턴",
-      "statsBoost": "피해감소 +5%",
+      "effect": "조수용동: 탑 보호 쿨타임 -1턴",
+      "statsBoost": "피해 감소 +5%",
       "skillIndex": 3
     },
     "5": {
-      "effect": "Isolated 마크 지속 +1턴",
-      "statsBoost": "피해감소 +10%",
+      "effect": "철천쇄쇄: 고립 마크 지속 +1턴",
+      "statsBoost": "피해 감소 +10%",
       "skillIndex": 1
     },
     "6": {
-      "effect": "Surge 1중첩당 ATK -5%, DEF -7%, SPD -150",
-      "statsBoost": "SPD +150, 피해감소 +10%",
+      "effect": "조수용동: 쇄도 1스택당 적 ATK 추가 -2%, DEF -2%, SPD -50",
+      "statsBoost": "SPD +150, 피해 감소 +10%",
       "skillIndex": 3
     }
   },
   "build": {
     "type": "Hybrid SPD & Status Build",
-    "pluginSet": "Blessing Sniper Set (2) + Quick Blessing Set (2)",
+    "pluginSet": "축복 스나이퍼 (2세트) + 신속 축복 (2세트)",
     "subStats": [
       "SPD +3~4",
-      "Status Hit +1~2",
-      "HP %",
-      "SPD"
+      "상태 적중 +1~2",
+      "HP % +1~2"
     ],
-    "mainSlotStat": "Status Hit or SPD",
-    "5thSubstat": "Toughness +1",
+    "mainSlotStat": "상태 적중 또는 SPD",
+    "5thSubstat": "인내 +1",
     "coreSuggestions": [
       "Combo",
       "Adhere",
@@ -83,8 +82,8 @@
     ],
     "targetValues": {
       "SPD": "7200 ~ 8500",
-      "StatusHit": "20000 ~ 30000",
-      "Toughness": "> 100%"
+      "Toughness": ">100%",
+      "StatusHit": "20000 ~ 30000"
     }
   }
 }
