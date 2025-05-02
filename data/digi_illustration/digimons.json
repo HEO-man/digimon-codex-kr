@@ -1,15 +1,15 @@
 [
   {
-    "name": "Agumon BB",
+    "name": "아구몬 BB (용기의 유대)",
     "element": "불",
     "type": "백신",
-    "role": "DPS",
+    "role": "딜러",
     "folderName": "agumon_bb",
     "grade": 25,
     "category": "Z진화"
   },
   {
-    "name": "Alphamon Ouryuken",
+    "name": "알파몬 왕룡검",
     "element": "빛",
     "type": "백신",
     "role": "딜러",
@@ -36,10 +36,10 @@
     "category": "Z진화"
   },
   {
-    "name": "Cendrillmon",
+    "name": "상드리몬",
     "element": "물",
     "type": "바이러스",
-    "role": "군중 제어",
+    "role": "컨트롤러",
     "folderName": "cendrillmon",
     "grade": 25,
     "category": "Z진화"
@@ -63,28 +63,28 @@
     "category": "Z진화"
   },
   {
-    "name": "Erlangmon",
+    "name": "이랑몬",
     "element": "빛",
     "type": "백신",
-    "role": "제어형 (CC)",
+    "role": "딜러",
     "folderName": "erlangmon",
     "grade": 25,
     "category": "Z진화"
   },
   {
-    "name": "Erlangmon BM",
+    "name": "이랑몬 BM",
     "element": "바람",
     "type": "백신",
-    "role": "공격형 (DPS)",
+    "role": "딜러",
     "folderName": "erlangmon_bm",
     "grade": 25,
     "category": "Z진화"
   },
   {
-    "name": "Gabumon BF",
+    "name": "파피몬 BF (우정의 유대)",
     "element": "물",
     "type": "데이터",
-    "role": "공격형 (DPS)",
+    "role": "딜러",
     "folderName": "gabumon_bf",
     "grade": 25,
     "category": "Z진화"
@@ -117,10 +117,10 @@
     "category": "Z진화"
   },
   {
-    "name": "Jougamon",
+    "name": "상아몬",
     "element": "풀",
     "type": "백신",
-    "role": "공격형 (DPS)",
+    "role": "딜러",
     "folderName": "jougamon",
     "grade": 25,
     "category": "Z진화"
@@ -144,19 +144,19 @@
     "category": "Z진화"
   },
   {
-    "name": "Nezhamon",
-    "element": "Fire",
-    "type": "Data",
-    "role": "Support (Auxiliary)",
+    "name": "나타몬",
+    "element": "불",
+    "type": "데이터",
+    "role": "서포터",
     "folderName": "nezhamon",
     "grade": 25,
     "category": "Z진화"
   },
   {
-    "name": "Nezhamon CM",
+    "name": "나타몬 CM",
     "element": "불",
     "type": "데이터",
-    "role": "공격형 (DPS)",
+    "role": "딜러",
     "folderName": "nezhamon_cm",
     "grade": 25,
     "category": "Z진화"
@@ -207,46 +207,46 @@
     "category": "Z진화"
   },
   {
-    "name": "Cendrillmon",
+    "name": "샤가라몬",
     "element": "물",
-    "type": "바이러스",
-    "role": "군중 제어",
+    "type": "데이터",
+    "role": "서포터",
     "folderName": "shagaramon",
     "grade": 25,
     "category": "Z진화"
   },
   {
-    "name": "Shoutmon X7",
+    "name": "샤우트몬 X7",
     "element": "불",
     "type": "데이터",
-    "role": "공격형 (DPS)",
+    "role": "딜러",
     "folderName": "shoutmon_x7",
     "grade": 25,
     "category": "Z진화"
   },
   {
-    "name": "Shoutmon X7 SM",
-    "element": "Light",
-    "type": "Vaccine",
-    "role": "Output (DPS)",
+    "name": "샤우트몬 X7 SM",
+    "element": "빛",
+    "type": "백신",
+    "role": "딜러",
     "folderName": "shoutmon_x7_sm",
     "grade": 25,
     "category": "Z진화"
   },
   {
-    "name": "Takutoumon",
-    "element": "Water",
-    "type": "Vaccine",
-    "role": "Support (Auxiliary)",
+    "name": "타쿠토우몬",
+    "element": "물",
+    "type": "백신",
+    "role": "서포터",
     "folderName": "takutoumon",
     "grade": 25,
     "category": "Z진화"
   },
   {
-    "name": "Takutoumon WM",
-    "element": "Thunder",
-    "type": "Vaccine",
-    "role": "Output (DPS)",
+    "name": "타쿠토우몬 WM",
+    "element": "번개",
+    "type": "백신",
+    "role": "딜러",
     "folderName": "takutoumon_wm",
     "grade": 25,
     "category": "Z진화"
