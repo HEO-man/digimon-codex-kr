@@ -162,19 +162,19 @@
     "category": "Z진화"
   },
   {
-    "name": "Omegamon MMˢᵖ",
-    "element": "Water",
-    "type": "Vaccine",
-    "role": "Output (DPS)",
+    "name": "오메가몬 MMˢᵖ",
+    "element": "물",
+    "type": "백신",
+    "role": "딜러",
     "folderName": "omegamon_mm_sp",
     "grade": 25,
     "category": "Z진화"
   },
   {
-    "name": "Omegamonˢᵖ",
-    "element": "Light",
-    "type": "Vaccine",
-    "role": "Output (DPS)",
+    "name": "오메가몬ˢᵖ",
+    "element": "빛",
+    "type": "백신",
+    "role": "딜러",
     "folderName": "omegamon_sp",
     "grade": 25,
     "category": "Z진화"
@@ -194,15 +194,6 @@
     "type": "바이러스",
     "role": "딜러",
     "folderName": "quartzmon",
-    "grade": 25,
-    "category": "Z진화"
-  },
-  {
-    "name": "Quartzmon",
-    "element": "번개",
-    "type": "바이러스",
-    "role": "공격형 (DPS)",
-    "folderName": "quartzmon2",
     "grade": 25,
     "category": "Z진화"
   },
