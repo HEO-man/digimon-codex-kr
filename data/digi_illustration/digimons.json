@@ -126,10 +126,10 @@
     "category": "Z진화"
   },
   {
-    "name": "Lucemon",
-    "element": "Light",
-    "type": "Vaccine",
-    "role": "Output (DPS)",
+    "name": "루체몬",
+    "element": "빛",
+    "type": "백신",
+    "role": "딜러",
     "folderName": "lucemon",
     "grade": 25,
     "category": "Z진화"
