@@ -18,7 +18,7 @@
     "category": "Z진화"
   },
   {
-    "name": "Apocalymon",
+    "name": "아포칼리몬",
     "element": "어둠",
     "type": "바이러스",
     "role": "딜러",
@@ -27,7 +27,7 @@
     "category": "Z진화"
   },
   {
-    "name": "Bagramon",
+    "name": "바그라몬",
     "element": "어둠",
     "type": "바이러스",
     "role": "제어",
@@ -45,7 +45,7 @@
     "category": "Z진화"
   },
   {
-    "name": "DarknessBagramon",
+    "name": "다크니스바그라몬",
     "element": "어둠",
     "type": "바이러스",
     "role": "딜러",
@@ -54,10 +54,10 @@
     "category": "Z진화"
   },
   {
-    "name": "Eosmon",
+    "name": "에오스몬",
     "element": "풀",
     "type": "데이터",
-    "role": "서포트",
+    "role": "서포터",
     "folderName": "eosmon",
     "grade": 25,
     "category": "Z진화"
@@ -90,28 +90,28 @@
     "category": "Z진화"
   },
   {
-    "name": "Huanglongmon",
-    "element": "Earth",
-    "type": "Data",
-    "role": "Support (Auxiliary)",
+    "name": "황룡몬",
+    "element": "땅",
+    "type": "데이터",
+    "role": "서포터",
     "folderName": "huanglongmon",
     "grade": 25,
     "category": "Z진화"
   },
   {
-    "name": "Huanglongmon RM",
-    "element": "Earth",
-    "type": "Data",
-    "role": "지원형 (보조)",
+    "name": "황룡몬 RM",
+    "element": "땅",
+    "type": "데이터",
+    "role": "딜러",
     "folderName": "huanglongmon_rm",
     "grade": 25,
     "category": "Z진화"
   },
   {
-    "name": "Imperialdramon PM",
-    "element": "Light",
-    "type": "Vaccine",
-    "role": "공격형 (DPS)",
+    "name": "임페리얼드라몬 PM",
+    "element": "빛",
+    "type": "백신",
+    "role": "딜러",
     "folderName": "imperialdramon_pm",
     "grade": 25,
     "category": "Z진화"
@@ -126,19 +126,19 @@
     "category": "Z진화"
   },
   {
-    "name": "Lucemon",
-    "element": "Light",
-    "type": "Vaccine",
-    "role": "Output (DPS)",
+    "name": "루체몬",
+    "element": "빛",
+    "type": "백신",
+    "role": "딜러",
     "folderName": "lucemon",
     "grade": 25,
     "category": "Z진화"
   },
   {
-    "name": "Lucemon SM",
-    "element": "Dark",
-    "type": "Virus",
-    "role": "제어형 (CC)",
+    "name": "루체몬 SM",
+    "element": "어둠",
+    "type": "바이러스",
+    "role": "CC (제어)",
     "folderName": "lucemon_sm",
     "grade": 25,
     "category": "Z진화"
@@ -180,19 +180,19 @@
     "category": "Z진화"
   },
   {
-    "name": "Ordinemon",
+    "name": "오르디네몬",
     "element": "어둠",
     "type": "바이러스",
-    "role": "공격형 (DPS)",
+    "role": "딜러",
     "folderName": "ordinemon",
     "grade": 25,
     "category": "Z진화"
   },
   {
-    "name": "Quartzmon",
-    "element": "번개",
+    "name": "쿼츠몬",
+    "element": "전기",
     "type": "바이러스",
-    "role": "공격형 (DPS)",
+    "role": "딜러",
     "folderName": "quartzmon",
     "grade": 25,
     "category": "Z진화"
@@ -203,6 +203,15 @@
     "type": "바이러스",
     "role": "공격형 (DPS)",
     "folderName": "quartzmon2",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "라센몬 FM",
+    "element": "풀",
+    "type": "데이터",
+    "role": "딜러",
+    "folderName": "rasenmon_fm",
     "grade": 25,
     "category": "Z진화"
   },

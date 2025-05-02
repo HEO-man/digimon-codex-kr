@@ -1,79 +1,82 @@
 {
-  "name": "Omegamon MMˢᵖ",
-  "element": "Water",
-  "type": "Vaccine",
-  "role": "Output (DPS)",
-  "skills": [
-    {
-      "name": "Garuru Cannon: Still Water",
-      "type": "AoE",
+  "name": "오메가몬 MMˢᵖ",
+  "element": "물",
+  "type": "백신",
+  "role": "딜러",
+  "skills": {
+    "normalSkill": {
+      "name": "가루루 캐논: 정수의 물",
+      "type": "광역 공격",
       "ap": "EXE: +10",
-      "description": "모든 적에게 100% 피해를 주고 자신에게 Rising Tide 2중첩을 부여합니다. 시전 전에 주요 대상의 쉴드를 훔쳐 자신에게 부여하며, Rising Tide가 5 중첩 이상일 경우 5 중첩을 소모하고 이 스킬을 한 번 더 시전합니다."
+      "description": "모든 적에게 100% 피해를 주고 자신에게 '밀물(Rising Tide)' 2스택을 부여합니다. 이 스킬을 능동적으로 시전할 경우, 공격 전에 주요 대상의 쉴드(해제 불가능한 쉴드 포함)를 훔쳐와 오메가몬 MMˢᵖ에게 부여합니다. 만약 밀물 스택이 5 이상이면 5스택을 제거하고 이 스킬을 한 번 더 시전합니다."
     },
-    {
-      "name": "Grey Blade: Soul Slash",
-      "type": "Main Skill",
+    "mainSkill": {
+      "name": "그레이 블레이드: 혼의 베기",
+      "type": "다중 타격 + 광역 + 진짜 피해",
       "ap": "6 AP | EXE: +30",
-      "description": "주요 대상과 HP 비율이 가장 낮은 2인을 공격하여 각각 350% 피해를 입히고, 대상의 잃은 HP 1%당 피해가 1% 증가합니다. 대상이 부족하면 기존 대상에게 반복 공격(75% 피해). 이후 잃은 HP의 50%에 해당하는 고정 피해를 전체 적에게 줍니다(최대 자신의 ATK의 500%). Rising Tide 8 중첩 시 스택을 소모하고 무코스트 재시전합니다."
+      "description": "오버라이드 효과: 최종 피해 +40%\n\n주요 대상의 쉴드(해제 불가능 포함)를 훔쳐 오메가몬 MMˢᵖ에게 부여합니다. 그레이 블레이드로 주요 대상과 HP 비율이 가장 낮은 적 2명을 공격하며, 각 대상에게 350% 피해를 줍니다. 대상이 잃은 HP 1%당 최종 피해가 1% 증가합니다. 대상이 3명 미만일 경우 기존 대상에게 반복 타격이 들어가며, 반복 공격은 원래 피해의 75%를 줍니다.\n\n그 후, 그레이 블레이드로 모든 적에게 잃은 HP의 50%에 해당하는 진짜 피해를 줍니다 (자신의 공격력의 500%를 넘을 수 없음). 밀물 스택이 8 이상일 경우, 8스택을 소모하여 이 스킬을 추가로 한 번 더 시전합니다."
     },
-    {
-      "name": "Tear of Resolve",
-      "type": "Passive Sub Skill",
-      "description": "전투 시작 시 Tear of Resolve를 획득합니다. 치명 피해를 받을 경우 이를 소모하여 피해를 무효화하고 최대 HP의 300%만큼 회복하며 1턴 지속. Tear가 없으면 적 처치 시 Tear Drop 1스택을 얻고, 3스택 시 Tear 복원. 비가 오는 날씨에서 턴 종료 시 Tear Drop 추가 1스택 획득."
+    "subSkill": {
+      "name": "결의의 눈물",
+      "type": "패시브 서브 스킬",
+      "ap": "",
+      "description": "전투 시작 시 '결의의 눈물'을 획득합니다. 오메가몬 MMˢᵖ가 치명적인 피해를 받을 경우, '결의의 눈물'을 소모하여 해당 피해를 무효화하고 최대 HP의 300%에 해당하는 생명력을 1턴간 부여합니다. '결의의 눈물'이 없을 경우, 오메가몬 MMˢᵖ가 치명적인 피해를 가할 때마다 '눈물방울(Tear Drop)' 1스택을 획득하며 (턴당 1회), 3스택 누적 시 '결의의 눈물'을 다시 획득합니다.\n\n날씨가 비(Rain)일 경우, 오메가몬 MMˢᵖ의 턴 종료 후 '눈물방울' 1스택을 추가로 획득합니다."
     },
-    {
-      "name": "Photon Scatter",
-      "type": "Passive Skill",
-      "description": "기본 피해 증가/감소 +40%. ATK 10,000당 HP +1%, ATK +1%, DEF +2%(최대 800,000 기준). 상태 적중/저항은 ATK의 10%만큼 증가(최대 35,000). AP를 소모할 때마다 Rising Tide 1스택을 획득. 반복 스킬 사용 시 True Mirror-Like Calm 상태 진입: 다른 디지몬의 패시브 무효, 피해로 적 처치 불가. 입장 시 비 날씨 및 Rising Tide 3스택 획득. 제어 상태일 때 5스택 소모로 제거. AP 감소 면역."
+    "passiveSkill": {
+      "name": "광자 분산",
+      "description": "기본 피해 증가 및 피해 감소 +40% (내재 스탯 포함).\n\n공격력 10,000당 최대 HP +1%, 공격력 +1%, 방어력 +2% 증가. 최대 계산 기준: 800,000 공격력. PVE 기준에서는 최소 500,000 공격력으로 간주합니다.\n\n오메가몬 MMˢᵖ는 AP를 1 잃을 때마다 '밀물' 1스택을 획득합니다. 추가 행동 턴을 얻지 않지만, 스킬을 반복 시전할 경우 '진정한 거울 같은 고요함(True Mirror-Like Calm)' 상태에 진입합니다. 이 상태에서는 다른 캐릭터의 서브 스킬 및 패시브 효과가 발동하지 않으며, 해당 턴이 끝날 때까지 유지됩니다. 이 상태에서는 즉사 이외의 피해로는 다른 디지몬이 사망하지 않습니다 (PVE에는 적용되지 않음).\n\n입장 효과: 전투 시작 시 날씨를 비로 변경하고, '밀물' 3스택을 획득합니다. '밀물'이 5스택 이상이고 제어 계열 상태이상이 있을 경우, 자신의 턴에 5스택을 소모하여 모든 제어 상태를 해제합니다.\n\n오메가몬 MMˢᵖ는 AP 감소 효과에 면역입니다."
     }
-  ],
+  },
+  "passive": {
+    "name": "광자 분산",
+    "description": "기본 피해 증가 및 피해 감소 +40% (내재 스탯 포함)...(상동)"
+  },
   "exclusiveCore": {
-    "exclusiveEffect": "Tear of Resolve의 최대 HP 지속 시간이 1턴 증가",
-    "suitableEffect": "피해를 줄 때마다 ATK +2%(최대 8스택, 공격 후 제거)"
+    "exclusiveEffect": "'결의의 눈물'로 획득한 최대 HP 지속 시간이 1턴 증가합니다.",
+    "suitableEffect": "자신이 피해를 줄 때마다 공격력 +2% 증가 (최대 8스택, 공격 시 초기화됨)"
   },
   "breakthrough": {
     "1": {
-      "effect": "Grey Blade: Soul Slash AP -1, 피해 +50%",
+      "effect": "그레이 블레이드: AP 소모 -1, 피해 +50%",
       "statsBoost": "치명타율 +5%",
       "skillIndex": 1
     },
     "2": {
-      "effect": "피해 증가 +10%, 피해 감소 +10%",
-      "statsBoost": "치명피해 +5%",
+      "effect": "광자 분산: 피해 증가 +10%, 피해 감소 +10%",
+      "statsBoost": "치명 피해 +5%",
       "skillIndex": 3
     },
     "3": {
-      "effect": "Grey Blade: Soul Slash 피해 +50%, 고정 피해 비율 +25%",
+      "effect": "그레이 블레이드: 피해 +50%, 진짜 피해 비율 +25%",
       "statsBoost": "치명타율 +8%",
       "skillIndex": 1
     },
     "4": {
-      "effect": "Tear of Resolve 회복 HP +200%",
-      "statsBoost": "치명피해 +10%",
+      "effect": "결의의 눈물: 획득 HP +200%",
+      "statsBoost": "치명 피해 +10%",
       "skillIndex": 2
     },
     "5": {
-      "effect": "Grey Blade 반복 시 필요한 Rising Tide -3",
+      "effect": "그레이 블레이드: 스택 소모 조건 -3",
       "statsBoost": "피해 증가 +10%",
       "skillIndex": 1
     },
     "6": {
-      "effect": "입장 시 Rising Tide +2, 제어 상태 제거 조건 -3스택",
+      "effect": "광자 분산: 입장 시 밀물 스택 +2, 이상 상태 해제에 필요한 스택 -3",
       "statsBoost": "피해 증가 +5%, 피해 감소 +15%",
       "skillIndex": 3
     }
   },
   "build": {
     "type": "High Output Build",
-    "pluginSet": "Damage Increase Burst Set (4)",
+    "pluginSet": "피해량 증가 버스트 세트 (4세트)",
     "subStats": [
-      "치명피해 +3~4",
+      "치명 피해 +3~4",
       "치명타율 +1~2",
-      "공격력 %",
-      "SPD +1"
+      "공격력 %"
     ],
-    "mainSlotStat": "치명피해",
-    "5thSubstat": "치명피해 +1",
+    "mainSlotStat": "치명 피해",
+    "5thSubstat": "치명 피해 +1",
     "coreSuggestions": [
       "Weakness",
       "Assault",

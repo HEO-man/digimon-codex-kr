@@ -1,76 +1,87 @@
 {
-  "name": "Bagramon",
+  "name": "바그라몬",
   "element": "어둠",
   "type": "바이러스",
   "role": "제어",
-  "skills": [
-    {
-      "name": "Prosthetic Strike",
-      "type": "일반기",
-      "ap": "디지볼루션 에너지: +10",
-      "description": "단일 대상 및 무작위 적 1명을 공격하여 ATK의 100% 고정 피해. 50% 확률로 AP -1 효과."
+  "skills": {
+    "mainSkill": {
+      "name": "유령 강탈",
+      "ap": "5",
+      "type": "단일 공격 + 도발",
+      "description": "단일 적에게 300% 피해를 주고, 100% 확률로 '도둑맞은 영혼' 상태를 부여합니다 (공격력 -50%, 치명타 확률 -50%, 치명타 피해 -100%). 동시에 바그라몬은 1턴 동안 '붙잡는 자세'에 들어갑니다. 붙잡는 자세 상태에서 바그라몬이 피해를 받을 경우, 그 피해의 50%는 도둑맞은 영혼 상태의 적이 대신 받습니다. 해당 효과는 1명에게만 적용되며, 바그라몬이 쓰러지거나 자세를 해제하면 효과는 사라집니다."
     },
-    {
-      "name": "Ghost Plunder",
-      "type": "주요기",
-      "ap": "5 AP | 디지볼루션 에너지: +30",
-      "description": "단일 적에게 300% 피해, 100% 확률로 Stolen Soul 부여 (ATK -50%, 크리율 -50%, 크리댐 -100%). Bagramon은 1턴간 Grabbing Posture 상태에 진입. 해당 상태에서는 받은 피해의 50%를 대상이 대신 받음. 디지볼루션 효과로 Grabbing Posture 1턴 연장."
-    },
-    {
-      "name": "Invisible Snake Eye",
-      "type": "서브기",
-      "ap": "5 AP | 디지볼루션 에너지: +30",
-      "description": "아군 1명에게 True Eye 부여 (2턴). 모든 적에게 100% 확률로 Eclipse (2턴), 70% 확률로 회복불가 & 버프불가 (2턴) 부여."
-    }
-  ],
-  "passive": {
-    "name": "Absurd World",
-    "description": "석화 면역. 행동 시 50% 확률로 적의 버프 2개를 무작위 디버프로 전환.\nEclipse가 부여된 적에게 피해를 받기 전, 70% 확률로 해당 적에게 ATK-20%, 크리율-20%, 크리댐-50% (1턴) 부여.\n적이 AP를 사용할 때마다 SPD +100 (1턴, 최대 20중첩)."
+    "subSkills": [
+      {
+        "name": "의안의 뱀눈",
+        "ap": "5",
+        "type": "버프 + 광역 디버프",
+        "description": "아군 하나에게 '진실의 눈'을 2턴간 부여하고, 적 전체에게 100% 확률로 '일식'을 1스택, 70% 확률로 '회복 불가', '강화 불가' 디버프를 2턴간 부여합니다."
+      },
+      {
+        "name": "의수 일격",
+        "ap": "0",
+        "type": "단일 + 무작위 1명 트루 대미지",
+        "description": "단일 적과 무작위 적 하나를 공격하여 각각 자신의 공격력의 100%에 해당하는 트루 대미지를 입힙니다. 50% 확률로 대상의 AP를 1 감소시킵니다."
+      }
+    ]
   },
+  "passive": "석화 면역. 행동 시 50% 확률로 적의 버프 최대 2개를 무작위 디버프로 전환. 일식 상태의 적에게 피해가 들어갈 경우, 아군이 피해를 받기 전에 70% 확률로 ATK-20%, 치명타 확률-20%, 치명타 피해-50%를 1턴간 부여. 적이 AP를 1 사용할 때마다 SPD+100 (1턴, 최대 20스택).",
   "exclusiveCore": {
-    "exclusiveEffect": "주요기 사용 후, 적 전체에게 100% 확률로 도발 1턴 부여",
-    "suitableEffect": "공격 대상의 SPD가 사용자보다 낮을 경우 효과 적중 +1500"
+    "exclusiveEffect": "메인 스킬 사용 시, 모든 적에게 100% 확률로 1턴간 도발 부여",
+    "suitableEffect": "속도가 낮은 적에게 공격 시 명중률 +1500"
   },
   "breakthrough": {
     "1": {
-      "effect": "Grabbing Posture 지속 +1턴",
-      "statsBoost": "SPD +50",
-      "skillIndex": 1
+      "effect": "유령 강탈 레벨 2: 붙잡는 자세 1턴 추가",
+      "statsBoost": "SPD+50",
+      "skillIndex": 0
     },
     "2": {
-      "effect": "버프 디버프 변환 확률 +50%",
-      "statsBoost": "효과 적중 +1000",
+      "effect": "왜곡된 세계 레벨 2: 버프 변환 확률 +50%",
+      "statsBoost": "효과 명중 +1000",
       "skillIndex": 3
     },
     "3": {
-      "effect": "Invisible Snake Eye AP -1, 디버프 확률 +30%",
-      "statsBoost": "SPD +100",
-      "skillIndex": 2
+      "effect": "의안의 뱀눈 레벨 2: AP 소모 -1, 디버프 확률 +30%",
+      "statsBoost": "SPD+100",
+      "skillIndex": 1
     },
     "4": {
-      "effect": "Eclipse 대상 디버프 확률 +30%, 지속 +1턴",
-      "statsBoost": "효과 적중 +1500",
+      "effect": "왜곡된 세계 레벨 3: 일식 대상에게 디버프 확률 +30%, 지속 시간 +1턴",
+      "statsBoost": "효과 명중 +1500",
       "skillIndex": 3
     },
     "5": {
-      "effect": "Invisible Snake Eye AP -1, Eclipse 1중첩 추가",
+      "effect": "의안의 뱀눈 레벨 3: AP 소모 -1, 일식 1스택 추가 부여",
       "statsBoost": "효과 저항 +2500",
-      "skillIndex": 2
+      "skillIndex": 1
     },
     "6": {
-      "effect": "Ghost Plunder AP -1, 디지볼루션 에너지 +20",
+      "effect": "유령 강탈 레벨 3: AP 소모 -1, 진화 에너지 +20",
       "statsBoost": "피해 감소 +20%",
-      "skillIndex": 1
+      "skillIndex": 0
     }
   },
   "build": {
-    "type": "상태이상 중심 CC 빌드",
-    "pluginSet": null,
-    "subStats": null,
-    "mainSlotStat": null,
-    "5thSubstat": null,
-    "coreSuggestions": null,
-    "coreStats": null,
-    "targetValues": null
+    "type": "디버프 제어 빌드",
+    "pluginSet": "상태이상 적중률 증가 세트 (4세트)",
+    "subStats": [
+      "SPD +1~2",
+      "효과 명중 +1000~1500",
+      "피해 감소 +5~10%",
+      "치명피해 감소 +5%"
+    ],
+    "mainSlotStat": "SPD",
+    "5thSubstat": "효과 저항",
+    "coreSuggestions": [
+      "Tyranny",
+      "Weakness",
+      "Verdict"
+    ],
+    "targetValues": {
+      "SPD": "4000 이상",
+      "EffectHit": "15000 이상",
+      "DamageReduction": "40% 이상"
+    }
   }
 }

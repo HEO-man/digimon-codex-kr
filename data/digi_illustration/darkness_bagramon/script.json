@@ -1,76 +1,87 @@
 {
-  "name": "DarknessBagramon",
+  "name": "다크니스바그라몬",
   "element": "어둠",
   "type": "바이러스",
   "role": "딜러",
-  "skills": [
-    {
-      "name": "Demon King's Claw",
-      "type": "일반기",
-      "ap": "디지볼루션 에너지: +10",
-      "description": "전체 적에게 40%의 고정 피해를 입히고, 100% 확률로 ATK -20%, DEF -60% 디버프를 2턴간 부여. 이후 World Domination 1스택 획득. 아군이 공격 시 50% 확률로 연계 공격 (어둠 속성일 경우 100%)."
+  "skills": {
+    "mainSkill": {
+      "name": "암흑의 몰락",
+      "ap": "5",
+      "type": "단일 공격",
+      "description": "50% 확률로 적에게 '고립' 마크를 1턴간 부여한 후, 단일 대상에게 550% 피해를 입힙니다. 이 공격으로 적을 처치하면 50% 확률로 석화 상태를 2턴간 부여합니다. 은신 상태에서 공격 시 '세계 제패' 2스택을 획득하고, 처치한 적은 부활이 금지됩니다. 공격 이후 은신 해제. 디지볼브 효과: 공격 후 추가 행동 획득."
     },
-    {
-      "name": "Pitch-Black Day of Fall",
-      "type": "주요기",
-      "ap": "5 AP | 디지볼루션 에너지: +20",
-      "description": "50% 확률로 대상에게 Isolation 부여 (1턴), 단일 대상에게 550% 피해. 대상이 사망 시 50% 확률로 Petrified(2턴) 부여. 은신 상태일 경우 World Domination 2스택 추가 획득 및 부활 금지 효과 부여. 이후 은신 해제. 사용 후 추가 행동 획득."
-    },
-    {
-      "name": "Emperor's Dominion",
-      "type": "서브기",
-      "ap": "패시브",
-      "description": "World Domination 1스택마다 ATK +6%, DEF +6% 증가. 3스택: 회피/은신 무시, 6스택: 방어력 75% 무시, 9스택: Eclipse 보유 대상의 크리 확률 -100%, 해제 가능한 버프 부여 불가."
-    }
-  ],
-  "passive": {
-    "name": "Infinite Summit",
-    "description": "피해 증가 +40%, 피해 감소 +40%, Debuff 적중 +ATK의 10% (최대 35,000).\n은신 상태일 경우 광역기 피해 -35%.\n은신이 아닐 때 공격받으면 Dark Sky Feather 발동: 전체 적에게 Eclipse 1중첩, 체력 50% 회복 후 은신 진입. Disarmed 면역."
+    "subSkills": [
+      {
+        "name": "마왕의 발톱",
+        "ap": "0",
+        "type": "광역 진정 데미지",
+        "description": "모든 적에게 40%의 진정 피해를 주고, 100% 확률로 ATK -20%, DEF -60%를 2턴간 부여합니다. 그 후 자신에게 '세계 제패' 1스택을 부여합니다. 아군이 공격할 때 50% 확률로 함께 연격하며, 어둠 속성일 경우 100% 확률로 연격합니다."
+      },
+      {
+        "name": "황제의 지배",
+        "ap": "0",
+        "type": "패시브",
+        "description": "'세계 제패' 1스택마다 ATK +6%, DEF +6% 상승. 3스택: 회피율과 은신 무시 / 6스택: 방어력 75% 무시 / 9스택: 일식 마크 대상의 치명타 확률 -100%, 해제 가능한 버프 무효화."
+      }
+    ]
   },
+  "passive": "기본 피해 증가 +40%, 피해 감소 +40%. ATK의 10%에 해당하는 디버프 적중 보정 (최대 35,000). 은신 상태에서 광역 피해 -35%. 은신이 아닐 때 공격받으면 '어둠의 깃털' 발동: 모든 적에게 일식 마크 1스택 부여 후 자신의 잃은 체력의 50% 회복하고 은신 진입. 무장 해제 면역.",
   "exclusiveCore": {
-    "exclusiveEffect": "전투 시작 시 World Domination 3스택 획득",
-    "suitableEffect": "행동 라운드 첫 공격 후 대상에게 초기 피해의 8%를 고정 피해로 추가"
+    "exclusiveEffect": "전투 시작 시 '세계 제패' 3스택 획득",
+    "suitableEffect": "첫 공격 이후 대상에게 초기 피해의 8%만큼 진정 피해 추가"
   },
   "breakthrough": {
     "1": {
-      "effect": "Isolation 및 Petrified 확률 +50%",
-      "statsBoost": "크리티컬 확률 +5%",
-      "skillIndex": 1
-    },
-    "2": {
-      "effect": "True Damage +10%",
-      "statsBoost": "크리티컬 피해 +5%",
+      "effect": "암흑의 몰락 확률 상승: 고립, 석화 확률 +50%",
+      "statsBoost": "치명타율 +5%",
       "skillIndex": 0
     },
+    "2": {
+      "effect": "마왕의 발톱 진정 피해 +10%",
+      "statsBoost": "치명피해 +5%",
+      "skillIndex": 1
+    },
     "3": {
-      "effect": "은신 중 광역 피해 감소 +15%, Dark Sky Feather의 Eclipse +1중첩",
-      "statsBoost": "크리티컬 확률 +8%",
+      "effect": "은신 상태 광역 피해 감소 추가 -15%, 어둠의 깃털 일식 +1스택",
+      "statsBoost": "치명타율 +8%",
       "skillIndex": 3
     },
     "4": {
-      "effect": "World Domination당 ATK/DEF 증가량 +3%",
-      "statsBoost": "크리티컬 피해 +10%",
+      "effect": "세계 제패 스택당 ATK/DEF +3% 추가 상승",
+      "statsBoost": "치명피해 +10%",
       "skillIndex": 2
     },
     "5": {
-      "effect": "AP -1, 주요기 피해 +50%",
+      "effect": "암흑의 몰락: AP -1, 피해량 +50%",
       "statsBoost": "피해 증가 +10%",
-      "skillIndex": 1
+      "skillIndex": 0
     },
     "6": {
-      "effect": "내재 피해 증가 +10%, 피해 감소 +10%",
+      "effect": "기본 피해 증가 +10%, 피해 감소 +10%",
       "statsBoost": "피해 증가 +5%, 피해 감소 +15%",
       "skillIndex": 3
     }
   },
   "build": {
-    "type": "딜러 특화 빌드",
-    "pluginSet": null,
-    "subStats": null,
-    "mainSlotStat": null,
-    "5thSubstat": null,
-    "coreSuggestions": null,
-    "coreStats": null,
-    "targetValues": null
+    "type": "고화력 빌드",
+    "pluginSet": "진정 피해 증가 세트 (4세트)",
+    "subStats": [
+      "치명피해 +3~4",
+      "치명타율 +1~2",
+      "공격력 %",
+      "SPD +1"
+    ],
+    "mainSlotStat": "치명피해",
+    "5thSubstat": "치명피해 +1",
+    "coreSuggestions": [
+      "Assault",
+      "Weakness",
+      "Verdict"
+    ],
+    "targetValues": {
+      "SPD": "4000 ~ 5000",
+      "CritRate": "140%",
+      "CritDamage": "450 ~ 500%"
+    }
   }
 }

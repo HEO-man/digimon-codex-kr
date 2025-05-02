@@ -1,92 +1,87 @@
 {
-  "name": "Lucemon SM",
-  "element": "Dark",
-  "type": "Virus",
-  "role": "제어형 (CC)",
-  "skills": [
-    {
-      "name": "Pollution Impact",
-      "type": "AOE",
-      "ap": "EXE: +10",
-      "description": "대상과 무작위 적 2명을 공격(각 100%)하며, 100% 확률로 아래 상태이상 중 2개를 부여 (2턴): 공격력 -20%, 방어력 -60%, 치명저항 -20%, 치명피해 -50%, 인내 -50%, 치명확률 -20%, 회피율 -20%."
+  "name": "루체몬 SM",
+  "element": "어둠",
+  "type": "바이러스",
+  "role": "CC (제어)",
+  "skills": {
+    "mainSkill": {
+      "name": "연옥의 불꽃",
+      "ap": "6",
+      "type": "광역 피해 + 고정 피해",
+      "description": "모든 적의 버프를 100% 확률로 제거한 후, 모든 적에게 350% 피해를 줍니다. 이후 모든 적에게 1스택의 [연옥의 불꽃]을 100% 확률로 부여합니다. 적이 이미 이상 상태이면 1스택 추가 부여됩니다. [연옥의 불꽃]은 최대 7스택까지 누적되며, 각 스택은 대상의 EXE 획득률과 실드 획득량을 10%씩 감소시키고, 턴 시작 전 대상 최대 HP의 7%에 해당하는 고정 피해를 줍니다 (루체몬 SM의 ATK를 초과할 수 없음). 이 효과는 영구 지속됩니다."
     },
-    {
-      "name": "Purgatorial Flame",
-      "type": "AOE + True Damage",
-      "ap": "6 AP | EXE: +50",
-      "description": "모든 적의 버프 제거 후, 전원에게 350% 피해. 이후 [Purgation Flame] 1중첩 부여(기본 100% 고정 확률). 상태이상이 있으면 추가 1중첩 부여. 이 효과는 중첩 가능(최대 7), EXE/쉴드 획득률 -10%, 행동 전 최대 체력의 7% 진짜 피해(최대 Lucemon SM의 ATK까지, 영구 지속)."
-    },
-    {
-      "name": "Judgment of the Seven Sins",
-      "type": "Single + AoE Multi-Hit",
-      "ap": "6 AP | EXE: +50",
-      "description": "대상 1명과 무작위 7명에게 연속 공격(각 160%). 각 공격마다 50% 확률로 상태이상 부여: 화상 5중첩, 빙결, 독 10중첩, 석화, 마비, 윈드블레이드 10중첩(고정), 이클립스 5중첩(고정). 사용 후 추가 행동 가능."
-    },
-    {
-      "name": "The Seven Deadly Sins",
-      "type": "Passive",
-      "description": "기본 상태 적중 +25,000, 피해 증가/감소 +40%. ATK 10,000당 최대 HP +1%, 공격력 +1%, 방어력 +2%(최대 800,000 기준). 적에게 상태이상이 있을 때마다 피해 증가 +2%(최대 20개), 부정 마크마다 피해 감소 +2%(최대 20개). 빠른 적에게 피해를 입으면 최대 HP +10%(행동당 최대 5회, 누적 최대 400%). 추방 면역."
-    }
-  ],
+    "subSkills": [
+      {
+        "name": "오염의 충격",
+        "ap": "0",
+        "type": "광역 공격",
+        "description": "선택한 대상과 임의의 적 2명을 공격하여 각각 100% 피해를 주고, 100% 확률로 아래 이상 상태 중 2가지를 부여합니다: ATK -20%, DEF -60%, 치명 저항 -20%, 치명 피해 -50%, 강인함 -50%, 치명률 -20%, 회피 -20% (모두 2턴 지속)."
+      },
+      {
+        "name": "칠죄종의 심판",
+        "ap": "6",
+        "type": "단일 + 광역 공격",
+        "description": "선택한 적을 공격한 후, 임의의 적 7명을 순차적으로 공격하여 각각 160% 피해를 입힙니다. 각 공격은 다음 상태 중 하나를 50% 확률로 부여합니다: 화상 5스택 (2턴), 빙결 (2턴), 중독 10스택 (3턴), 석화 (2턴), 마비 (2턴), 바람베기 10스택 (3턴, 고정 확률), 일식 5스택 (2턴, 고정 확률). 스킬 사용 후 루체몬 SM은 한 번 더 행동할 수 있습니다."
+      }
+    ]
+  },
+  "passive": "기본 상태 적중 +25000, 피해 증가 +40%, 피해 감소 +40%. 기본 ATK 10,000당 HP +1%, ATK +1%, DEF +2% 추가 획득 (최대 800,000 ATK 기준). PVE 모드에서는 ATK를 최소 500,000으로 간주. 적에게 이상 상태 1개당 최종 피해 +2% (최대 20개), 디버프 1개당 최종 피해 감소 +2% (최대 20개). 루체몬 SM보다 빠른 디지몬에게 피해를 받으면 HP +10% (턴당 최대 5회, 총 400%까지). 배틀 중 Banish 상태에 면역.",
   "exclusiveCore": {
-    "exclusiveEffect": "기본 상태 적중의 100%만큼 상태 저항 증가",
-    "suitableEffect": "공격 시마다 공격력 +2%(최대 8중첩, 공격 시 해제)"
+    "exclusiveEffect": "루체몬 SM의 상태 저항이 기본 상태 적중 수치의 100%만큼 증가",
+    "suitableEffect": "공격 시 ATK +2% (최대 8스택, 공격 시 초기화)"
   },
   "breakthrough": {
     "1": {
-      "effect": "AP -1, 피해 +50%",
+      "effect": "연옥의 불꽃 레벨 2: AP 소모 -1, 피해량 +50%",
       "statsBoost": "SPD +50",
-      "skillIndex": 1
+      "skillIndex": 0
     },
     "2": {
-      "effect": "상태 적중 +10000, 피해 증가/감소 +10%",
+      "effect": "칠죄종 패시브 레벨 2: 상태 적중 +10000, 피해 증가 +10%, 피해 감소 +10%",
       "statsBoost": "상태 적중 +1000",
       "skillIndex": 3
     },
     "3": {
-      "effect": "각 상태이상 확률 +50%",
+      "effect": "칠죄종의 심판 레벨 2: 상태 이상 및 디버프 확률 +50%",
       "statsBoost": "SPD +100",
       "skillIndex": 2
     },
     "4": {
-      "effect": "상태이상 적 대상에게 [Purgation Flame] 1중첩 추가",
+      "effect": "연옥의 불꽃 레벨 3: 이상 상태 대상에게 연옥의 불꽃 1스택 추가 부여",
       "statsBoost": "상태 적중 +1500",
-      "skillIndex": 1
+      "skillIndex": 0
     },
     "5": {
-      "effect": "AP -1, 각 히트 피해 +40%",
+      "effect": "칠죄종의 심판 레벨 3: AP 소모 -1, 공격당 피해 +40%",
       "statsBoost": "상태 저항 +2500",
       "skillIndex": 2
     },
     "6": {
-      "effect": "상태이상 1개당 피해 증가 +1%, 마크 1개당 피해 감소 +1%, 피해 받을 때마다 최대 HP +10%",
+      "effect": "칠죄종 패시브 레벨 3: 이상 상태 1개당 추가 피해 +1%, 디버프 1개당 추가 피해 감소 +1%, 피해 시 HP +10% 추가 증가",
       "statsBoost": "피해 감소 +20%",
       "skillIndex": 3
     }
   },
   "build": {
-    "type": "상태이상 기반 제어형",
-    "pluginSet": "상태 적중 + 속도 중심 구성",
+    "type": "Control DPS Hybrid",
+    "pluginSet": "확률 제어 및 피해 증가 기반",
     "subStats": [
-      "SPD +3~4",
-      "Status Hit +1~2",
-      "Status Resistance +1~2"
+      "상태 적중 +1000~2000",
+      "SPD +100~200",
+      "치명 피해 %",
+      "공격력 %"
     ],
-    "mainSlotStat": "Status Hit or SPD",
-    "5thSubstat": "Status Resistance +1",
+    "mainSlotStat": "상태 적중",
+    "5thSubstat": "상태 저항 +2500",
     "coreSuggestions": [
-      "Adhere",
-      "Cleanse",
-      "Debuff Spread",
-      "Digivolution"
-    ],
-    "coreStats": [
-      "SPD + Status Hit",
-      "Status Hit + Crit Rate"
+      "Verdict",
+      "Weakness",
+      "Assault"
     ],
     "targetValues": {
-      "SPD": "6500 ~ 7500",
-      "Status Hit": "25000 ~ 35000"
+      "StatusHit": "25000 이상",
+      "SPD": "최소 600 이상",
+      "CritDamage": "300% 이상"
     }
   }
 }
