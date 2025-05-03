@@ -241,5 +241,23 @@
     "folderName": "takutoumon_wm",
     "grade": 25,
     "category": "Z진화"
+  },
+  {
+    "name": "알포스브이드라몬 X",
+    "element": "바람",
+    "type": "백신",
+    "role": "딜러",
+    "folderName": "ulforceveedramon_x",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "워그레이몬 X",
+    "element": "불",
+    "type": "백신",
+    "role": "딜러",
+    "folderName": "wargreymon_x",
+    "grade": 25,
+    "category": "Z진화"
   }
 ]
