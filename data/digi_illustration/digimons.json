@@ -30,7 +30,7 @@
     "name": "바그라몬",
     "element": "어둠",
     "type": "바이러스",
-    "role": "제어",
+    "role": "컨트롤러",
     "folderName": "bagramon",
     "grade": 25,
     "category": "Z진화"
@@ -99,16 +99,7 @@
     "category": "Z진화"
   },
   {
-    "name": "황룡몬 RM",
-    "element": "땅",
-    "type": "데이터",
-    "role": "딜러",
-    "folderName": "huanglongmon_rm",
-    "grade": 25,
-    "category": "Z진화"
-  },
-  {
-    "name": "임페리얼드라몬 PM",
+    "name": "황제드라몬 PM",
     "element": "빛",
     "type": "백신",
     "role": "딜러",
