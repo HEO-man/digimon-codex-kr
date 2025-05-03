@@ -18,7 +18,7 @@
     "category": "Z진화"
   },
   {
-    "name": "아포칼리몬",
+    "name": "아포카리몬",
     "element": "어둠",
     "type": "바이러스",
     "role": "딜러",
@@ -165,7 +165,7 @@
     "name": "매그너몬 X",
     "element": "빛",
     "type": "백신",
-    "role": "서포트",
+    "role": "서포터",
     "folderName": "magnamon_x",
     "grade": 25,
     "category": "Z진화"
