@@ -117,6 +117,15 @@
     "category": "Z진화"
   },
   {
+    "name": "로드나이트몬 X",
+    "element": "바람",
+    "type": "바이러스",
+    "role": "딜러",
+    "folderName": "lordknightmon_x",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
     "name": "루체몬",
     "element": "빛",
     "type": "백신",
@@ -131,6 +140,51 @@
     "type": "바이러스",
     "role": "컨트롤러",
     "folderName": "lucemon_sm",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "루체몬 X",
+    "element": "빛",
+    "type": "바이러스",
+    "role": "컨트롤러",
+    "folderName": "lucemon_x",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "매그너몬 X",
+    "element": "빛",
+    "type": "백신",
+    "role": "서포트",
+    "folderName": "magnamon_x",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "메기드라몬 X",
+    "element": "불",
+    "type": "바이러스",
+    "role": "서포터",
+    "folderName": "megidramon_x",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "메탈가루루몬 X",
+    "element": "물",
+    "type": "데이터",
+    "role": "서포터",
+    "folderName": "metalgarurumon_x",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "미네르바몬 X",
+    "element": "풀",
+    "type": "바이러스",
+    "role": "딜러",
+    "folderName": "minervamon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -171,11 +225,56 @@
     "category": "Z진화"
   },
   {
+    "name": "오메가몬 X",
+    "element": "빛",
+    "type": "백신",
+    "role": "딜러",
+    "folderName": "omegamon_x",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "오파니몬 FMX",
+    "element": "어둠",
+    "type": "바이러스",
+    "role": "딜러",
+    "folderName": "ophanimon_fmx",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "오파니몬 X",
+    "element": "빛",
+    "type": "백신",
+    "role": "서포터",
+    "folderName": "ophanimon_x",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
     "name": "오르디네몬",
     "element": "어둠",
     "type": "바이러스",
     "role": "딜러",
     "folderName": "ordinemon",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "플레시오몬 X",
+    "element": "물",
+    "type": "데이터",
+    "role": "서포터",
+    "folderName": "plesiomon_x",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "프린스콩알몬 X",
+    "element": "전기",
+    "type": "데이터",
+    "role": "컨트롤러",
+    "folderName": "princemamemon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -194,6 +293,24 @@
     "type": "데이터",
     "role": "딜러",
     "folderName": "rasenmon_fm",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "로제몬 X",
+    "element": "풀",
+    "type": "데이터",
+    "role": "서포터",
+    "folderName": "rosemon_x",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "사쿠야몬 X",
+    "element": "땅",
+    "type": "데이터",
+    "role": "서포터",
+    "folderName": "sakuyamon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -221,6 +338,15 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "shoutmon_x7_sm",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "슬레이프몬 X",
+    "element": "바람",
+    "type": "백신",
+    "role": "서포터",
+    "folderName": "sleipmon_x",
     "grade": 25,
     "category": "Z진화"
   },
