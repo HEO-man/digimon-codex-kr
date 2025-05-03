@@ -1,0 +1,88 @@
+{
+  "name": "매그너몬 X",
+  "element": "빛",
+  "type": "백신",
+  "role": "서포트",
+  "skills": [
+    {
+      "name": "플라즈마 슛",
+      "ap": "EXE: +10",
+      "type": "단일 타겟 | 직접 피해",
+      "description": "자신의 방어력 150%를 공격력으로 간주하여 단일 적에게 150% 피해를 준다."
+    },
+    {
+      "name": "익스트림 지하드",
+      "ap": "5 AP | EXE: +40",
+      "type": "단일 타겟 | 직접 피해",
+      "description": "모든 버프를 100% 확률로 해제한 후, 방어력 150%를 공격력으로 간주하여 단일 적에게 300% 피해를 입힌다. 이후 아군 전체에게 방어력 300%에 해당하는 실드를 2턴간 부여한다."
+    },
+    {
+      "name": "지속 에너지",
+      "ap": "5 AP | EXE: +40",
+      "type": "아군 전체 | 버프",
+      "description": "모든 아군에게 50% 확률의 디스펠 저항(1턴), 피해 감소 +20%, 방어력 +60% (2턴)을 부여한다."
+    }
+  ],
+  "passive": {
+    "name": "골드 합금",
+    "description": "전투 시작 시 최대 HP +25%, 방어력 +50%. 아군이 받는 피해의 25%를 대신 받는다. 매 라운드 시작 시, 자신에게 방어력 500% 실드를 2턴간 부여하고, 아군 전체에게 '빛의 실드'를 부여한다. 이 실드는 치명 피해를 1% HP로 막고, 회복 효과를 부여한다 (2턴 쿨타임)."
+  },
+  "exclusiveCore": {
+    "exclusiveEffect": "패시브 실드 수치가 라운드당 +150% 증가한다.",
+    "suitableEffect": "자신이 부여하는 실드 수치 +12% 증가"
+  },
+  "breakthrough": {
+    "1": {
+      "effect": "익스트림 지하드 피해량 +50%",
+      "statsBoost": "1000 상태저항",
+      "skillIndex": 1
+    },
+    "2": {
+      "effect": "지속 에너지 AP -1",
+      "statsBoost": "피해감소 5%",
+      "skillIndex": 2
+    },
+    "3": {
+      "effect": "HP +5%, 방어력 +10%",
+      "statsBoost": "1500 상태저항",
+      "skillIndex": 4
+    },
+    "4": {
+      "effect": "익스트림 지하드 AP -1",
+      "statsBoost": "피해감소 5%",
+      "skillIndex": 1
+    },
+    "5": {
+      "effect": "빛의 실드 쿨타임 -1",
+      "statsBoost": "피해감소 10%",
+      "skillIndex": 4
+    },
+    "6": {
+      "effect": "디스펠 저항 지속시간 +1턴, 피해감소 +10%",
+      "statsBoost": "SPD 150, 피해감소 10%",
+      "skillIndex": 2
+    }
+  },
+  "build": {
+    "type": "고방어 중간 상태저항 빌드",
+    "pluginSet": "블레싱 저항 세트 (4)",
+    "subStats": [
+      "상태저항 +3~+4",
+      "SPD +2",
+      "방어력 % +1",
+      "HP %"
+    ],
+    "mainSlotStat": "SPD 또는 상태저항",
+    "5thSubstat": "방어력 % +1 또는 상태저항 +1",
+    "coreSuggestions": [
+      "Resolute",
+      "Adhere",
+      "Cleanse",
+      "Accumulation"
+    ],
+    "targetValues": {
+      "SPD": "5000~5500",
+      "Status Resistance": "35000~50000"
+    }
+  }
+}
