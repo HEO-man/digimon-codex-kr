@@ -36,6 +36,15 @@
     "category": "Z진화"
   },
   {
+    "name": "블룸로드몬",
+    "element": "풀",
+    "type": "백신",
+    "role": "딜러",
+    "folderName": "bloomlordmon",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
     "name": "상드리몬",
     "element": "물",
     "type": "바이러스",
