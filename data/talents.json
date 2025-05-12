@@ -1,0 +1,21 @@
+[
+  {
+    "id": "atk_enhancement",
+    "icon": "atk_enhancement.png",
+    "name": "공격력 강화",
+    "description": "전투에 돌입한 후, 총 공격력이 n% 증가합니다.",
+    "suitableFor": "모든 공격력 기반 딜러에게 적합",
+    "remark": "참고: 고정 피해가 공격력 수치에 의해 제한될 경우에도 유용합니다.",
+    "levels": [
+      { "level": 1, "value": "0.6%" },
+      { "level": 2, "value": "1.2%" },
+      { "level": 3, "value": "1.8%" },
+      { "level": 4, "value": "2.4%" },
+      { "level": 5, "value": "3.0%" },
+      { "level": 6, "value": "3.75%" },
+      { "level": 7, "value": "4.5%" },
+      { "level": 8, "value": "6.0%" }
+    ],
+    "position": { "row": 0, "col": 1 }
+  }
+]
