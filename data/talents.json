@@ -55,5 +55,255 @@
       { "level": 8, "value": "8.0%" }
     ],
     "position": { "row": 0, "col": 3 }
+  },
+  {
+    "id": "normal_skill_enhancement",
+    "icon": "normal_skill_enhancement.png",
+    "name": "일반 스킬 강화",
+    "description": "일반 스킬의 최종 피해가 n% 증가합니다.",
+    "suitableFor": "모든 딜러에게 적합",
+    "remark": "참고: 콤보 팀에 권장됩니다.\n\n(최종 피해는 스킬 설명에 명시된 피해 수치를 의미하지 않으며, 치명타 피해, 강인함, 피해 증가 및 피해 감소 등의 스탯 계산 이후의 피해량을 의미합니다.)",
+    "levels": [
+      { "level": 1, "value": "2.0%" },
+      { "level": 2, "value": "4.0%" },
+      { "level": 3, "value": "6.0%" },
+      { "level": 4, "value": "7.0%" },
+      { "level": 5, "value": "8.5%" },
+      { "level": 6, "value": "10.5%" }
+    ],
+    "position": { "row": 1, "col": 0 }
+  },
+  {
+    "id": "main_skill_enhancement",
+    "icon": "main_skill_enhancement.png",
+    "name": "메인 스킬 강화",
+    "description": "메인 스킬의 최종 피해가 n% 증가합니다.",
+    "suitableFor": "모든 딜러에게 적합",
+    "remark": "참고: 대부분의 딜러에게 권장됩니다.\n\n(최종 피해는 스킬 설명에 명시된 피해 수치를 의미하지 않으며, 치명타 피해, 강인함, 피해 증가 및 피해 감소 등의 스탯 계산 이후의 피해량을 의미합니다.)",
+    "levels": [
+      { "level": 1, "value": "1.0%" },
+      { "level": 2, "value": "2.0%" },
+      { "level": 3, "value": "3.0%" },
+      { "level": 4, "value": "4.0%" },
+      { "level": 5, "value": "5.0%" },
+      { "level": 6, "value": "7.0%" }
+    ],
+    "position": { "row": 1, "col": 1 }
+  },
+  {
+    "id": "sub_skill_enhancement",
+    "icon": "sub_skill_enhancement.png",
+    "name": "서브 스킬 강화",
+    "description": "서브 스킬의 최종 피해가 n% 증가합니다.",
+    "suitableFor": "AP를 소모하는 서브 스킬",
+    "remark": "참고: 조건 기반 서브 스킬(예: 다이너스몬 X)에는 효과가 없습니다.\n\n(최종 피해는 스킬 설명에 명시된 피해 수치를 의미하지 않으며, 치명타 피해, 강인함, 피해 증가 및 피해 감소 등의 스탯 계산 이후의 피해량을 의미합니다.)",
+    "levels": [
+      { "level": 1, "value": "1.0%" },
+      { "level": 2, "value": "2.0%" },
+      { "level": 3, "value": "3.0%" },
+      { "level": 4, "value": "4.0%" },
+      { "level": 5, "value": "5.0%" },
+      { "level": 6, "value": "7.0%" }
+    ],
+    "position": { "row": 1, "col": 2 }
+  },
+  {
+    "id": "ambush",
+    "icon": "ambush.png",
+    "name": "매복",
+    "description": "HP가 50% 이상인 적에게 주는 피해가 n% 증가합니다.",
+    "suitableFor": "모든 딜러에게 선택적으로 적합",
+    "remark": "참고: 특성 포인트가 남을 경우 주로 선택됩니다.",
+    "levels": [
+      { "level": 1, "value": "1.0%" },
+      { "level": 2, "value": "2.0%" },
+      { "level": 3, "value": "3.0%" },
+      { "level": 4, "value": "4.0%" },
+      { "level": 5, "value": "5.0%" },
+      { "level": 6, "value": "6.0%" },
+      { "level": 7, "value": "7.0%" },
+      { "level": 8, "value": "9.0%" }
+    ],
+    "position": { "row": 2, "col": 0 }
+  },
+  {
+    "id": "insult",
+    "icon": "insult.png",
+    "name": "모욕",
+    "description": "자신보다 최대 HP가 높은 적에게 주는 피해가 n% 증가합니다.",
+    "suitableFor": "모든 딜러에게 선택적으로 적합",
+    "remark": "참고: 특성 포인트가 남을 경우 주로 선택됩니다.",
+    "levels": [
+      { "level": 1, "value": "1.0%" },
+      { "level": 2, "value": "2.0%" },
+      { "level": 3, "value": "3.0%" },
+      { "level": 4, "value": "4.0%" },
+      { "level": 5, "value": "5.0%" },
+      { "level": 6, "value": "5.5%" },
+      { "level": 7, "value": "6.0%" },
+      { "level": 8, "value": "7.0%" }
+    ],
+    "position": { "row": 2, "col": 2 }
+  },
+  {
+    "id": "crit_damage_enhancement",
+    "icon": "crit_damage_enhancement.png",
+    "name": "치명타 피해 강화",
+    "description": "치명타 피해량이 n% 증가합니다.",
+    "suitableFor": "치명타를 가할 수 있는 모든 딜러에게 적합",
+    "remark": "참고: 치명타를 사용할 수 있는 모든 딜러에게 필수입니다.",
+    "levels": [
+      { "level": 1, "value": "2.5%" },
+      { "level": 2, "value": "5.0%" },
+      { "level": 3, "value": "7.5%" },
+      { "level": 4, "value": "10.0%" },
+      { "level": 5, "value": "12.5%" },
+      { "level": 6, "value": "15.0%" },
+      { "level": 7, "value": "17.5%" },
+      { "level": 8, "value": "22.5%" }
+    ],
+    "position": { "row": 2, "col": 3 }
+  },
+  {
+    "id": "difficulties_admiration",
+    "icon": "difficulties_admiration.png",
+    "name": "강자 숭배",
+    "description": "버프가 있는 적을 공격할 때, 최종 피해가 n% 증가합니다.",
+    "suitableFor": "모든 딜러, 특히 PVP 모드에 적합",
+    "remark": "참고: 고정 피해에는 효과 없음",
+    "levels": [
+      { "level": 1, "value": "2.0%" },
+      { "level": 2, "value": "4.0%" },
+      { "level": 3, "value": "6.0%" },
+      { "level": 4, "value": "8.0%" },
+      { "level": 5, "value": "10.0%" },
+      { "level": 6, "value": "14.0%" }
+    ],
+    "position": { "row": 3, "col": 1 }
+  },
+  {
+    "id": "fanaticism",
+    "icon": "fanaticism.png",
+    "name": "광신",
+    "description": "자신에게 버프가 있을 때, 치명타 확률이 n% 증가합니다.",
+    "suitableFor": "치명타를 가할 수 있는 모든 딜러에게 적합",
+    "remark": "참고: 특성 버프(블루 버프) 및 해제 불가능한 버프에는 효과 없음",
+    "levels": [
+      { "level": 1, "value": "4.0%" },
+      { "level": 2, "value": "8.0%" },
+      { "level": 3, "value": "12.0%" },
+      { "level": 4, "value": "13.5%" },
+      { "level": 5, "value": "15.0%" },
+      { "level": 6, "value": "18.0%" }
+    ],
+    "position": { "row": 3, "col": 2 }
+  },
+  {
+    "id": "fight_till_death",
+    "icon": "fight_till_death.png",
+    "name": "죽을 때까지 싸운다",
+    "description": "자신의 HP가 50% 이하일 때, 최종 피해가 n% 증가합니다.",
+    "suitableFor": "모든 딜러에게 선택적으로 적합",
+    "remark": "참고: 특성 포인트가 남을 경우 주로 선택됩니다.",
+    "levels": [
+      { "level": 1, "value": "2.0%" },
+      { "level": 2, "value": "4.0%" },
+      { "level": 3, "value": "6.0%" },
+      { "level": 4, "value": "8.0%" },
+      { "level": 5, "value": "10.0%" },
+      { "level": 6, "value": "12.0%" },
+      { "level": 7, "value": "14.0%" },
+      { "level": 8, "value": "18.0%" }
+    ],
+    "position": { "row": 4, "col": 0 }
+  },
+  {
+    "id": "deep_suffering",
+    "icon": "deep_suffering.png",
+    "name": "심연의 고통",
+    "description": "중독, 중상, 화상 등 지속 피해(DOT)로 인한 피해가 n% 증가합니다.\n(예상되는 DOT 피해 계산 후, 해당 수치에 이 특성의 증가량을 곱하여 최종 피해를 계산합니다.)",
+    "suitableFor": "지속 피해 기반 딜러에게 적합",
+    "remark": "참고: 각 DOT의 고정 피해 상한에는 영향을 주지 않습니다.",
+    "levels": [
+      { "level": 1, "value": "3.0%" },
+      { "level": 2, "value": "6.0%" },
+      { "level": 3, "value": "9.0%" },
+      { "level": 4, "value": "12.0%" },
+      { "level": 5, "value": "15.0%" },
+      { "level": 6, "value": "18.0%" },
+      { "level": 7, "value": "21.0%" },
+      { "level": 8, "value": "27.0%" }
+    ],
+    "position": { "row": 4, "col": 1 }
+  },
+  {
+    "id": "persecute",
+    "icon": "persecute.png",
+    "name": "박해",
+    "description": "자신의 HP가 70% 이상일 때, 최종 피해가 n% 증가합니다.",
+    "suitableFor": "모든 딜러에게 적합",
+    "remark": "참고: 대부분의 딜러에게 권장됩니다.\n\n(최종 피해는 스킬 설명에 명시된 피해 수치를 의미하지 않으며, 치명타 피해, 강인함, 피해 증가 및 피해 감소 등의 스탯 계산 이후의 피해량을 의미합니다.)",
+    "levels": [
+      { "level": 1, "value": "1.5%" },
+      { "level": 2, "value": "3.0%" },
+      { "level": 3, "value": "4.5%" },
+      { "level": 4, "value": "6.0%" },
+      { "level": 5, "value": "7.5%" },
+      { "level": 6, "value": "9.0%" },
+      { "level": 7, "value": "10.5%" },
+      { "level": 8, "value": "13.5%" }
+    ],
+    "position": { "row": 4, "col": 2 }
+  },
+  {
+    "id": "victory_exploitation",
+    "icon": "victory_exploitation.png",
+    "name": "승리의 착취",
+    "description": "대상이 처치될 경우(아군에 의해 처치된 경우 포함), 자신의 공격력이 n% 증가합니다. 최대 2회까지 중첩되며, 전투 종료 시까지 유지됩니다.",
+    "suitableFor": "공격력 기반 딜러에게 적합",
+    "remark": "참고: 해제 불가능한 버프로, 버프 효과 악용에는 사용할 수 없습니다.",
+    "levels": [
+      { "level": 1, "value": "3.0%" },
+      { "level": 2, "value": "6.0%" },
+      { "level": 3, "value": "9.0%" },
+      { "level": 4, "value": "12.0%" },
+      { "level": 5, "value": "15.0%" },
+      { "level": 6, "value": "18.0%" }
+    ],
+    "position": { "row": 5, "col": 0 }
+  },
+  {
+    "id": "giant_killer",
+    "icon": "giant_killer.png",
+    "name": "거인 학살자",
+    "description": "피해를 줄 때마다 n% 확률로 대상의 최대 HP의 5%에 해당하는 고정 피해(True Damage)를 추가로 가합니다. 이 피해는 자신의 공격력의 50%를 초과할 수 없습니다.",
+    "suitableFor": "다단 히트 기반 딜러에게 적합",
+    "remark": "참고: 다단 히트 스킬에서 발동 확률이 더 높습니다.",
+    "levels": [
+      { "level": 1, "value": "8.0%" },
+      { "level": 2, "value": "16.0%" },
+      { "level": 3, "value": "24.0%" },
+      { "level": 4, "value": "32.0%" },
+      { "level": 5, "value": "40.0%" },
+      { "level": 6, "value": "56.0%" }
+    ],
+    "position": { "row": 5, "col": 2 }
+  },
+  {
+    "id": "fatal_blow",
+    "icon": "fatal_blow.png",
+    "name": "치명타 일격",
+    "description": "치명타를 가할 때, 대상의 방어력을 n% 무시합니다.",
+    "suitableFor": "치명타를 가할 수 있는 모든 딜러에게 적합",
+    "remark": "참고: 치명타가 없는 딜러에게는 사용하지 마십시오.",
+    "levels": [
+      { "level": 1, "value": "3.0%" },
+      { "level": 2, "value": "6.0%" },
+      { "level": 3, "value": "9.0%" },
+      { "level": 4, "value": "12.0%" },
+      { "level": 5, "value": "15.0%" },
+      { "level": 6, "value": "20.0%" }
+    ],
+    "position": { "row": 5, "col": 3 }
   }
 ]
