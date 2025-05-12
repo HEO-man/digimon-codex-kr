@@ -17,5 +17,43 @@
       { "level": 8, "value": "6.0%" }
     ],
     "position": { "row": 0, "col": 0 }
+  },
+  {
+    "id": "hit_rate_enhancement",
+    "icon": "hit_rate_enhancement.png",
+    "name": "명중률 강화",
+    "description": "명중률이 n% 증가합니다.",
+    "suitableFor": "모든 딜러에게 적합",
+    "remark": "참고: 일반적으로 PVP 특화 세팅에서는 사용되지 않으며, 일부 PVE 콘텐츠에서 유용합니다.",
+    "levels": [
+      { "level": 1, "value": "1.5%" },
+      { "level": 2, "value": "3.0%" },
+      { "level": 3, "value": "4.5%" },
+      { "level": 4, "value": "6.0%" },
+      { "level": 5, "value": "7.5%" },
+      { "level": 6, "value": "9.0%" },
+      { "level": 7, "value": "10.5%" },
+      { "level": 8, "value": "13.5%" }
+    ],
+    "position": { "row": 0, "col": 2 }
+  },
+  {
+    "id": "crit_rate_enhancement",
+    "icon": "crit_rate_enhancement.png",
+    "name": "치명타 확률 강화",
+    "description": "치명타 확률이 n% 증가합니다.",
+    "suitableFor": "치명타를 가할 수 있는 모든 딜러에게 적합",
+    "remark": "참고: 치명타 확률은 최소 120% 이상이 되어야 하며, 140% 이상을 권장합니다.",
+    "levels": [
+      { "level": 1, "value": "1.0%" },
+      { "level": 2, "value": "2.0%" },
+      { "level": 3, "value": "3.0%" },
+      { "level": 4, "value": "4.0%" },
+      { "level": 5, "value": "5.0%" },
+      { "level": 6, "value": "6.0%" },
+      { "level": 7, "value": "7.0%" },
+      { "level": 8, "value": "8.0%" }
+    ],
+    "position": { "row": 0, "col": 3 }
   }
 ]
