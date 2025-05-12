@@ -1,30 +1,11 @@
 [
   {
-    "id": "atk_enhancement",
-    "icon": "atk_enhancement.png",
-    "name": "공격력 강화",
-    "description": "전투에 돌입한 후, 총 공격력이 n% 증가합니다.",
-    "suitableFor": "모든 공격력 기반 딜러에게 적합",
-    "remark": "참고: 고정 피해가 공격력 수치에 의해 제한될 경우에도 유용합니다.",
-    "levels": [
-      { "level": 1, "value": "0.6%" },
-      { "level": 2, "value": "1.2%" },
-      { "level": 3, "value": "1.8%" },
-      { "level": 4, "value": "2.4%" },
-      { "level": 5, "value": "3.0%" },
-      { "level": 6, "value": "3.75%" },
-      { "level": 7, "value": "4.5%" },
-      { "level": 8, "value": "6.0%" }
-    ],
-    "position": { "row": 0, "col": 0 }
-  },
-  {
-    "id": "hit_rate_enhancement",
-    "icon": "hit_rate_enhancement.png",
-    "name": "명중률 강화",
-    "description": "명중률이 n% 증가합니다.",
-    "suitableFor": "모든 딜러에게 적합",
-    "remark": "참고: 일반적으로 PVP 특화 세팅에서는 사용되지 않으며, 일부 PVE 콘텐츠에서 유용합니다.",
+    "id": "def_enhancement",
+    "icon": "def_enhancement.png",
+    "name": "방어력 강화",
+    "description": "전투에 돌입한 후, 방어력이 n% 증가합니다.",
+    "suitableFor": "방어력 기반 디지몬에게 적합",
+    "remark": "추천 대상: 방어력 기반 DPS",
     "levels": [
       { "level": 1, "value": "1.5%" },
       { "level": 2, "value": "3.0%" },
@@ -35,123 +16,123 @@
       { "level": 7, "value": "10.5%" },
       { "level": 8, "value": "13.5%" }
     ],
+    "position": { "row": 0, "col": 0 }
+  },
+  {
+    "id": "status_resistance_enhancement",
+    "icon": "status_resistance_enhancement.png",
+    "name": "상태 저항력 강화",
+    "description": "상태 저항력을 n 증가시킵니다.",
+    "suitableFor": "서포터, 클렌저에게 적합",
+    "remark": "상태 저항 플러그인을 사용하는 서포터에게 권장됩니다.",
+    "levels": [
+      { "level": 1, "value": "100" },
+      { "level": 2, "value": "200" },
+      { "level": 3, "value": "300" },
+      { "level": 4, "value": "400" },
+      { "level": 5, "value": "500" },
+      { "level": 6, "value": "600" },
+      { "level": 7, "value": "700" },
+      { "level": 8, "value": "900" }
+    ],
+    "position": { "row": 0, "col": 1 }
+  },
+  {
+    "id": "evasion_enhancement",
+    "icon": "evasion_enhancement.png",
+    "name": "회피율 강화",
+    "description": "회피율이 n% 증가합니다.",
+    "suitableFor": "서포터, 클렌저, DPS",
+    "remark": "방어력 또는 상태 저항 특성을 필요로 하지 않는 유닛에게 사용",
+    "levels": [
+      { "level": 1, "value": "0.3%" },
+      { "level": 2, "value": "0.6%" },
+      { "level": 3, "value": "0.9%" },
+      { "level": 4, "value": "1.2%" },
+      { "level": 5, "value": "1.5%" },
+      { "level": 6, "value": "1.8%" },
+      { "level": 7, "value": "2.1%" },
+      { "level": 8, "value": "2.7%" }
+    ],
     "position": { "row": 0, "col": 2 }
   },
   {
-    "id": "crit_rate_enhancement",
-    "icon": "crit_rate_enhancement.png",
-    "name": "치명타 확률 강화",
-    "description": "치명타 확률이 n% 증가합니다.",
-    "suitableFor": "치명타를 가할 수 있는 모든 딜러에게 적합",
-    "remark": "참고: 치명타 확률은 최소 120% 이상이 되어야 하며, 140% 이상을 권장합니다.",
+    "id": "strong_will",
+    "icon": "strong_will.png",
+    "name": "강한 의지",
+    "description": "제어 상태에 걸렸을 때, 피해 감소율이 n% 증가합니다.",
+    "suitableFor": "제어 상태에 취약한 모든 디지몬",
+    "remark": "방어력 또는 상태 저항 특성을 필요로 하지 않는 유닛에게 사용",
     "levels": [
-      { "level": 1, "value": "1.0%" },
-      { "level": 2, "value": "2.0%" },
-      { "level": 3, "value": "3.0%" },
-      { "level": 4, "value": "4.0%" },
-      { "level": 5, "value": "5.0%" },
-      { "level": 6, "value": "6.0%" },
-      { "level": 7, "value": "7.0%" },
-      { "level": 8, "value": "8.0%" }
-    ],
-    "position": { "row": 0, "col": 3 }
-  },
-  {
-    "id": "normal_skill_enhancement",
-    "icon": "normal_skill_enhancement.png",
-    "name": "일반 스킬 강화",
-    "description": "일반 스킬의 최종 피해가 n% 증가합니다.",
-    "suitableFor": "모든 딜러에게 적합",
-    "remark": "참고: 콤보 팀에 권장됩니다.\n\n(최종 피해는 스킬 설명에 명시된 피해 수치를 의미하지 않으며, 치명타 피해, 강인함, 피해 증가 및 피해 감소 등의 스탯 계산 이후의 피해량을 의미합니다.)",
-    "levels": [
-      { "level": 1, "value": "2.0%" },
-      { "level": 2, "value": "4.0%" },
-      { "level": 3, "value": "6.0%" },
-      { "level": 4, "value": "7.0%" },
-      { "level": 5, "value": "8.5%" },
-      { "level": 6, "value": "10.5%" }
-    ],
-    "position": { "row": 1, "col": 0 }
-  },
-  {
-    "id": "main_skill_enhancement",
-    "icon": "main_skill_enhancement.png",
-    "name": "메인 스킬 강화",
-    "description": "메인 스킬의 최종 피해가 n% 증가합니다.",
-    "suitableFor": "모든 딜러에게 적합",
-    "remark": "참고: 대부분의 딜러에게 권장됩니다.\n\n(최종 피해는 스킬 설명에 명시된 피해 수치를 의미하지 않으며, 치명타 피해, 강인함, 피해 증가 및 피해 감소 등의 스탯 계산 이후의 피해량을 의미합니다.)",
-    "levels": [
-      { "level": 1, "value": "1.0%" },
-      { "level": 2, "value": "2.0%" },
-      { "level": 3, "value": "3.0%" },
-      { "level": 4, "value": "4.0%" },
-      { "level": 5, "value": "5.0%" },
-      { "level": 6, "value": "7.0%" }
+      { "level": 1, "value": "3.3%" },
+      { "level": 2, "value": "6.6%" },
+      { "level": 3, "value": "9.9%" },
+      { "level": 4, "value": "13.2%" },
+      { "level": 5, "value": "15.6%" },
+      { "level": 6, "value": "23.1%" }
     ],
     "position": { "row": 1, "col": 1 }
   },
   {
-    "id": "sub_skill_enhancement",
-    "icon": "sub_skill_enhancement.png",
-    "name": "서브 스킬 강화",
-    "description": "서브 스킬의 최종 피해가 n% 증가합니다.",
-    "suitableFor": "AP를 소모하는 서브 스킬",
-    "remark": "참고: 조건 기반 서브 스킬(예: 다이너스몬 X)에는 효과가 없습니다.\n\n(최종 피해는 스킬 설명에 명시된 피해 수치를 의미하지 않으며, 치명타 피해, 강인함, 피해 증가 및 피해 감소 등의 스탯 계산 이후의 피해량을 의미합니다.)",
+    "id": "aerobicized",
+    "icon": "aerobicized.png",
+    "name": "에어로바이즈",
+    "description": "공격을 회피하면 자신의 최대 HP의 n%만큼 회복합니다.",
+    "suitableFor": "기본 회피율이 내장된 디지몬",
+    "remark": "회피를 거의 하지 않는 유닛에게는 사용하지 마세요.",
     "levels": [
-      { "level": 1, "value": "1.0%" },
-      { "level": 2, "value": "2.0%" },
-      { "level": 3, "value": "3.0%" },
-      { "level": 4, "value": "4.0%" },
-      { "level": 5, "value": "5.0%" },
-      { "level": 6, "value": "7.0%" }
+      { "level": 1, "value": "2.0%" },
+      { "level": 2, "value": "4.0%" },
+      { "level": 3, "value": "6.0%" },
+      { "level": 4, "value": "8.0%" },
+      { "level": 5, "value": "10.0%" },
+      { "level": 6, "value": "14.0%" }
     ],
     "position": { "row": 1, "col": 2 }
   },
   {
-    "id": "ambush",
-    "icon": "ambush.png",
-    "name": "매복",
-    "description": "HP가 50% 이상인 적에게 주는 피해가 n% 증가합니다.",
-    "suitableFor": "모든 딜러에게 선택적으로 적합",
-    "remark": "참고: 특성 포인트가 남을 경우 주로 선택됩니다.",
+    "id": "gathering_strength",
+    "icon": "gathering_strength.png",
+    "name": "힘 모으기",
+    "description": "피격 시 n% 방어력 버프를 획득하며, 1라운드 동안 지속되고 2라운드의 쿨타임이 발생합니다.",
+    "suitableFor": "방어력 기반 디지몬",
+    "remark": "해제 불가능한 버프로, 버프 악용 효과에는 사용할 수 없습니다.",
     "levels": [
-      { "level": 1, "value": "1.0%" },
-      { "level": 2, "value": "2.0%" },
-      { "level": 3, "value": "3.0%" },
-      { "level": 4, "value": "4.0%" },
-      { "level": 5, "value": "5.0%" },
-      { "level": 6, "value": "6.0%" },
-      { "level": 7, "value": "7.0%" },
-      { "level": 8, "value": "9.0%" }
+      { "level": 1, "value": "7.0%" },
+      { "level": 2, "value": "14.0%" },
+      { "level": 3, "value": "21.0%" },
+      { "level": 4, "value": "28.0%" },
+      { "level": 5, "value": "35.0%" },
+      { "level": 6, "value": "42.0%" }
+    ],
+    "position": { "row": 1, "col": 3 }
+  },
+  {
+    "id": "fearless",
+    "icon": "fearless.png",
+    "name": "두려움 없는 의지",
+    "description": "매 라운드 처음으로 피격될 때, n만큼 상태 저항력 버프를 획득합니다.",
+    "suitableFor": "서포터 및 제어형 디지몬",
+    "remark": "상태 저항 플러그인 빌드를 사용하는 서포터에게 최적입니다.",
+    "levels": [
+      { "level": 1, "value": "200" },
+      { "level": 2, "value": "400" },
+      { "level": 3, "value": "600" },
+      { "level": 4, "value": "800" },
+      { "level": 5, "value": "1000" },
+      { "level": 6, "value": "1200" },
+      { "level": 7, "value": "1400" },
+      { "level": 8, "value": "1800" }
     ],
     "position": { "row": 2, "col": 0 }
   },
   {
-    "id": "insult",
-    "icon": "insult.png",
-    "name": "모욕",
-    "description": "자신보다 최대 HP가 높은 적에게 주는 피해가 n% 증가합니다.",
-    "suitableFor": "모든 딜러에게 선택적으로 적합",
-    "remark": "참고: 특성 포인트가 남을 경우 주로 선택됩니다.",
-    "levels": [
-      { "level": 1, "value": "1.0%" },
-      { "level": 2, "value": "2.0%" },
-      { "level": 3, "value": "3.0%" },
-      { "level": 4, "value": "4.0%" },
-      { "level": 5, "value": "5.0%" },
-      { "level": 6, "value": "5.5%" },
-      { "level": 7, "value": "6.0%" },
-      { "level": 8, "value": "7.0%" }
-    ],
-    "position": { "row": 2, "col": 2 }
-  },
-  {
-    "id": "crit_damage_enhancement",
-    "icon": "crit_damage_enhancement.png",
-    "name": "치명타 피해 강화",
-    "description": "치명타 피해량이 n% 증가합니다.",
-    "suitableFor": "치명타를 가할 수 있는 모든 딜러에게 적합",
-    "remark": "참고: 치명타를 사용할 수 있는 모든 딜러에게 필수입니다.",
+    "id": "toughness_enhancement",
+    "icon": "toughness_enhancement.png",
+    "name": "강인함 강화",
+    "description": "전투에 돌입한 후, 강인함이 n% 증가합니다.",
+    "suitableFor": "모든 디지몬",
+    "remark": "강인함은 치명타 피해량을 감소시킵니다.",
     "levels": [
       { "level": 1, "value": "2.5%" },
       { "level": 2, "value": "5.0%" },
@@ -162,49 +143,87 @@
       { "level": 7, "value": "17.5%" },
       { "level": 8, "value": "22.5%" }
     ],
-    "position": { "row": 2, "col": 3 }
+    "position": { "row": 2, "col": 1 }
   },
   {
-    "id": "difficulties_admiration",
-    "icon": "difficulties_admiration.png",
-    "name": "강자 숭배",
-    "description": "버프가 있는 적을 공격할 때, 최종 피해가 n% 증가합니다.",
-    "suitableFor": "모든 딜러, 특히 PVP 모드에 적합",
-    "remark": "참고: 고정 피해에는 효과 없음",
+    "id": "single_target_protection",
+    "icon": "single_target_protection.png",
+    "name": "단일 타겟 보호",
+    "description": "단일 타겟 스킬로부터 받는 최종 피해량이 n% 감소합니다.",
+    "suitableFor": "모든 디지몬",
+    "remark": "특성 포인트가 남을 경우 주로 선택됩니다.",
     "levels": [
-      { "level": 1, "value": "2.0%" },
-      { "level": 2, "value": "4.0%" },
-      { "level": 3, "value": "6.0%" },
-      { "level": 4, "value": "8.0%" },
-      { "level": 5, "value": "10.0%" },
-      { "level": 6, "value": "14.0%" }
+      { "level": 1, "value": "1.0%" },
+      { "level": 2, "value": "2.0%" },
+      { "level": 3, "value": "3.0%" },
+      { "level": 4, "value": "4.0%" },
+      { "level": 5, "value": "5.0%" },
+      { "level": 6, "value": "6.0%" },
+      { "level": 7, "value": "7.0%" },
+      { "level": 8, "value": "9.0%" }
     ],
-    "position": { "row": 3, "col": 1 }
+    "position": { "row": 2, "col": 2 }
   },
   {
-    "id": "fanaticism",
-    "icon": "fanaticism.png",
-    "name": "광신",
-    "description": "자신에게 버프가 있을 때, 치명타 확률이 n% 증가합니다.",
-    "suitableFor": "치명타를 가할 수 있는 모든 딜러에게 적합",
-    "remark": "참고: 특성 버프(블루 버프) 및 해제 불가능한 버프에는 효과 없음",
+    "id": "shield_barrier",
+    "icon": "shield_barrier.png",
+    "name": "실드 배리어",
+    "description": "실드가 있을 때, 자신의 피해 감소율이 n% 증가합니다.",
+    "suitableFor": "모든 디지몬",
+    "remark": "팀이 실드를 생성할 수 있는 경우에만 이 특성을 사용하세요.",
     "levels": [
       { "level": 1, "value": "4.0%" },
       { "level": 2, "value": "8.0%" },
       { "level": 3, "value": "12.0%" },
-      { "level": 4, "value": "13.5%" },
-      { "level": 5, "value": "15.0%" },
-      { "level": 6, "value": "18.0%" }
+      { "level": 4, "value": "16.0%" },
+      { "level": 5, "value": "20.0%" },
+      { "level": 6, "value": "24.0%" }
     ],
-    "position": { "row": 3, "col": 2 }
+    "position": { "row": 3, "col": 0 }
   },
   {
-    "id": "fight_till_death",
-    "icon": "fight_till_death.png",
-    "name": "죽을 때까지 싸운다",
-    "description": "자신의 HP가 50% 이하일 때, 최종 피해가 n% 증가합니다.",
-    "suitableFor": "모든 딜러에게 선택적으로 적합",
-    "remark": "참고: 특성 포인트가 남을 경우 주로 선택됩니다.",
+    "id": "caution",
+    "icon": "caution.png",
+    "name": "경계 태세",
+    "description": "자신의 턴이 끝날 때, n% 확률로 상태 저항력 +1200 버프를 1라운드 동안 획득합니다.",
+    "suitableFor": "모든 서포터",
+    "remark": "해제 불가능한 버프로, 버프 악용 효과에는 사용할 수 없습니다.",
+    "levels": [
+      { "level": 1, "value": "33%" },
+      { "level": 2, "value": "66%" },
+      { "level": 3, "value": "100%" },
+      { "level": 4, "value": "1300 Resistance" },
+      { "level": 5, "value": "1400 Resistance" },
+      { "level": 6, "value": "1600 Resistance" }
+    ],
+    "position": { "row": 3, "col": 1 }
+  },
+  {
+    "id": "shield_resistance",
+    "icon": "shield_resistance.png",
+    "name": "실드 상태 저항력",
+    "description": "실드가 있을 때, 상태 저항력을 n만큼 증가시킵니다.",
+    "suitableFor": "모든 서포터",
+    "remark": "해제 불가능한 버프로, 버프 악용 효과에는 사용할 수 없습니다.",
+    "levels": [
+      { "level": 1, "value": "500" },
+      { "level": 2, "value": "1000" },
+      { "level": 3, "value": "1500" },
+      { "level": 4, "value": "2000" },
+      { "level": 5, "value": "2500" },
+      { "level": 6, "value": "3000" },
+      { "level": 7, "value": "3500" },
+      { "level": 8, "value": "4500" }
+    ],
+    "position": { "row": 4, "col": 0 }
+  },
+  {
+    "id": "survival_instinct",
+    "icon": "survival_instinct.png",
+    "name": "생존 본능",
+    "description": "HP가 50% 이하일 때, 가한 피해량의 n%만큼 체력을 회복합니다.",
+    "suitableFor": "모든 DPS",
+    "remark": "서포터나 제어형에게는 권장되지 않습니다.",
     "levels": [
       { "level": 1, "value": "2.0%" },
       { "level": 2, "value": "4.0%" },
@@ -215,94 +234,75 @@
       { "level": 7, "value": "14.0%" },
       { "level": 8, "value": "18.0%" }
     ],
-    "position": { "row": 4, "col": 0 }
-  },
-  {
-    "id": "deep_suffering",
-    "icon": "deep_suffering.png",
-    "name": "심연의 고통",
-    "description": "중독, 중상, 화상 등 지속 피해(DOT)로 인한 피해가 n% 증가합니다.\n(예상되는 DOT 피해 계산 후, 해당 수치에 이 특성의 증가량을 곱하여 최종 피해를 계산합니다.)",
-    "suitableFor": "지속 피해 기반 딜러에게 적합",
-    "remark": "참고: 각 DOT의 고정 피해 상한에는 영향을 주지 않습니다.",
-    "levels": [
-      { "level": 1, "value": "3.0%" },
-      { "level": 2, "value": "6.0%" },
-      { "level": 3, "value": "9.0%" },
-      { "level": 4, "value": "12.0%" },
-      { "level": 5, "value": "15.0%" },
-      { "level": 6, "value": "18.0%" },
-      { "level": 7, "value": "21.0%" },
-      { "level": 8, "value": "27.0%" }
-    ],
     "position": { "row": 4, "col": 1 }
   },
   {
-    "id": "persecute",
-    "icon": "persecute.png",
-    "name": "박해",
-    "description": "자신의 HP가 70% 이상일 때, 최종 피해가 n% 증가합니다.",
-    "suitableFor": "모든 딜러에게 적합",
-    "remark": "참고: 대부분의 딜러에게 권장됩니다.\n\n(최종 피해는 스킬 설명에 명시된 피해 수치를 의미하지 않으며, 치명타 피해, 강인함, 피해 증가 및 피해 감소 등의 스탯 계산 이후의 피해량을 의미합니다.)",
+    "id": "life_protection",
+    "icon": "life_protection.png",
+    "name": "생명 보호",
+    "description": "HP가 50% 이하일 때, 자신의 최대 HP의 n%만큼 체력을 회복합니다 (턴 종료 시).",
+    "suitableFor": "모든 서포터 및 제어형 디지몬",
+    "remark": "DPS에게는 권장되지 않습니다.",
     "levels": [
-      { "level": 1, "value": "1.5%" },
-      { "level": 2, "value": "3.0%" },
-      { "level": 3, "value": "4.5%" },
-      { "level": 4, "value": "6.0%" },
-      { "level": 5, "value": "7.5%" },
-      { "level": 6, "value": "9.0%" },
-      { "level": 7, "value": "10.5%" },
-      { "level": 8, "value": "13.5%" }
+      { "level": 1, "value": "1.0%" },
+      { "level": 2, "value": "2.0%" },
+      { "level": 3, "value": "3.0%" },
+      { "level": 4, "value": "4.0%" },
+      { "level": 5, "value": "5.0%" },
+      { "level": 6, "value": "6.0%" },
+      { "level": 7, "value": "7.0%" },
+      { "level": 8, "value": "9.0%" }
     ],
     "position": { "row": 4, "col": 2 }
   },
   {
-    "id": "victory_exploitation",
-    "icon": "victory_exploitation.png",
-    "name": "승리의 착취",
-    "description": "대상이 처치될 경우(아군에 의해 처치된 경우 포함), 자신의 공격력이 n% 증가합니다. 최대 2회까지 중첩되며, 전투 종료 시까지 유지됩니다.",
-    "suitableFor": "공격력 기반 딜러에게 적합",
-    "remark": "참고: 해제 불가능한 버프로, 버프 효과 악용에는 사용할 수 없습니다.",
+    "id": "tactical_shield",
+    "icon": "tactical_shield.png",
+    "name": "전술 실드",
+    "description": "전투에 돌입하면 자신의 최대 HP의 n%에 해당하는 실드를 획득합니다.",
+    "suitableFor": "모든 디지몬",
+    "remark": "해제 불가능한 버프로, 버프 악용 효과에는 사용할 수 없습니다.",
     "levels": [
-      { "level": 1, "value": "3.0%" },
-      { "level": 2, "value": "6.0%" },
-      { "level": 3, "value": "9.0%" },
-      { "level": 4, "value": "12.0%" },
-      { "level": 5, "value": "15.0%" },
-      { "level": 6, "value": "18.0%" }
+      { "level": 1, "value": "2.0%" },
+      { "level": 2, "value": "4.0%" },
+      { "level": 3, "value": "6.0%" },
+      { "level": 4, "value": "8.0%" },
+      { "level": 5, "value": "10.0%" },
+      { "level": 6, "value": "14.0%" }
     ],
     "position": { "row": 5, "col": 0 }
   },
   {
-    "id": "giant_killer",
-    "icon": "giant_killer.png",
-    "name": "거인 학살자",
-    "description": "피해를 줄 때마다 n% 확률로 대상의 최대 HP의 5%에 해당하는 고정 피해(True Damage)를 추가로 가합니다. 이 피해는 자신의 공격력의 50%를 초과할 수 없습니다.",
-    "suitableFor": "다단 히트 기반 딜러에게 적합",
-    "remark": "참고: 다단 히트 스킬에서 발동 확률이 더 높습니다.",
+    "id": "pain_suppression",
+    "icon": "pain_suppression.png",
+    "name": "고통 억제",
+    "description": "피해를 받을 경우, n% 피해 감소 버프를 획득하며 1라운드 동안 지속됩니다. 최대 5회 중첩 가능합니다.",
+    "suitableFor": "모든 디지몬",
+    "remark": "해제 불가능한 버프로, 버프 악용 효과에는 사용할 수 없습니다.",
     "levels": [
-      { "level": 1, "value": "8.0%" },
-      { "level": 2, "value": "16.0%" },
-      { "level": 3, "value": "24.0%" },
-      { "level": 4, "value": "32.0%" },
-      { "level": 5, "value": "40.0%" },
-      { "level": 6, "value": "56.0%" }
+      { "level": 1, "value": "1.0%" },
+      { "level": 2, "value": "2.0%" },
+      { "level": 3, "value": "3.0%" },
+      { "level": 4, "value": "4.0%" },
+      { "level": 5, "value": "5.0%" },
+      { "level": 6, "value": "6.0%" }
     ],
-    "position": { "row": 5, "col": 2 }
+    "position": { "row": 5, "col": 1 }
   },
   {
-    "id": "fatal_blow",
-    "icon": "fatal_blow.png",
-    "name": "치명타 일격",
-    "description": "치명타를 가할 때, 대상의 방어력을 n% 무시합니다.",
-    "suitableFor": "치명타를 가할 수 있는 모든 딜러에게 적합",
-    "remark": "참고: 치명타가 없는 딜러에게는 사용하지 마십시오.",
+    "id": "energy_absorbing_armor",
+    "icon": "energy_absorbing_armor.png",
+    "name": "에너지 흡수형 아머",
+    "description": "피해를 받을 경우, n% 확률로 1 AP를 획득하며, 라운드당 최대 2회 발동됩니다.",
+    "suitableFor": "AP를 많이 소모하는 디지몬",
+    "remark": "AP 소모가 많은 디지몬에게 권장됩니다.",
     "levels": [
-      { "level": 1, "value": "3.0%" },
-      { "level": 2, "value": "6.0%" },
-      { "level": 3, "value": "9.0%" },
-      { "level": 4, "value": "12.0%" },
-      { "level": 5, "value": "15.0%" },
-      { "level": 6, "value": "20.0%" }
+      { "level": 1, "value": "5.0%" },
+      { "level": 2, "value": "10.0%" },
+      { "level": 3, "value": "15.0%" },
+      { "level": 4, "value": "20.0%" },
+      { "level": 5, "value": "25.0%" },
+      { "level": 6, "value": "33.3%" }
     ],
     "position": { "row": 5, "col": 3 }
   }
