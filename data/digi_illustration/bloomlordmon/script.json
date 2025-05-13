@@ -30,7 +30,7 @@
   },
   "exclusiveCore": {
     "exclusiveEffect": "중독 상태 적에게 주는 피해량 증가, 날씨 효과 발동 시 해제 및 중독 스택 관련 강화 효과 제공",
-    "suitableEffect": "중독 피해 증폭 코어 또는 날씨 연계 보조 코어 추천"
+    "suitableEffect": "방어막 가진 적에게 최종데미지  12% 증가"
   },
   "breakthrough": {
     "1": {

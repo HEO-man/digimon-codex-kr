@@ -1,0 +1,137 @@
+[
+    {
+      "id": "destiny_camera",
+      "name": "운명의 카메라",
+      "color": "green",
+      "nickname": "Camera Tech",
+      "icon": "destiny_camera.png",
+      "effects": {
+        "preBattle": {
+          "slot": 1,
+          "description": "전투 시작 시 아군 전체의 DEF를 x% 증가시킵니다.",
+          "values": [12, 14, 16, 18, 20],
+          "unit": "%"
+        },
+        "trigger": {
+          "slot": 2,
+          "description": "아군이 치명타를 입히면 자신의 최대 HP의 y%만큼 회복합니다.",
+          "values": [5, 6, 7, 8, 10],
+          "unit": "%"
+        },
+        "passive": {
+          "slot": 3,
+          "description": "아군 전체의 회피율을 z% 증가시킵니다.",
+          "values": [2.5, 3, 3.5, 4, 5],
+          "unit": "%"
+        }
+      }
+    },
+    {
+      "id": "destiny_camera",
+      "name": "운명의 카메라",
+      "color": "green",
+      "nickname": "Camera Tech",
+      "icon": "destiny_camera.png",
+      "effects": {
+        "preBattle": {
+          "slot": 1,
+          "description": "전투 시작 시 아군 전체의 DEF를 x% 증가시킵니다.",
+          "values": [12, 14, 16, 18, 20],
+          "unit": "%"
+        },
+        "trigger": {
+          "slot": 2,
+          "description": "아군이 치명타를 입히면 자신의 최대 HP의 y%만큼 회복합니다.",
+          "values": [5, 6, 7, 8, 10],
+          "unit": "%"
+        },
+        "passive": {
+          "slot": 3,
+          "description": "아군 전체의 회피율을 z% 증가시킵니다.",
+          "values": [2.5, 3, 3.5, 4, 5],
+          "unit": "%"
+        }
+      }
+    },
+    {
+      "id": "destiny_camera",
+      "name": "운명의 카메라",
+      "color": "green",
+      "nickname": "Camera Tech",
+      "icon": "destiny_camera.png",
+      "effects": {
+        "preBattle": {
+          "slot": 1,
+          "description": "전투 시작 시 아군 전체의 DEF를 x% 증가시킵니다.",
+          "values": [12, 14, 16, 18, 20],
+          "unit": "%"
+        },
+        "trigger": {
+          "slot": 2,
+          "description": "아군이 치명타를 입히면 자신의 최대 HP의 y%만큼 회복합니다.",
+          "values": [5, 6, 7, 8, 10],
+          "unit": "%"
+        },
+        "passive": {
+          "slot": 3,
+          "description": "아군 전체의 회피율을 z% 증가시킵니다.",
+          "values": [2.5, 3, 3.5, 4, 5],
+          "unit": "%"
+        }
+      }
+    },
+    {
+      "id": "destiny_camera",
+      "name": "운명의 카메라",
+      "color": "green",
+      "nickname": "Camera Tech",
+      "icon": "destiny_camera.png",
+      "effects": {
+        "preBattle": {
+          "slot": 1,
+          "description": "전투 시작 시 아군 전체의 DEF를 x% 증가시킵니다.",
+          "values": [12, 14, 16, 18, 20],
+          "unit": "%"
+        },
+        "trigger": {
+          "slot": 2,
+          "description": "아군이 치명타를 입히면 자신의 최대 HP의 y%만큼 회복합니다.",
+          "values": [5, 6, 7, 8, 10],
+          "unit": "%"
+        },
+        "passive": {
+          "slot": 3,
+          "description": "아군 전체의 회피율을 z% 증가시킵니다.",
+          "values": [2.5, 3, 3.5, 4, 5],
+          "unit": "%"
+        }
+      }
+    },
+    {
+      "id": "destiny_camera",
+      "name": "운명의 카메라",
+      "color": "green",
+      "nickname": "Camera Tech",
+      "icon": "destiny_camera.png",
+      "effects": {
+        "preBattle": {
+          "slot": 1,
+          "description": "전투 시작 시 아군 전체의 DEF를 x% 증가시킵니다.",
+          "values": [12, 14, 16, 18, 20],
+          "unit": "%"
+        },
+        "trigger": {
+          "slot": 2,
+          "description": "아군이 치명타를 입히면 자신의 최대 HP의 y%만큼 회복합니다.",
+          "values": [5, 6, 7, 8, 10],
+          "unit": "%"
+        },
+        "passive": {
+          "slot": 3,
+          "description": "아군 전체의 회피율을 z% 증가시킵니다.",
+          "values": [2.5, 3, 3.5, 4, 5],
+          "unit": "%"
+        }
+      }
+    },
+]
