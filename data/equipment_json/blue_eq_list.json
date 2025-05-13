@@ -1,137 +1,140 @@
 [
-    {
-      "id": "destiny_camera",
-      "name": "운명의 카메라",
-      "color": "green",
-      "nickname": "Camera Tech",
-      "icon": "destiny_camera.png",
-      "effects": {
-        "preBattle": {
-          "slot": 1,
-          "description": "전투 시작 시 아군 전체의 DEF를 x% 증가시킵니다.",
-          "values": [12, 14, 16, 18, 20],
-          "unit": "%"
-        },
-        "trigger": {
-          "slot": 2,
-          "description": "아군이 치명타를 입히면 자신의 최대 HP의 y%만큼 회복합니다.",
-          "values": [5, 6, 7, 8, 10],
-          "unit": "%"
-        },
-        "passive": {
-          "slot": 3,
-          "description": "아군 전체의 회피율을 z% 증가시킵니다.",
-          "values": [2.5, 3, 3.5, 4, 5],
-          "unit": "%"
-        }
-      }
-    },
-    {
-      "id": "destiny_camera",
-      "name": "운명의 카메라",
-      "color": "green",
-      "nickname": "Camera Tech",
-      "icon": "destiny_camera.png",
-      "effects": {
-        "preBattle": {
-          "slot": 1,
-          "description": "전투 시작 시 아군 전체의 DEF를 x% 증가시킵니다.",
-          "values": [12, 14, 16, 18, 20],
-          "unit": "%"
-        },
-        "trigger": {
-          "slot": 2,
-          "description": "아군이 치명타를 입히면 자신의 최대 HP의 y%만큼 회복합니다.",
-          "values": [5, 6, 7, 8, 10],
-          "unit": "%"
-        },
-        "passive": {
-          "slot": 3,
-          "description": "아군 전체의 회피율을 z% 증가시킵니다.",
-          "values": [2.5, 3, 3.5, 4, 5],
-          "unit": "%"
-        }
-      }
-    },
-    {
-      "id": "destiny_camera",
-      "name": "운명의 카메라",
-      "color": "green",
-      "nickname": "Camera Tech",
-      "icon": "destiny_camera.png",
-      "effects": {
-        "preBattle": {
-          "slot": 1,
-          "description": "전투 시작 시 아군 전체의 DEF를 x% 증가시킵니다.",
-          "values": [12, 14, 16, 18, 20],
-          "unit": "%"
-        },
-        "trigger": {
-          "slot": 2,
-          "description": "아군이 치명타를 입히면 자신의 최대 HP의 y%만큼 회복합니다.",
-          "values": [5, 6, 7, 8, 10],
-          "unit": "%"
-        },
-        "passive": {
-          "slot": 3,
-          "description": "아군 전체의 회피율을 z% 증가시킵니다.",
-          "values": [2.5, 3, 3.5, 4, 5],
-          "unit": "%"
-        }
-      }
-    },
-    {
-      "id": "destiny_camera",
-      "name": "운명의 카메라",
-      "color": "green",
-      "nickname": "Camera Tech",
-      "icon": "destiny_camera.png",
-      "effects": {
-        "preBattle": {
-          "slot": 1,
-          "description": "전투 시작 시 아군 전체의 DEF를 x% 증가시킵니다.",
-          "values": [12, 14, 16, 18, 20],
-          "unit": "%"
-        },
-        "trigger": {
-          "slot": 2,
-          "description": "아군이 치명타를 입히면 자신의 최대 HP의 y%만큼 회복합니다.",
-          "values": [5, 6, 7, 8, 10],
-          "unit": "%"
-        },
-        "passive": {
-          "slot": 3,
-          "description": "아군 전체의 회피율을 z% 증가시킵니다.",
-          "values": [2.5, 3, 3.5, 4, 5],
-          "unit": "%"
-        }
-      }
-    },
-    {
-      "id": "destiny_camera",
-      "name": "운명의 카메라",
-      "color": "green",
-      "nickname": "Camera Tech",
-      "icon": "destiny_camera.png",
-      "effects": {
-        "preBattle": {
-          "slot": 1,
-          "description": "전투 시작 시 아군 전체의 DEF를 x% 증가시킵니다.",
-          "values": [12, 14, 16, 18, 20],
-          "unit": "%"
-        },
-        "trigger": {
-          "slot": 2,
-          "description": "아군이 치명타를 입히면 자신의 최대 HP의 y%만큼 회복합니다.",
-          "values": [5, 6, 7, 8, 10],
-          "unit": "%"
-        },
-        "passive": {
-          "slot": 3,
-          "description": "아군 전체의 회피율을 z% 증가시킵니다.",
-          "values": [2.5, 3, 3.5, 4, 5],
-          "unit": "%"
-        }
+  {
+    "id": "energy_scattering_scarf",
+    "name": "에너지 분산 스카프",
+    "color": "blue",
+    "nickname": "Scarf Tech",
+    "icon": "energy_scattering_scarf.png",
+    "effects": {
+      "preBattle": {
+        "slot": 1,
+        "description": "전투 시작 시 아군 전체의 상태이상 명중치를 x 포인트 증가시킵니다. (지속시간: 2턴)",
+        "values": [500, 600, 700, 800, 1000],
+        "unit": "포인트"
+      },
+      "trigger": {
+        "slot": 2,
+        "description": "아군이 치명타를 받을 때마다, 적의 EXE를 y 포인트 감소시킵니다. (턴당 1회 한정)",
+        "values": [4, 5, 6, 7, 8],
+        "unit": "포인트"
+      },
+      "passive": {
+        "slot": 3,
+        "description": "아군 전체의 상태이상 저항력을 z 포인트 증가시킵니다.",
+        "values": [500, 600, 700, 800, 1000],
+        "unit": "포인트"
       }
     }
+  },
+  {
+    "id": "yi_neng_gloves",
+    "name": "이능 장갑",
+    "color": "blue",
+    "nickname": "Glove Tech",
+    "icon": "yi_neng_gloves.png",
+    "effects": {
+      "preBattle": {
+        "slot": 1,
+        "description": "전투 시작 시 아군 전체의 치유 효과를 x% 증가시킵니다. (지속시간: 2턴)",
+        "values": [12, 15, 18, 21, 24],
+        "unit": "%"
+      },
+      "trigger": {
+        "slot": 2,
+        "description": "아군이 치명타를 입힐 때마다, 적의 EXE를 y 포인트 감소시킵니다. (턴당 1회 한정)",
+        "values": [4, 5, 6, 7, 8],
+        "unit": "포인트"
+      },
+      "passive": {
+        "slot": 3,
+        "description": "아군 전체의 회피율을 z% 증가시킵니다.",
+        "values": [3, 3.6, 4.2, 4.8, 6],
+        "unit": "%"
+      }
+    }
+  }
+  ,
+  {
+    "id": "firm_headphones",
+    "name": "단단한 헤드폰",
+    "color": "blue",
+    "nickname": "Headphone Tech",
+    "icon": "firm_headphones.png",
+    "effects": {
+      "preBattle": {
+        "slot": 1,
+        "description": "전투 시작 시 아군 전체의 치명타 저항률을 x% 증가시킵니다. (지속시간: 2턴)",
+        "values": [10, 12, 14, 16, 20],
+        "unit": "%"
+      },
+      "trigger": {
+        "slot": 2,
+        "description": "아군이 치명타 피해를 받을 경우, x% 확률로 1 HP를 남기고 생존합니다. (아군당 1회 한정)",
+        "values": [5, 6, 7, 8, 10],
+        "unit": "%"
+      },
+      "passive": {
+        "slot": 3,
+        "description": "아군 전체(공격 역할)의 최종 데미지를 z% 증가시킵니다.",
+        "values": [5, 6, 7, 8, 10],
+        "unit": "%"
+      }
+    }
+  }
+  ,
+  {
+    "id": "magnetic_raincoat",
+    "name": "자성 레인코트",
+    "color": "blue",
+    "nickname": "Raincoat Tech",
+    "icon": "magnetic_raincoat.png",
+    "effects": {
+      "preBattle": {
+        "slot": 1,
+        "description": "전투 시작 시 아군의 공격력을 x% 감소시키고, 감소된 총 공격력을 가장 높은 공격력 아군에게 부여합니다. (지속시간: 1턴)",
+        "values": [2, 2.5, 3, 3.5, 4],
+        "unit": "%"
+      },
+      "trigger": {
+        "slot": 2,
+        "description": "아군이 최대 HP의 40%를 초과하는 단일 피해를 받을 경우, y% 확률로 DEF +60% 효과를 얻습니다. (지속시간: 2턴)",
+        "values": [50, 60, 70, 80, 100],
+        "unit": "%"
+      },
+      "passive": {
+        "slot": 3,
+        "description": "아군 전체의 방어력을 z% 증가시킵니다.",
+        "values": [8, 10, 12, 14, 16],
+        "unit": "%"
+      }
+    }
+  }
+  ,
+  {
+    "id": "precision_scope",
+    "name": "정밀 조준경",
+    "color": "blue",
+    "nickname": "Scope Tech",
+    "icon": "precision_scope.png",
+    "effects": {
+      "preBattle": {
+        "slot": 1,
+        "description": "전투 시작 시, 현재 HP가 가장 높은 아군에게 x% 확률로 상태이상 면역(Status Immunity) 효과를 부여합니다. (지속시간: 1턴)",
+        "values": [50, 60, 70, 80, 100],
+        "unit": "%"
+      },
+      "trigger": {
+        "slot": 2,
+        "description": "아군이 이상 상태에 걸릴 경우, 최대 HP의 x%만큼 회복 효과를 얻습니다. (매 턴 1회 발동)",
+        "values": [5, 6, 7, 8, 10],
+        "unit": "%"
+      },
+      "passive": {
+        "slot": 3,
+        "description": "아군 전체의 상태이상 저항력을 z 포인트 증가시킵니다.",
+        "values": [500, 600, 700, 800, 1000],
+        "unit": "포인트"
+      }
+    }
+  }
 ]
