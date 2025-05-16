@@ -1,0 +1,106 @@
+{
+  "status_immunity": {
+    "type": "buff",
+    "name": "상태 이상 면역",
+    "icon": "battle_effects/icons/status_immunity.png",
+    "color": "#4CAF50",
+    "description": "모든 종류의 제어 상태 및 대부분의 디버프에 저항합니다. 단, 일부 특수 마크(과부하, 부활 금지 등)에는 적용되지 않습니다.",
+    "dispellable": true
+  },
+  "stealth": {
+    "type": "buff",
+    "name": "은신",
+    "icon": "battle_effects/icons/stealth.png",
+    "color": "#4CAF50",
+    "description": "전투 중 아군이 존재할 경우, 적의 스킬 대상이 되지 않습니다. 단, 모든 아군이 사망 시 해제됩니다.",
+    "dispellable": false
+  },
+  "atk_up_indispellable": {
+    "type": "buff",
+    "name": "공격력 증가 (불가 해제)",
+    "icon": "battle_effects/icons/atk_up_indispellable.png",
+    "color": "#4CAF50",
+    "description": "공격력이 증가하는 버프입니다. AncientWisemon 및 Wisemon의 경우 '오라'로 분류되며, 해당 효과는 아군 전체에게 적용됩니다.",
+    "dispellable": false
+  },
+  "atk_up": {
+    "type": "buff",
+    "name": "공격력 증가",
+    "icon": "battle_effects/icons/atk_up.png",
+    "color": "#4CAF50",
+    "description": "공격력이 일정 수치만큼 증가합니다.",
+    "dispellable": true
+  },
+  "evasion_up": {
+    "type": "buff",
+    "name": "회피율 증가",
+    "icon": "battle_effects/icons/evasion_up.png",
+    "color": "#4CAF50",
+    "description": "회피율이 증가하여 적의 공격을 회피할 확률이 높아집니다.",
+    "dispellable": false
+  },
+  "crit_rate_up": {
+    "type": "buff",
+    "name": "치명타 확률 증가",
+    "icon": "battle_effects/icons/crit_rate_up.png",
+    "color": "#4CAF50",
+    "description": "치명타가 발생할 확률이 증가합니다.",
+    "dispellable": false
+  },
+  "crit_rate_up_dispellable": {
+    "type": "buff",
+    "name": "치명타 확률 증가",
+    "icon": "battle_effects/icons/crit_rate_up_dispellable.png",
+    "color": "#4CAF50",
+    "description": "치명타가 발생할 확률이 증가합니다.",
+    "dispellable": true
+  },
+  "hit_rate_up": {
+    "type": "buff",
+    "name": "명중률 증가",
+    "icon": "battle_effects/icons/hit_rate_up.png",
+    "color": "#4CAF50",
+    "description": "공격의 명중률이 증가합니다.",
+    "dispellable": false
+  },
+  "def_up": {
+    "type": "buff",
+    "name": "방어력 증가",
+    "icon": "battle_effects/icons/def_up.png",
+    "color": "#4CAF50",
+    "description": "방어력이 증가하여 받는 피해를 줄입니다.",
+    "dispellable": false
+  },
+  "def_up_dispellable": {
+    "type": "buff",
+    "name": "방어력 증가",
+    "icon": "battle_effects/icons/def_up_dispellable.png",
+    "color": "#4CAF50",
+    "description": "방어력이 증가하여 받는 피해를 줄입니다.",
+    "dispellable": true
+  },
+  "crit_dmg_up": {
+    "type": "buff",
+    "name": "치명타 피해 증가",
+    "icon": "battle_effects/icons/crit_dmg_up.png",
+    "color": "#4CAF50",
+    "description": "치명타 발생 시 가하는 피해량이 증가합니다.",
+    "dispellable": true
+  },
+  "spd_up": {
+    "type": "buff",
+    "name": "속도 증가",
+    "icon": "battle_effects/icons/spd_up.png",
+    "color": "#4CAF50",
+    "description": "행동 속도가 증가합니다.",
+    "dispellable": false
+  },
+  "spd_up_dispellable": {
+    "type": "buff",
+    "name": "속도 증가",
+    "icon": "battle_effects/icons/spd_up_dispellable.png",
+    "color": "#4CAF50",
+    "description": "행동 속도가 증가합니다.",
+    "dispellable": true
+  }
+}
