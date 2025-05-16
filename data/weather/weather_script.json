@@ -1,0 +1,58 @@
+{
+  "weather_gale": {
+    "type": "weather",
+    "name": "강풍",
+    "icon": "assets/effects/weather_gale.png",
+    "color": "#4CAF50",
+    "description": "받는 속도 버프의 효과가 추가로 30% 증가합니다."
+  },
+  "weather_heatwave": {
+    "type": "weather",
+    "name": "열파",
+    "icon": "assets/effects/weather_heatwave.png",
+    "color": "#F44336",
+    "description": "공격 시 대상의 방어력을 40% 무시합니다."
+  },
+  "weather_overcast": {
+    "type": "weather",
+    "name": "흐림",
+    "icon": "assets/effects/weather_overcast.png",
+    "color": "#9E9E9E",
+    "description": "적용된 디버프 1개마다 전체 피해 증가량이 2% 증가하고, 전체 피해 감소량이 2% 감소합니다. 최대 10회 중첩됩니다."
+  },
+  "weather_poisonmist": {
+    "type": "weather",
+    "name": "독 안개",
+    "icon": "assets/effects/weather_poisonmist.png",
+    "color": "#8E24AA",
+    "description": "모든 지속 피해(DoT) 효과의 피해량이 50% 증가합니다."
+  },
+  "weather_rain": {
+    "type": "weather",
+    "name": "비",
+    "icon": "assets/effects/weather_rain.png",
+    "color": "#2196F3",
+    "description": "행동 전에 아군의 버프 2개를 해제하고, 디버프 2개를 정화합니다."
+  },
+  "weather_rainbow": {
+    "type": "weather",
+    "name": "무지개",
+    "icon": "assets/effects/weather_rainbow.png",
+    "color": "#FF9800",
+    "description": "턴마다 회복되는 AP가 1 증가합니다."
+  },
+  "weather_sandstorm": {
+    "type": "weather",
+    "name": "모래폭풍",
+    "icon": "assets/effects/weather_sandstorm.png",
+    "color": "#A1887F",
+    "description": "능동 공격을 받을 때, 33% 확률로 '튕기기(Deflect)'를 발동하여, 이번 턴 동안 받는 치명타 피해를 120%로 제한합니다."
+  },
+  "weather_thunderstorm": {
+    "type": "weather",
+    "name": "뇌우",
+    "icon": "assets/effects/weather_thunderstorm.png",
+    "color": "#673AB7",
+    "description": "광역 공격(AoE)의 최종 피해량이 25% 증가합니다."
+  }
+}
