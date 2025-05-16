@@ -17,7 +17,7 @@
   },
   "atk_up_indispellable": {
     "type": "buff",
-    "name": "공격력 증가 (불가 해제)",
+    "name": "공격력 증가 (해제 불가)",
     "icon": "effects/icons/atk_up_indispellable.png",
     "color": "#4CAF50",
     "description": "공격력이 증가하는 버프입니다. AncientWisemon 및 Wisemon의 경우 '오라'로 분류되며, 해당 효과는 아군 전체에게 적용됩니다.",
@@ -145,7 +145,7 @@
   },
   "damage_reduction_indispellable": {
     "type": "buff",
-    "name": "피해 감소 (불가 해제)",
+    "name": "피해 감소 (해제 불가)",
     "icon": "effects/icons/damage_reduction_indispellable.png",
     "color": "#4CAF50",
     "description": "받는 피해를 줄여주는 버프로, Dark Birds, Elec Guard, Doom Mark 등 출처를 제거하면 사라집니다.",
