@@ -126,5 +126,104 @@
     "color": "#F44336",
     "description": "대상의 중독 효과에 대한 저항력이 2000 감소합니다.",
     "dispellable": false
+  },
+  "eclipse": {
+    "type": "debuff",
+    "name": "이클립스",
+    "icon": "battle_effects/icons/eclipse.png",
+    "color": "#E53935",
+    "description": "특수 부정 마크. 어둠 속성 스킬을 받을 경우, 상태이상 저항이 15% 감소합니다. 최대 5중첩 가능.",
+    "bypassImmunity": true,
+    "dispellable": false
+  },
+  "sacred_penalty": {
+    "type": "debuff",
+    "name": "신성한 형벌",
+    "icon": "battle_effects/icons/sacred_penalty.png",
+    "color": "#E53935",
+    "description": "빛 속성 스킬에 피격 시 무작위 버프 1개를 제거하는 특수 부정 마크입니다.",
+    "bypassImmunity": true,
+    "dispellable": false
+  },
+  "doom_mark": {
+    "type": "debuff",
+    "name": "파멸의 징표",
+    "icon": "battle_effects/icons/doom_mark.png",
+    "color": "#E53935",
+    "description": "다양한 능력에 의해 영향을 받는 특수 마크입니다. 조커몬 전용입니다.",
+    "bypassImmunity": true,
+    "dispellable": false
+  },
+  "aimed_target": {
+    "type": "debuff",
+    "name": "조준 대상",
+    "icon": "battle_effects/icons/aimed_target.png",
+    "color": "#E53935",
+    "description": "회피율과 치명 저항이 감소하며, 무겐드라몬의 공격에 추가 피해를 입습니다.",
+    "bypassImmunity": true,
+    "dispellable": false
+  },
+  "dark_bird": {
+    "type": "debuff",
+    "name": "어둠의 새",
+    "icon": "battle_effects/icons/dark_bird.png",
+    "color": "#E53935",
+    "description": "시전자 스킬에 따라 다양한 추가 효과를 발생시키는 특수 마크입니다. 그리폰몬 전용.",
+    "bypassImmunity": true,
+    "dispellable": false
+  },
+  "crystal_mark": {
+    "type": "debuff",
+    "name": "크리스탈 마크",
+    "icon": "battle_effects/icons/crystal_mark.png",
+    "color": "#E53935",
+    "description": "인어몬 전용 마크로, 다양한 추가 효과를 발휘합니다.",
+    "bypassImmunity": true,
+    "dispellable": false
+  },
+  "wind_blade": {
+    "type": "debuff",
+    "name": "윈드 블레이드",
+    "icon": "battle_effects/icons/wind_blade.png",
+    "color": "#E53935",
+    "description": "바람 속성 스킬에 피격 시 콤보 확률이 증가합니다. 피격 시 중첩이 제거됩니다.",
+    "bypassImmunity": true,
+    "dispellable": false
+  },
+  "overload": {
+    "type": "debuff",
+    "name": "과부하",
+    "icon": "battle_effects/icons/overload.png",
+    "color": "#E53935",
+    "description": "적이 전기 속성 스킬에 맞으면, 이 마크가 있는 적도 10% 피해를 받습니다.",
+    "bypassImmunity": true,
+    "dispellable": false
+  },
+  "molten_armor": {
+    "type": "debuff",
+    "name": "용암 갑옷",
+    "icon": "battle_effects/icons/molten_armor.png",
+    "color": "#E53935",
+    "description": "불 속성 공격에 피해 증가 +20%, 연소 효과에 대한 저항 -40%.",
+    "bypassImmunity": true,
+    "dispellable": false
+  },
+  "weakening": {
+    "type": "debuff",
+    "name": "약화",
+    "icon": "battle_effects/icons/weakening.png",
+    "color": "#E53935",
+    "description": "지지몬이 대상의 공격력 10%를 흡수합니다.",
+    "bypassImmunity": true,
+    "dispellable": false
+  },
+  "duel": {
+    "type": "debuff",
+    "name": "결투",
+    "icon": "battle_effects/icons/duel.png",
+    "color": "#E53935",
+    "description": "결투 마크가 없는 대상을 공격 시 피해 감소. 크레니엄몬 전용.",
+    "bypassImmunity": true,
+    "dispellable": false
   }
 }

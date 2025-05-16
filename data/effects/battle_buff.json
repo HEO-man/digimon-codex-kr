@@ -102,5 +102,53 @@
     "color": "#4CAF50",
     "description": "행동 속도가 증가합니다.",
     "dispellable": true
+  },
+  "talent_status_resistance": {
+    "type": "buff",
+    "name": "재능 상태 저항",
+    "icon": "battle_effects/icons/talent_status_resistance.png",
+    "color": "#4CAF50",
+    "description": "Talent를 통해 습득한 버프로, 학습한 Talent에 따라 저항 수치가 달라집니다.",
+    "dispellable": true
+  },
+  "toughness": {
+    "type": "buff",
+    "name": "튼튼함",
+    "icon": "battle_effects/icons/toughness.png",
+    "color": "#4CAF50",
+    "description": "일정 정도의 피해를 견디는 강화 상태입니다.",
+    "dispellable": true
+  },
+  "control_resistance": {
+    "type": "buff",
+    "name": "제어 저항",
+    "icon": "battle_effects/icons/control_resistance.png",
+    "color": "#4CAF50",
+    "description": "제어 상태 디버프를 완전히 무시합니다.",
+    "dispellable": true
+  },
+  "damage_nullification": {
+    "type": "buff",
+    "name": "피해 무효화",
+    "icon": "battle_effects/icons/damage_nullification.png",
+    "color": "#4CAF50",
+    "description": "적의 직접적인 피해를 완전히 무시합니다.",
+    "dispellable": true
+  },
+  "shield": {
+    "type": "buff",
+    "name": "실드",
+    "icon": "battle_effects/icons/shield.png",
+    "color": "#4CAF50",
+    "description": "실드를 부여받아 HP에 피해가 가기 전 먼저 소모됩니다. 실드의 양은 제공자에 따라 달라집니다.",
+    "dispellable": true
+  },
+  "damage_reduction_indispellable": {
+    "type": "buff",
+    "name": "피해 감소 (불가 해제)",
+    "icon": "battle_effects/icons/damage_reduction_indispellable.png",
+    "color": "#4CAF50",
+    "description": "받는 피해를 줄여주는 버프로, Dark Birds, Elec Guard, Doom Mark 등 출처를 제거하면 사라집니다.",
+    "dispellable": false
   }
 }
