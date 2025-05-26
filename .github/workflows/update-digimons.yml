@@ -24,6 +24,11 @@ jobs:
         run: |
           python scripts/generate_digimons.py
 
+      - name: Pull latest main branch (rebase)
+        run: |
+          git config pull.rebase true
+          git pull origin main
+
       - name: Commit and push updated digimons.json
         run: |
           git config --global user.name "github-actions"
