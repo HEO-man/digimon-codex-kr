@@ -1,5 +1,15 @@
 [
   {
+    "name": "z테스트 디지몬",
+    "element": "풀",
+    "type": null,
+    "role": "컨트롤러",
+    "folderName": "z테스트 디지몬",
+    "folderUrl": "z%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%94%94%EC%A7%80%EB%AA%AC",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
     "name": "나타몬",
     "element": "불",
     "type": "데이터",
