@@ -450,16 +450,6 @@
     "category": "Z진화"
   },
   {
-    "name": "라센몬 FM",
-    "element": "풀",
-    "type": "데이터",
-    "role": "딜러",
-    "folderName": "라센몬 FM",
-    "folderUrl": "%EB%9D%BC%EC%84%BC%EB%AA%AC%20FM",
-    "grade": 25,
-    "category": "Z진화"
-  },
-  {
     "name": "블룸로드몬",
     "element": "풀",
     "type": "백신",
