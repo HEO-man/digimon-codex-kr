@@ -1,5 +1,6 @@
 import os
 import json
+from urllib.parse import quote  # 🔸 URL-safe 처리용
 
 BASE_DIR = './data/digi_illustration'
 OUTPUT_FILE = os.path.join(BASE_DIR, 'digimons.json')
@@ -17,6 +18,7 @@ def extract_info(folder):
             'type': data.get('type'),
             'role': data.get('role', ''),
             'folderName': folder,
+            'folderUrl': quote(folder),  # ✅ URL 인코딩된 폴더명
             'grade': data.get('grade', 25),
             'category': data.get('category', 'Z진화')
         }
