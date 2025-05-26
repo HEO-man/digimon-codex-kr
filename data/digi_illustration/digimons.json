@@ -40,19 +40,7 @@
     "category": "Z진화"
   },
   {
-<<<<<<< HEAD
-    "name": "블룸로드몬",
-    "element": "풀",
-    "type": "백신",
-    "role": "딜러",
-    "folderName": "블룸로드몬",
-    "folderUrl": "%EB%B8%94%EB%A3%B8%EB%A1%9C%EB%93%9C%EB%AA%AC",
-    "grade": 25,
-    "category": "Z진화"
-  },
-  {
-=======
->>>>>>> 2816102b3923fe4b0845c82e70430b2ad020f27a
+
     "name": "상드리몬",
     "element": "물",
     "type": "바이러스",
