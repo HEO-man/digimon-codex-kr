@@ -5,6 +5,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "agumon_bb",
+    "folderUrl": "agumon_bb",
     "grade": 25,
     "category": "Z진화"
   },
@@ -14,6 +15,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "alphamon_ouryuken",
+    "folderUrl": "alphamon_ouryuken",
     "grade": 25,
     "category": "Z진화"
   },
@@ -23,6 +25,7 @@
     "type": "바이러스",
     "role": "딜러",
     "folderName": "apocalymon",
+    "folderUrl": "apocalymon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -32,6 +35,7 @@
     "type": "바이러스",
     "role": "컨트롤러",
     "folderName": "bagramon",
+    "folderUrl": "bagramon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -41,6 +45,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "bloomlordmon",
+    "folderUrl": "bloomlordmon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -50,6 +55,7 @@
     "type": "바이러스",
     "role": "컨트롤러",
     "folderName": "cendrillmon",
+    "folderUrl": "cendrillmon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -59,6 +65,7 @@
     "type": "바이러스",
     "role": "딜러",
     "folderName": "darkness_bagramon",
+    "folderUrl": "darkness_bagramon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -68,6 +75,7 @@
     "type": "데이터",
     "role": "서포터",
     "folderName": "eosmon",
+    "folderUrl": "eosmon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -77,6 +85,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "erlangmon",
+    "folderUrl": "erlangmon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -86,6 +95,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "erlangmon_bm",
+    "folderUrl": "erlangmon_bm",
     "grade": 25,
     "category": "Z진화"
   },
@@ -95,6 +105,7 @@
     "type": "데이터",
     "role": "딜러",
     "folderName": "gabumon_bf",
+    "folderUrl": "gabumon_bf",
     "grade": 25,
     "category": "Z진화"
   },
@@ -104,6 +115,7 @@
     "type": "데이터",
     "role": "서포터",
     "folderName": "huanglongmon",
+    "folderUrl": "huanglongmon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -113,6 +125,7 @@
     "type": "데이터",
     "role": "딜러",
     "folderName": "huanglongmon_rm",
+    "folderUrl": "huanglongmon_rm",
     "grade": 25,
     "category": "Z진화"
   },
@@ -122,6 +135,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "imperialdramon_pm",
+    "folderUrl": "imperialdramon_pm",
     "grade": 25,
     "category": "Z진화"
   },
@@ -131,6 +145,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "jougamon",
+    "folderUrl": "jougamon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -140,6 +155,7 @@
     "type": "바이러스",
     "role": "딜러",
     "folderName": "lordknightmon_x",
+    "folderUrl": "lordknightmon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -149,6 +165,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "lucemon",
+    "folderUrl": "lucemon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -158,6 +175,7 @@
     "type": "바이러스",
     "role": "컨트롤러",
     "folderName": "lucemon_sm",
+    "folderUrl": "lucemon_sm",
     "grade": 25,
     "category": "Z진화"
   },
@@ -167,6 +185,7 @@
     "type": "바이러스",
     "role": "컨트롤러",
     "folderName": "lucemon_x",
+    "folderUrl": "lucemon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -176,6 +195,7 @@
     "type": "백신",
     "role": "서포터",
     "folderName": "magnamon_x",
+    "folderUrl": "magnamon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -185,6 +205,7 @@
     "type": "바이러스",
     "role": "서포터",
     "folderName": "megidramon_x",
+    "folderUrl": "megidramon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -194,6 +215,7 @@
     "type": "데이터",
     "role": "서포터",
     "folderName": "metalgarurumon_x",
+    "folderUrl": "metalgarurumon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -203,6 +225,7 @@
     "type": "바이러스",
     "role": "딜러",
     "folderName": "minervamon_x",
+    "folderUrl": "minervamon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -212,6 +235,7 @@
     "type": "데이터",
     "role": "서포터",
     "folderName": "nezhamon",
+    "folderUrl": "nezhamon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -221,6 +245,7 @@
     "type": "데이터",
     "role": "딜러",
     "folderName": "nezhamon_cm",
+    "folderUrl": "nezhamon_cm",
     "grade": 25,
     "category": "Z진화"
   },
@@ -230,6 +255,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "omegamon_mm_sp",
+    "folderUrl": "omegamon_mm_sp",
     "grade": 25,
     "category": "Z진화"
   },
@@ -239,6 +265,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "omegamon_sp",
+    "folderUrl": "omegamon_sp",
     "grade": 25,
     "category": "Z진화"
   },
@@ -248,6 +275,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "omegamon_x",
+    "folderUrl": "omegamon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -257,6 +285,7 @@
     "type": "바이러스",
     "role": "딜러",
     "folderName": "ophanimon_fmx",
+    "folderUrl": "ophanimon_fmx",
     "grade": 25,
     "category": "Z진화"
   },
@@ -266,6 +295,7 @@
     "type": "백신",
     "role": "서포터",
     "folderName": "ophanimon_x",
+    "folderUrl": "ophanimon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -275,6 +305,7 @@
     "type": "바이러스",
     "role": "딜러",
     "folderName": "ordinemon",
+    "folderUrl": "ordinemon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -284,6 +315,7 @@
     "type": "데이터",
     "role": "서포터",
     "folderName": "plesiomon_x",
+    "folderUrl": "plesiomon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -293,6 +325,7 @@
     "type": "데이터",
     "role": "컨트롤러",
     "folderName": "princemamemon_x",
+    "folderUrl": "princemamemon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -302,6 +335,7 @@
     "type": "바이러스",
     "role": "딜러",
     "folderName": "quartzmon",
+    "folderUrl": "quartzmon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -311,6 +345,7 @@
     "type": "데이터",
     "role": "딜러",
     "folderName": "rasenmon_fm",
+    "folderUrl": "rasenmon_fm",
     "grade": 25,
     "category": "Z진화"
   },
@@ -320,6 +355,7 @@
     "type": "데이터",
     "role": "서포터",
     "folderName": "rosemon_x",
+    "folderUrl": "rosemon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -329,6 +365,7 @@
     "type": "데이터",
     "role": "서포터",
     "folderName": "sakuyamon_x",
+    "folderUrl": "sakuyamon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -338,6 +375,7 @@
     "type": "데이터",
     "role": "서포터",
     "folderName": "shagaramon",
+    "folderUrl": "shagaramon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -347,6 +385,7 @@
     "type": "데이터",
     "role": "딜러",
     "folderName": "shoutmon_x7",
+    "folderUrl": "shoutmon_x7",
     "grade": 25,
     "category": "Z진화"
   },
@@ -356,6 +395,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "shoutmon_x7_sm",
+    "folderUrl": "shoutmon_x7_sm",
     "grade": 25,
     "category": "Z진화"
   },
@@ -365,6 +405,7 @@
     "type": "백신",
     "role": "서포터",
     "folderName": "sleipmon_x",
+    "folderUrl": "sleipmon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -374,6 +415,7 @@
     "type": "백신",
     "role": "서포터",
     "folderName": "takutoumon",
+    "folderUrl": "takutoumon",
     "grade": 25,
     "category": "Z진화"
   },
@@ -383,6 +425,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "takutoumon_wm",
+    "folderUrl": "takutoumon_wm",
     "grade": 25,
     "category": "Z진화"
   },
@@ -392,6 +435,7 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "ulforceveedramon_x",
+    "folderUrl": "ulforceveedramon_x",
     "grade": 25,
     "category": "Z진화"
   },
@@ -401,6 +445,27 @@
     "type": "백신",
     "role": "딜러",
     "folderName": "wargreymon_x",
+    "folderUrl": "wargreymon_x",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "라센몬 FM",
+    "element": "풀",
+    "type": "데이터",
+    "role": "딜러",
+    "folderName": "라센몬 FM",
+    "folderUrl": "%EB%9D%BC%EC%84%BC%EB%AA%AC%20FM",
+    "grade": 25,
+    "category": "Z진화"
+  },
+  {
+    "name": "블룸로드몬",
+    "element": "풀",
+    "type": "백신",
+    "role": "딜러",
+    "folderName": "블룸로드몬",
+    "folderUrl": "%EB%B8%94%EB%A3%B8%EB%A1%9C%EB%93%9C%EB%AA%AC",
     "grade": 25,
     "category": "Z진화"
   }
