@@ -9,18 +9,17 @@ def rename_ilst_images():
             continue
 
         for filename in os.listdir(folder_path):
-            if filename.endswith('_ilst.png') and not filename.startswith('_'):
-                new_name = '_ilst.png'
+            if filename == '_ilst.png':
                 old_path = os.path.join(folder_path, filename)
-                new_path = os.path.join(folder_path, new_name)
+                new_path = os.path.join(folder_path, 'ilst.png')
 
-                # 덮어쓰지 않도록 기존 파일 확인
+                # 충돌 방지
                 if os.path.exists(new_path):
-                    print(f'❌ 이미 존재함: {new_path}, 건너뜀')
+                    print(f'❌ ilst.png 이미 존재함 → 건너뜀: {new_path}')
                     continue
 
                 os.rename(old_path, new_path)
-                print(f'✅ {filename} → {new_name}')
+                print(f'✅ {filename} → ilst.png')
 
 if __name__ == '__main__':
     rename_ilst_images()
