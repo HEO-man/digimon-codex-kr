@@ -1,0 +1,32 @@
+name: Fix Binary Image Uploads
+
+on:
+  push:
+    paths:
+      - 'data/digi_illustration/**/*.png'
+
+jobs:
+  decode_images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Decode base64-encoded PNG files
+        run: |
+          find data/digi_illustration -name "*.png" | while read file; do
+            # base64 문자열의 서두는 일반적으로 iVBOR로 시작함 (PNG header)
+            if file "$file" | grep -q text && head -c 10 "$file" | grep -q "iVBOR"; then
+              echo "🔄 base64 → 바이너리 변환: $file"
+              base64 -d "$file" > "${file}.real"
+              mv "${file}.real" "$file"
+            fi
+          done
+
+      - name: Commit decoded binary images
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add data/digi_illustration/**/*.png
+          git commit -m "🔧 Fix base64-encoded PNG uploads" || echo "No changes to commit"
+          git push
